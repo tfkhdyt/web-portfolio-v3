@@ -54,7 +54,7 @@ function skillsPage() {
                 .map((skill) => (
                   <motion.div key={skill.name} whileHover={{ y: -8 }}>
                     <Tooltip label={skill.name}>
-                      <Paper shadow='xs' radius='lg' p='xl'>
+                      <Paper shadow='sm' radius='lg' p='xl'>
                         <Image
                           src={`/images/tech/${skill.icon}`}
                           height={100}

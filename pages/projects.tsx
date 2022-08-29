@@ -66,7 +66,7 @@ function ProjectsPage() {
                     key={project.name}
                     component={motion.div}
                     whileHover={{ y: -8 }}
-                    shadow='xs'
+                    shadow='sm'
                     radius='lg'
                     p='xl'
                     sx={{
