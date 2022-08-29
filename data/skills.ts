@@ -30,7 +30,7 @@ export const skills: Skill[] = [
   {
     name: 'Go',
     category: 'Language',
-    icon: 'golang.png',
+    icon: 'golang.svg',
   },
   {
     name: 'Python',
@@ -70,7 +70,7 @@ export const skills: Skill[] = [
   {
     name: 'Gin',
     category: 'Framework/Library',
-    icon: 'gin.svg',
+    icon: 'gin.png',
   },
   {
     name: 'Telegraf',
@@ -155,6 +155,6 @@ export const skills: Skill[] = [
   {
     name: 'GNU/Linux',
     category: 'Operating System',
-    icon: 'linux.png',
+    icon: 'linux.svg',
   },
 ];

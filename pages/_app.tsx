@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       >
         <Layout>
           <AnimatePresence
-            exitBeforeEnter
+            mode='wait'
             initial={false}
             onExitComplete={() => window.scrollTo(0, 0)}
           >

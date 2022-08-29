@@ -39,7 +39,7 @@ function ProjectsPage() {
           <Tabs.List grow>
             {projectCategories.map((category) => (
               <Tabs.Tab value={category.toLowerCase()} key={category}>
-                <Text weight='bold'>{category}</Text>
+                {category}
               </Tabs.Tab>
             ))}
           </Tabs.List>

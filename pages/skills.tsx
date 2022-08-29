@@ -10,7 +10,6 @@ import {
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
-import Layout from '../components/Layout';
 import { skillCategories } from '../data/skillCategories';
 import { skills } from '../data/skills';
 
@@ -28,7 +27,7 @@ function skillsPage() {
           <Tabs.List grow>
             {skillCategories.map((category) => (
               <Tabs.Tab value={category.toLowerCase()} key={category}>
-                <Text weight='bold'>{category}</Text>
+                {category}
               </Tabs.Tab>
             ))}
           </Tabs.List>
@@ -44,7 +43,7 @@ function skillsPage() {
             <SimpleGrid
               breakpoints={[
                 { minWidth: 0, cols: 2 },
-                { minWidth: 'sm', cols: 2 },
+                { minWidth: 'sm', cols: 3 },
                 { minWidth: 'md', cols: 3 },
                 { minWidth: 'lg', cols: 4 },
               ]}
