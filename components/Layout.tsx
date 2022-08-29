@@ -29,9 +29,7 @@ export default function MyAppShell({ children }: Props) {
       footer={<MyFooter />}
       header={<MyHeader />}
     >
-      <Container sx={{ height: '70vh', display: 'grid', placeItems: 'center' }}>
-        {children}
-      </Container>
+      <Container>{children}</Container>
     </AppShell>
   );
 }
