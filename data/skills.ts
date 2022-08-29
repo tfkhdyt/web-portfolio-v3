@@ -2,139 +2,159 @@ import { skillCategories } from './skillCategories';
 
 interface Skill {
   name: string;
-  category: string;
+  category: typeof skillCategories[number];
   icon: string;
 }
 
 export const skills: Skill[] = [
   {
     name: 'HTML',
-    category: skillCategories[0],
+    category: 'Language',
     icon: 'html.svg',
   },
   {
     name: 'CSS',
-    category: skillCategories[0],
+    category: 'Language',
     icon: 'css.svg',
   },
   {
     name: 'JavaScript',
-    category: skillCategories[0],
+    category: 'Language',
     icon: 'js.svg',
   },
   {
     name: 'TypeScript',
-    category: skillCategories[0],
+    category: 'Language',
     icon: 'ts.svg',
   },
   {
     name: 'Go',
-    category: skillCategories[0],
-    icon: 'golang.svg',
+    category: 'Language',
+    icon: 'golang.png',
+  },
+  {
+    name: 'Python',
+    category: 'Language',
+    icon: 'python.svg',
+  },
+  {
+    name: 'PHP',
+    category: 'Language',
+    icon: 'php.svg',
   },
   {
     name: 'React',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'react.svg',
   },
   {
     name: 'Next.js',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'next.svg',
   },
   {
     name: 'Node.js',
-    category: skillCategories[1],
-    icon: 'node.svg',
+    category: 'Framework/Library',
+    icon: 'node.png',
   },
   {
     name: 'Express.js',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'express.png',
   },
   {
     name: 'NestJS',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'nest.svg',
   },
   {
     name: 'Gin',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'gin.svg',
   },
   {
     name: 'Telegraf',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'telegraf.svg',
   },
   {
     name: 'Zustand',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'zustand.png',
   },
   {
     name: 'React Hook Form',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'react-hook-form.svg',
   },
   {
     name: 'Jotai',
-    category: skillCategories[1],
+    category: 'Framework/Library',
     icon: 'jotai.png',
   },
   {
+    name: 'Prisma',
+    category: 'Framework/Library',
+    icon: 'prisma.png',
+  },
+  {
+    name: 'NextAuth',
+    category: 'Framework/Library',
+    icon: 'nextauth.png',
+  },
+  {
     name: 'Bootstrap',
-    category: skillCategories[2],
+    category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
   },
   {
     name: 'Tailwind CSS',
-    category: skillCategories[2],
+    category: 'UI Framework/Component',
     icon: 'tailwind.svg',
   },
   {
     name: 'daisyUI',
-    category: skillCategories[2],
+    category: 'UI Framework/Component',
     icon: 'daisy.svg',
   },
   {
     name: 'Mantine',
-    category: skillCategories[2],
+    category: 'UI Framework/Component',
     icon: 'mantine.svg',
   },
   {
     name: 'PostgreSQL',
-    category: skillCategories[3],
+    category: 'DBMS',
     icon: 'postgres.svg',
   },
   {
     name: 'MongoDB',
-    category: skillCategories[3],
+    category: 'DBMS',
     icon: 'mongo.svg',
   },
   {
     name: 'MySQL',
-    category: skillCategories[3],
+    category: 'DBMS',
     icon: 'mysql.svg',
   },
   {
     name: 'SQLite',
-    category: skillCategories[3],
+    category: 'DBMS',
     icon: 'sqlite.svg',
   },
   {
     name: 'EndeavourOS',
-    category: skillCategories[4],
+    category: 'Operating System',
     icon: 'endeavouros.svg',
   },
   {
     name: 'Arch Linux',
-    category: skillCategories[4],
+    category: 'Operating System',
     icon: 'arch.svg',
   },
   {
     name: 'GNU/Linux',
-    category: skillCategories[4],
+    category: 'Operating System',
     icon: 'linux.png',
   },
 ];

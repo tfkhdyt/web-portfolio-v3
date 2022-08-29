@@ -4,4 +4,4 @@ export const skillCategories = [
   'UI Framework/Component',
   'DBMS',
   'Operating System',
-];
+] as const;
