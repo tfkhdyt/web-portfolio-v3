@@ -13,6 +13,7 @@ specifiers:
   '@types/react-dom': 18.0.6
   eslint: 8.23.0
   eslint-config-next: 12.2.5
+  eslint-plugin-simple-import-sort: ^7.0.0
   next: 12.2.5
   react: 18.2.0
   react-dom: 18.2.0
@@ -36,6 +37,7 @@ devDependencies:
   '@types/react-dom': 18.0.6
   eslint: 8.23.0
   eslint-config-next: 12.2.5_yqf6kl63nyoq5megxukfnom5rm
+  eslint-plugin-simple-import-sort: 7.0.0_eslint@8.23.0
   typescript: 4.8.2
 
 packages:
@@ -240,8 +242,8 @@ packages:
   /@floating-ui/react-dom-interactions/0.6.6_zxljzmqdrxwnuenbkrz77w74uy:
     resolution: {integrity: sha512-qnao6UPjSZNHnXrF+u4/n92qVroQkx0Umlhy3Avk1oIebm/5ee6yvDm4xbHob0OjY7ya8WmUnV3rQlPwX3Atwg==}
     peerDependencies:
-      react: '>=16.8.0 || 18'
-      react-dom: '>=16.8.0 || 18'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/react-dom': 0.7.2_zxljzmqdrxwnuenbkrz77w74uy
       aria-hidden: 1.2.1_ug65io7jkbhmo4fihdmbrh3ina
@@ -589,8 +591,8 @@ packages:
   /@radix-ui/react-presence/1.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-A+6XEvN01NfVWiKu38ybawfHsBjWum42MRPnEuqPsBZ4eV7e/7K321B5VgYMPv3Xx5An6o1/l9ZuDBgmcmWK3w==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0 || 18
-      react-dom: ^16.8 || ^17.0 || ^18.0 || 18
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
     dependencies:
       '@babel/runtime': 7.18.9
       '@radix-ui/react-compose-refs': 1.0.0_react@18.2.0
@@ -1363,6 +1365,14 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+    dev: true
+
+  /eslint-plugin-simple-import-sort/7.0.0_eslint@8.23.0:
+    resolution: {integrity: sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.23.0
     dev: true
 
   /eslint-scope/7.1.1:
