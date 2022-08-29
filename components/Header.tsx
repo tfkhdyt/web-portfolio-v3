@@ -51,7 +51,7 @@ function MyHeader() {
           <MediaQuery smallerThan='sm' styles={{ display: 'none' }}>
             <Group spacing={0.5}>
               {headerItems.map((item, idx) => (
-                <Link href={item.link} passHref key={idx}>
+                <Link href={item.link} passHref key={idx} scroll={false}>
                   <Button
                     variant='subtle'
                     size='lg'
