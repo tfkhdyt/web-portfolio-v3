@@ -51,7 +51,6 @@ const Home: NextPage = () => {
                   weight='bold'
                   size={24}
                   gradient={{ from: 'indigo', to: 'red', deg: 45 }}
-                  mx={4}
                   mt={-5}
                   sx={{ letterSpacing: 0.15 }}
                 >
