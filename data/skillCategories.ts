@@ -1,4 +1,4 @@
-export const categories = [
+export const skillCategories = [
   'Language',
   'Framework/Library',
   'UI Framework/Component',

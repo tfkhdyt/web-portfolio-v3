@@ -10,7 +10,7 @@ import {
 import Head from 'next/head';
 
 import Layout from '../components/Layout';
-import { categories } from '../data/categories';
+import { skillCategories } from '../data/skillCategories';
 import { skills } from '../data/skills';
 
 function skillsPage() {
@@ -25,7 +25,7 @@ function skillsPage() {
           <Tabs defaultValue='language' variant='pills' color='violet'>
             <ScrollArea type='never'>
               <Tabs.List grow>
-                {categories.map((category) => (
+                {skillCategories.map((category) => (
                   <Tabs.Tab value={category.toLowerCase()} key={category}>
                     {category}
                   </Tabs.Tab>
@@ -33,7 +33,7 @@ function skillsPage() {
               </Tabs.List>
             </ScrollArea>
 
-            {categories.map((category) => (
+            {skillCategories.map((category) => (
               <Tabs.Panel
                 value={category.toLowerCase()}
                 key={category}
