@@ -1,10 +1,23 @@
-import { Navbar, Text } from '@mantine/core';
+import {
+  Anchor,
+  Box,
+  Divider,
+  MediaQuery,
+  Navbar,
+  Stack,
+  Text,
+} from '@mantine/core';
 import { useAtom } from 'jotai';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { navbarAtom } from '../atom/navbar';
+import { headerItems } from './headerItem';
 
 function MyNavbar() {
   const [opened] = useAtom(navbarAtom);
+  const router = useRouter();
+  const path = router.asPath;
 
   return (
     <Navbar
@@ -13,7 +26,23 @@ function MyNavbar() {
       hidden={!opened}
       width={{ sm: 200, lg: 300 }}
     >
-      <Text>Application navbar</Text>
+      <Stack>
+        {headerItems.map((item, idx) => (
+          <div key={idx}>
+            <Link href={item.link}>
+              <Text mx='md' size='md' weight={600}>
+                {item.label}
+              </Text>
+            </Link>
+            <Divider
+              my='sm'
+              mx='md'
+              size='xs'
+              color={item.link === path ? 'violet' : undefined}
+            />
+          </div>
+        ))}
+      </Stack>
     </Navbar>
   );
 }

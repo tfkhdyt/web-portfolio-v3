@@ -1,6 +1,7 @@
-import { AppShell, useMantineTheme } from '@mantine/core';
+import { AppShell, Container, useMantineTheme } from '@mantine/core';
 import { ReactNode } from 'react';
 
+import useBreakpoint from '../hooks/isSm';
 import MyFooter from './Footer';
 import MyHeader from './Header';
 import MyNavbar from './Navbar';
@@ -11,6 +12,7 @@ interface Props {
 
 export default function MyAppShell({ children }: Props) {
   const theme = useMantineTheme();
+  const { isSm } = useBreakpoint();
 
   return (
     <AppShell
@@ -23,12 +25,13 @@ export default function MyAppShell({ children }: Props) {
         },
       }}
       navbarOffsetBreakpoint='sm'
-      asideOffsetBreakpoint='sm'
-      navbar={<MyNavbar />}
+      navbar={isSm ? <MyNavbar /> : undefined}
       footer={<MyFooter />}
       header={<MyHeader />}
     >
-      {children}
+      <Container sx={{ height: '70vh', display: 'grid', placeItems: 'center' }}>
+        {children}
+      </Container>
     </AppShell>
   );
 }
