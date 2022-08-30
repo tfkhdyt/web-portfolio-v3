@@ -1,5 +1,4 @@
 import {
-  ActionIcon,
   Box,
   Burger,
   Button,
@@ -7,22 +6,20 @@ import {
   Group,
   Header,
   MediaQuery,
-  useMantineColorScheme,
   useMantineTheme,
 } from '@mantine/core';
 import { useAtom } from 'jotai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
 import { headerItems } from '@/data/headerItem';
 import { navbarAtom } from '@/store/navbar';
 
+import { SwitchToggle } from './ColorSchemeToggle';
+
 function MyHeader() {
   const [opened, setOpened] = useAtom(navbarAtom);
   const theme = useMantineTheme();
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  const dark = colorScheme === 'dark';
   const router = useRouter();
   const path = router.asPath;
 
@@ -63,7 +60,7 @@ function MyHeader() {
             </Group>
           </MediaQuery>
         </Box>
-        <ActionIcon
+        {/* <ActionIcon
           color={dark ? 'yellow' : 'blue'}
           variant='light'
           onClick={() => toggleColorScheme()}
@@ -71,7 +68,8 @@ function MyHeader() {
           size='lg'
         >
           {dark ? <BsFillSunFill size={16} /> : <BsFillMoonFill size={16} />}
-        </ActionIcon>
+        </ActionIcon> */}
+        <SwitchToggle />
       </Container>
     </Header>
   );
