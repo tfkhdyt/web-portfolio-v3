@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { navbarAtom } from '../atom/navbar';
-import { headerItems } from './headerItem';
+import { headerItems } from '../data/headerItem';
 
 function MyNavbar() {
   const [opened, setOpened] = useAtom(navbarAtom);

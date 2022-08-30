@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
 import { navbarAtom } from '../atom/navbar';
-import { headerItems } from './headerItem';
+import { headerItems } from '../data/headerItem';
 
 function MyHeader() {
   const [opened, setOpened] = useAtom(navbarAtom);

@@ -1,7 +1,4 @@
-interface NavbarItem {
-  label: string;
-  link: string;
-}
+import { NavbarItem } from './navbarItem';
 
 export const headerItems: NavbarItem[] = [
   {
