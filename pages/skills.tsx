@@ -53,7 +53,7 @@ function skillsPage() {
                 .filter((skill) => skill.category === category)
                 .map((skill) => (
                   <motion.div key={skill.name} whileHover={{ y: -8 }}>
-                    <Tooltip label={skill.name}>
+                    <Tooltip label={skill.name} withArrow withinPortal>
                       <Paper shadow='sm' radius='lg' p='xl'>
                         <Image
                           src={`/images/tech/${skill.icon}`}
