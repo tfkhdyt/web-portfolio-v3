@@ -148,7 +148,13 @@ function MessageBox() {
               }
             />
           </Group>
-          <Button mt='md' size='md' leftIcon={<FiSend />} type='submit'>
+          <Button
+            mt='md'
+            size='md'
+            leftIcon={<FiSend />}
+            type='submit'
+            color='violet'
+          >
             Send
           </Button>
         </form>
