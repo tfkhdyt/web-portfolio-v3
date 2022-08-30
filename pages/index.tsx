@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <Grid.Col sm={6} orderSm={2}>
             <Group position='center' mt='lg'>
               <img
-                src='/images/tfkhdyt_illustration.png'
+                src='/images/tfkhdyt_illustration.svg'
                 alt='illustration'
                 width='50%'
                 height='auto'
