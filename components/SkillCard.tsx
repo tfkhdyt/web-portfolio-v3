@@ -13,7 +13,6 @@ function SkillCard({ skill }: Props) {
     <motion.div whileHover={{ y: -8 }} whileTap={{ y: -8 }}>
       <Tooltip
         label={skill.name}
-        withArrow
         withinPortal
         events={{ hover: true, focus: false, touch: true }}
       >
