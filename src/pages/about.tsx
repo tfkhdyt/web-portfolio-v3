@@ -25,6 +25,7 @@ function about() {
               width={150}
               height={150}
               objectFit='cover'
+              priority
             />
           </Box>
         </Grid.Col>
