@@ -9,9 +9,6 @@ import { BsFillSunFill, BsMoonStars } from 'react-icons/bs';
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
-    '& *': {
-      cursor: 'pointer',
-    },
   },
 
   icon: {
