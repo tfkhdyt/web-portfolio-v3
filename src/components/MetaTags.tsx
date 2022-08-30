@@ -15,25 +15,25 @@ const MetaTags = () => {
       <meta name='twitter:description' content={metaTagsData.deskripsi} />
       <meta
         name='twitter:image'
-        content={/* metaTagsData.link +  */ metaTagsData.thumbnail}
+        content={metaTagsData.link + metaTagsData.thumbnail}
       />
       <meta name='twitter:title' content={metaTagsData.title} />
       <meta property='og:description' content={metaTagsData.deskripsi} />
       <meta
         property='og:image'
-        content={/* metaTagsData.link +  */ metaTagsData.thumbnail}
+        content={metaTagsData.link + metaTagsData.thumbnail}
       />
       <meta property='og:title' content={metaTagsData.title} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content={metaTagsData.link} />
       <link
         rel='image_src'
-        href={/* metaTagsData.link +  */ metaTagsData.thumbnail}
+        href={metaTagsData.link + metaTagsData.thumbnail}
       />
       <link
         rel='icon'
         type='image/x-icon'
-        href={/* metaTagsData.link +  */ metaTagsData.favicon}
+        href={metaTagsData.link + metaTagsData.favicon}
       />
     </>
   );
