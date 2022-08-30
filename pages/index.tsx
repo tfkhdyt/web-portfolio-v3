@@ -7,17 +7,12 @@ import {
   Text,
   useMantineColorScheme,
 } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
-import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
   const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
-  const isSm = useMediaQuery('(min-width: 768px)');
-  const isMd = useMediaQuery('(min-width: 992px)');
 
   return (
     <>
@@ -26,24 +21,24 @@ const Home: NextPage = () => {
       </Head>
       <Box sx={{ height: '70vh', display: 'grid', placeItems: 'center' }}>
         <Grid align='center'>
-          <Grid.Col sm={6} md={6} orderSm={2}>
+          <Grid.Col sm={6} orderSm={2}>
             <Group position='center' mt='lg'>
               <img
                 src='/images/tfkhdyt_illustration.png'
                 alt='illustration'
-                width={isSm ? '50%' : isSm ? '25%' : '50%'}
+                width='50%'
                 height='auto'
               />
             </Group>
           </Grid.Col>
-          <Grid.Col sm={6} md={6} orderMd={1}>
+          <Grid.Col sm={6} orderSm={1}>
             <Stack
               spacing='lg'
               mt='md'
               sx={{
-                textAlign: 'left',
-                '@media (max-width: 768px)': {
-                  textAlign: 'center',
+                textAlign: 'center',
+                '@media (min-width: 768px)': {
+                  textAlign: 'left',
                 },
               }}
             >
