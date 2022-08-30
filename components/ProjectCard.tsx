@@ -6,7 +6,6 @@ import {
   Paper,
   Text,
   Title,
-  Tooltip,
   useMantineColorScheme,
 } from '@mantine/core';
 import { motion } from 'framer-motion';
@@ -57,33 +56,23 @@ function ProjectCard({ project }: Props) {
           {project.link.github && (
             <Link href={project.link.github} passHref>
               <Box component='a' target='_blank'>
-                <Tooltip
-                  label='Source Code'
-                  events={{ hover: true, focus: false, touch: true }}
-                >
-                  <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
-                    <BsGithub size={24} />
-                  </ActionIcon>
-                </Tooltip>
+                <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
+                  <BsGithub size={24} />
+                </ActionIcon>
               </Box>
             </Link>
           )}
           {project.link.demo && (
             <Link href={project.link.demo} passHref>
               <Box component='a' target='_blank'>
-                <Tooltip
-                  label='Demo'
-                  events={{ hover: true, focus: false, touch: true }}
+                <ActionIcon
+                  component='a'
+                  target='_blank'
+                  color={dark ? undefined : 'dark'}
+                  size='lg'
                 >
-                  <ActionIcon
-                    component='a'
-                    target='_blank'
-                    color={dark ? undefined : 'dark'}
-                    size='lg'
-                  >
-                    <HiExternalLink size={24} />
-                  </ActionIcon>
-                </Tooltip>
+                  <HiExternalLink size={24} />
+                </ActionIcon>
               </Box>
             </Link>
           )}
@@ -97,17 +86,13 @@ function ProjectCard({ project }: Props) {
           .filter((skill) => project.tech.includes(skill.name))
           .map((skill) => (
             <Box key={skill.name}>
-              <Tooltip
-                label={skill.name}
-                events={{ hover: true, focus: false, touch: true }}
-              >
-                <Image
-                  src={`/images/tech/${skill.icon}`}
-                  alt={skill.name}
-                  height={25}
-                  fit='contain'
-                />
-              </Tooltip>
+              <Image
+                src={`/images/tech/${skill.icon}`}
+                alt={skill.name}
+                height={25}
+                fit='contain'
+                sx={{ pointerEvents: 'none' }}
+              />
             </Box>
           ))}
       </Group>
