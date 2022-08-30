@@ -19,9 +19,9 @@ export const projects: Project[] = [
     desc: 'Third revision of my portfolio website',
     link: {
       demo: '',
-      github: '',
+      github: 'https://github.com/tfkhdyt/web-portfolio-v3/',
     },
-    tech: ['TypeScript', 'Next.js', 'Mantine'],
+    tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
   },
   {
     name: 'Todo List',
@@ -51,7 +51,14 @@ export const projects: Project[] = [
       demo: 'https://roadmap.tfkhdyt.my.id',
       github: 'https://github.com/tfkhdyt/full-stack-roadmap',
     },
-    tech: ['TypeScript', 'Next.js', 'NestJS', 'Tailwind CSS', 'MongoDB'],
+    tech: [
+      'TypeScript',
+      'Next.js',
+      'NestJS',
+      'Tailwind CSS',
+      'MongoDB',
+      'Framer Motion',
+    ],
   },
   {
     name: 'Portfolio Website v2',
@@ -61,7 +68,7 @@ export const projects: Project[] = [
       demo: 'https://tfkhdyt.my.id',
       github: 'https://github.com/tfkhdyt/web-portfolio',
     },
-    tech: ['TypeScript', 'Next.js', 'Tailwind CSS', 'daisyUI'],
+    tech: ['TypeScript', 'Next.js', 'Tailwind CSS', 'daisyUI', 'Framer Motion'],
   },
   {
     name: 'WhatsApp Status Trimmer - Go',
@@ -91,7 +98,15 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/bookstore',
       demo: 'https://bookstore.tfkhdyt.my.id/',
     },
-    tech: ['TypeScript', 'Next.js', 'Mantine', 'Go', 'Gin', 'PostgreSQL'],
+    tech: [
+      'TypeScript',
+      'Next.js',
+      'Mantine',
+      'Go',
+      'Gin',
+      'PostgreSQL',
+      'Framer Motion',
+    ],
   },
   {
     name: 'VSGA JWD',
@@ -121,7 +136,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/popclick',
       demo: null,
     },
-    tech: ['JavaScript', 'React', 'Bootstrap', 'MongoDB'],
+    tech: ['JavaScript', 'React', 'Bootstrap'],
   },
   {
     name: 'LAM Final Project',
@@ -131,7 +146,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/tugas-akhir-aljabar-linier-matriks',
       demo: 'https://aljabar-linier-matriks-kelompok-2.vercel.app/',
     },
-    tech: ['JavaScript', 'Tailwind CSS', 'Next.js'],
+    tech: ['JavaScript', 'Tailwind CSS', 'Next.js', 'Framer Motion'],
   },
   {
     name: 'IDCamp2022',

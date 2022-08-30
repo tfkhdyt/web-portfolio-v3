@@ -9,6 +9,7 @@ import {
   Tabs,
   Text,
   Title,
+  Tooltip,
   useMantineColorScheme,
 } from '@mantine/core';
 import { motion } from 'framer-motion';
@@ -91,26 +92,32 @@ function ProjectsPage() {
                       >
                         {project.link.github && (
                           <Link href={project.link.github} passHref>
-                            <ActionIcon
-                              component='a'
-                              target='_blank'
-                              color={dark ? undefined : 'dark'}
-                              size='lg'
-                            >
-                              <BsGithub size={24} />
-                            </ActionIcon>
+                            <Box component='a' target='_blank'>
+                              <Tooltip label='Source Code'>
+                                <ActionIcon
+                                  color={dark ? undefined : 'dark'}
+                                  size='lg'
+                                >
+                                  <BsGithub size={24} />
+                                </ActionIcon>
+                              </Tooltip>
+                            </Box>
                           </Link>
                         )}
                         {project.link.demo && (
                           <Link href={project.link.demo} passHref>
-                            <ActionIcon
-                              component='a'
-                              target='_blank'
-                              color={dark ? undefined : 'dark'}
-                              size='lg'
-                            >
-                              <HiExternalLink size={24} />
-                            </ActionIcon>
+                            <Box component='a' target='_blank'>
+                              <Tooltip label='Demo'>
+                                <ActionIcon
+                                  component='a'
+                                  target='_blank'
+                                  color={dark ? undefined : 'dark'}
+                                  size='lg'
+                                >
+                                  <HiExternalLink size={24} />
+                                </ActionIcon>
+                              </Tooltip>
+                            </Box>
                           </Link>
                         )}
                       </Box>
@@ -123,12 +130,14 @@ function ProjectsPage() {
                         .filter((skill) => project.tech.includes(skill.name))
                         .map((skill) => (
                           <Box key={skill.name}>
-                            <Image
-                              src={`/images/tech/${skill.icon}`}
-                              alt={skill.name}
-                              height={25}
-                              fit='contain'
-                            />
+                            <Tooltip label={skill.name}>
+                              <Image
+                                src={`/images/tech/${skill.icon}`}
+                                alt={skill.name}
+                                height={25}
+                                fit='contain'
+                              />
+                            </Tooltip>
                           </Box>
                         ))}
                     </Group>
