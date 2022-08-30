@@ -15,7 +15,7 @@ import { navbarAtom } from '../atom/navbar';
 import { headerItems } from './headerItem';
 
 function MyNavbar() {
-  const [opened] = useAtom(navbarAtom);
+  const [opened, setOpened] = useAtom(navbarAtom);
   const router = useRouter();
   const path = router.asPath;
 
@@ -28,7 +28,7 @@ function MyNavbar() {
     >
       <Stack>
         {headerItems.map((item, idx) => (
-          <div key={idx}>
+          <div key={idx} onClick={() => setOpened(false)}>
             <Link href={item.link}>
               <Text mx='md' size='md' weight={600}>
                 {item.label}
