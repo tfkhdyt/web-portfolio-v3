@@ -106,6 +106,7 @@ export const projects: Project[] = [
       'Gin',
       'PostgreSQL',
       'Framer Motion',
+      'Zustand',
     ],
   },
   {
