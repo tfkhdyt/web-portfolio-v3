@@ -7,7 +7,7 @@ import {
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import type { AppProps } from 'next/app';
 
 import { variants } from '../animations/variants';
@@ -40,22 +40,24 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       >
         <NotificationsProvider>
           <Layout>
-            <AnimatePresence
-              mode='wait'
-              initial={false}
-              onExitComplete={() => window.scrollTo(0, 0)}
-            >
-              <motion.div
-                key={router.asPath}
-                variants={variants}
-                initial='hidden'
-                animate='enter'
-                exit='exit'
-                transition={{ ease: 'easeInOut', duration: 0.5 }}
+            <LazyMotion features={domAnimation}>
+              <AnimatePresence
+                mode='wait'
+                initial={false}
+                onExitComplete={() => window.scrollTo(0, 0)}
               >
-                <Component {...pageProps} />
-              </motion.div>
-            </AnimatePresence>
+                <m.div
+                  key={router.asPath}
+                  variants={variants}
+                  initial='hidden'
+                  animate='enter'
+                  exit='exit'
+                  transition={{ ease: 'easeInOut', duration: 0.5 }}
+                >
+                  <Component {...pageProps} />
+                </m.div>
+              </AnimatePresence>
+            </LazyMotion>
           </Layout>
         </NotificationsProvider>
       </MantineProvider>
