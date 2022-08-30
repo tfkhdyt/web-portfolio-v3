@@ -6,6 +6,7 @@ import {
   MantineProvider,
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
+import { NotificationsProvider } from '@mantine/notifications';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { AppProps } from 'next/app';
 
@@ -37,24 +38,26 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         withNormalizeCSS
         theme={{ colorScheme, fontFamily: 'Source Sans Pro, sans-serif' }}
       >
-        <Layout>
-          <AnimatePresence
-            mode='wait'
-            initial={false}
-            onExitComplete={() => window.scrollTo(0, 0)}
-          >
-            <motion.div
-              key={router.asPath}
-              variants={variants}
-              initial='hidden'
-              animate='enter'
-              exit='exit'
-              transition={{ ease: 'easeInOut', duration: 0.5 }}
+        <NotificationsProvider>
+          <Layout>
+            <AnimatePresence
+              mode='wait'
+              initial={false}
+              onExitComplete={() => window.scrollTo(0, 0)}
             >
-              <Component {...pageProps} />
-            </motion.div>
-          </AnimatePresence>
-        </Layout>
+              <motion.div
+                key={router.asPath}
+                variants={variants}
+                initial='hidden'
+                animate='enter'
+                exit='exit'
+                transition={{ ease: 'easeInOut', duration: 0.5 }}
+              >
+                <Component {...pageProps} />
+              </motion.div>
+            </AnimatePresence>
+          </Layout>
+        </NotificationsProvider>
       </MantineProvider>
     </ColorSchemeProvider>
   );

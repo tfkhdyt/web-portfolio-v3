@@ -19,6 +19,7 @@ specifiers:
   next: 12.2.5
   react: 18.2.0
   react-dom: 18.2.0
+  react-hook-form: ^7.34.2
   react-icons: ^4.4.0
   typescript: 4.8.2
 
@@ -35,6 +36,7 @@ dependencies:
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-hook-form: 7.34.2_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
 
 devDependencies:
@@ -2389,6 +2391,15 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-hook-form/7.34.2_react@18.2.0:
+    resolution: {integrity: sha512-1lYWbEqr0GW7HHUjMScXMidGvV0BE2RJV3ap2BL7G0EJirkqpccTaawbsvBO8GZaB3JjCeFBEbnEWI1P8ZoLRQ==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-icons/4.4.0_react@18.2.0:
