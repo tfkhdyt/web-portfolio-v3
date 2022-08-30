@@ -23,6 +23,7 @@ function SkillCard({ skill }: Props) {
             height={100}
             fit='contain'
             alt={skill.name}
+            sx={{ pointerEvents: 'none' }}
           />
         </Paper>
       </Tooltip>
