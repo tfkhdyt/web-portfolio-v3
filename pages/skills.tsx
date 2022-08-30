@@ -1,15 +1,7 @@
-import {
-  Image,
-  Paper,
-  ScrollArea,
-  SimpleGrid,
-  Tabs,
-  Text,
-  Tooltip,
-} from '@mantine/core';
-import { motion } from 'framer-motion';
+import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
 import Head from 'next/head';
 
+import SkillCard from '../components/SkillCard';
 import { skillCategories } from '../data/skillCategories';
 import { skills } from '../data/skills';
 
@@ -52,18 +44,7 @@ function skillsPage() {
               {skills
                 .filter((skill) => skill.category === category)
                 .map((skill) => (
-                  <motion.div key={skill.name} whileHover={{ y: -8 }}>
-                    <Tooltip label={skill.name} withArrow withinPortal>
-                      <Paper shadow='sm' radius='lg' p='xl'>
-                        <Image
-                          src={`/images/tech/${skill.icon}`}
-                          height={100}
-                          fit='contain'
-                          alt={skill.name}
-                        />
-                      </Paper>
-                    </Tooltip>
-                  </motion.div>
+                  <SkillCard skill={skill} key={skill.name} />
                 ))}
             </SimpleGrid>
           </Tabs.Panel>
