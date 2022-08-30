@@ -29,7 +29,7 @@ function MyNavbar() {
       <Stack>
         {headerItems.map((item, idx) => (
           <div key={idx} onClick={() => setOpened(false)}>
-            <Link href={item.link}>
+            <Link href={item.link} scroll={false}>
               <Text mx='md' size='md' weight={600}>
                 {item.label}
               </Text>
