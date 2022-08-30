@@ -9,6 +9,7 @@ import {
 } from '@mantine/core';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const { colorScheme } = useMantineColorScheme();
@@ -19,22 +20,22 @@ const Home: NextPage = () => {
       <Head>
         <title>Taufik Hidayat | Junior Full Stack Developer</title>
       </Head>
-      <Box sx={{ height: '70vh', display: 'grid', placeItems: 'center' }}>
-        <Grid align='center'>
+      <Box sx={{ height: '80vh', display: 'grid', placeItems: 'center' }}>
+        <Grid align='center' sx={{ width: '90%' }}>
           <Grid.Col sm={6} orderSm={2}>
             <Group position='center' mt='lg'>
-              <img
+              <Image
                 src='/images/tfkhdyt_illustration.svg'
                 alt='illustration'
-                width='50%'
-                height='auto'
+                width={200}
+                height={300}
+                priority
               />
             </Group>
           </Grid.Col>
           <Grid.Col sm={6} orderSm={1}>
             <Stack
-              spacing='lg'
-              mt='md'
+              spacing='md'
               sx={{
                 textAlign: 'center',
                 '@media (min-width: 768px)': {
