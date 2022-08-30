@@ -103,6 +103,11 @@ export const skills: Skill[] = [
     icon: 'nextauth.png',
   },
   {
+    name: 'Framer Motion',
+    category: 'Framework/Library',
+    icon: 'framer-motion.png',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
