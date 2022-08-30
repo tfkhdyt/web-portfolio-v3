@@ -1,8 +1,8 @@
 import { Box, Space, Text, useMantineColorScheme } from '@mantine/core';
 import Head from 'next/head';
 
-import MessageBox from '../components/MessageBox';
-import { contacts } from '../data/contacts';
+import MessageBox from '@/components/MessageBox';
+import { contacts } from '@/data/contacts';
 
 function Contact() {
   const { colorScheme } = useMantineColorScheme();

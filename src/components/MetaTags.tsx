@@ -1,4 +1,4 @@
-import { metaTagsData } from '../data/metaTags';
+import { metaTagsData } from '@/data/metaTags';
 
 const MetaTags = () => {
   return (
@@ -26,10 +26,7 @@ const MetaTags = () => {
       <meta property='og:title' content={metaTagsData.title} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content={metaTagsData.link} />
-      <link
-        rel='image_src'
-        href={metaTagsData.link + metaTagsData.thumbnail}
-      />
+      <link rel='image_src' href={metaTagsData.link + metaTagsData.thumbnail} />
       <link
         rel='icon'
         type='image/x-icon'

@@ -13,8 +13,8 @@ import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
 import { HiExternalLink } from 'react-icons/hi';
 
-import { Project } from '../data/project';
-import { skills } from '../data/skills';
+import { Project } from '@/data/project';
+import { skills } from '@/data/skills';
 
 interface Props {
   project: Project;

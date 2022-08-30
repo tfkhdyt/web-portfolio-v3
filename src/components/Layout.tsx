@@ -2,8 +2,9 @@ import { AppShell, Container, useMantineTheme } from '@mantine/core';
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 
-import { headerItems } from '../data/headerItem';
-import useBreakpoint from '../hooks/isSm';
+import { headerItems } from '@/data/headerItem';
+import useBreakpoint from '@/hooks/isSm';
+
 import MyFooter from './Footer';
 import MyHeader from './Header';
 import MyNavbar from './Navbar';

@@ -3,8 +3,8 @@ import { useAtom } from 'jotai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { headerItems } from '../data/headerItem';
-import { navbarAtom } from '../store/navbar';
+import { headerItems } from '@/data/headerItem';
+import { navbarAtom } from '@/store/navbar';
 
 function MyNavbar() {
   const [opened, setOpened] = useAtom(navbarAtom);

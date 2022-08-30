@@ -15,8 +15,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
-import { headerItems } from '../data/headerItem';
-import { navbarAtom } from '../store/navbar';
+import { headerItems } from '@/data/headerItem';
+import { navbarAtom } from '@/store/navbar';
 
 function MyHeader() {
   const [opened, setOpened] = useAtom(navbarAtom);

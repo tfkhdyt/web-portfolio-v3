@@ -1,9 +1,9 @@
 import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
 import Head from 'next/head';
 
-import ProjectCard from '../components/ProjectCard';
-import { projectCategories } from '../data/projectCategories';
-import { projects } from '../data/projects';
+import ProjectCard from '@/components/ProjectCard';
+import { projectCategories } from '@/data/projectCategories';
+import { projects } from '@/data/projects';
 
 function ProjectsPage() {
   return (
