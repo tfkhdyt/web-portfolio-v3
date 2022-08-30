@@ -10,7 +10,7 @@ interface Props {
 
 function SkillCard({ skill }: Props) {
   return (
-    <motion.div whileHover={{ y: -8 }}>
+    <motion.div whileHover={{ y: -8 }} whileTap={{ y: -8 }}>
       <Tooltip
         label={skill.name}
         withArrow
