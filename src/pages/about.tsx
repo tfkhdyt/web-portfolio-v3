@@ -2,8 +2,6 @@
 import { Box, Grid, Group, Image, List, Text, Timeline } from '@mantine/core';
 import Head from 'next/head';
 
-import Layout from '../components/Layout';
-
 function about() {
   return (
     <>

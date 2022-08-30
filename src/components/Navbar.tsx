@@ -1,18 +1,10 @@
-import {
-  Anchor,
-  Box,
-  Divider,
-  MediaQuery,
-  Navbar,
-  Stack,
-  Text,
-} from '@mantine/core';
+import { Divider, Navbar, Stack, Text } from '@mantine/core';
 import { useAtom } from 'jotai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { navbarAtom } from '../atom/navbar';
 import { headerItems } from '../data/headerItem';
+import { navbarAtom } from '../store/navbar';
 
 function MyNavbar() {
   const [opened, setOpened] = useAtom(navbarAtom);

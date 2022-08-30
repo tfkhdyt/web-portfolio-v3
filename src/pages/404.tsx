@@ -1,21 +1,9 @@
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  Image,
-  Stack,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Box, Button, Image, Stack, Title } from '@mantine/core';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { IoMdArrowBack } from 'react-icons/io';
 
 function My404() {
-  const router = useRouter();
-
   return (
     <>
       <Head>

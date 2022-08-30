@@ -20,10 +20,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Taufik Hidayat | Junior Full Stack Developer</title>
       </Head>
-      <Box sx={{ height: '80vh', display: 'grid', placeItems: 'center' }}>
+      <Box sx={{ height: '75vh', display: 'grid', placeItems: 'center' }}>
         <Grid align='center' sx={{ width: '90%' }}>
           <Grid.Col sm={6} orderSm={2}>
-            <Group position='center' mt='lg'>
+            <Group position='center'>
               <Image
                 src='/images/tfkhdyt_illustration.svg'
                 alt='illustration'
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                   component='span'
                   variant='gradient'
                   weight='bold'
-                  size={24}
+                  size={22}
                   gradient={{ from: 'indigo', to: 'red', deg: 45 }}
                   mt={-5}
                   sx={{ letterSpacing: 0.15 }}
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                   Junior Full Stack Developer
                 </Text>
               </Box>
-              <Text size='lg'>
+              <Text size='md'>
                 Hi everyone 👋🏼, welcome to my portfolio website
               </Text>
             </Stack>
