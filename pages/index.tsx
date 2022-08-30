@@ -22,21 +22,21 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Taufik Hidayat | Junior Full Stack</title>
+        <title>Taufik Hidayat | Junior Full Stack Developer</title>
       </Head>
       <Box sx={{ height: '70vh', display: 'grid', placeItems: 'center' }}>
         <Grid align='center'>
-          <Grid.Col md={6} orderMd={2}>
+          <Grid.Col sm={6} md={6} orderSm={2}>
             <Group position='center' mt='lg'>
               <img
                 src='/images/tfkhdyt_illustration.png'
                 alt='illustration'
-                width={isSm ? '50%' : isMd ? '25%' : '50%'}
+                width={isSm ? '50%' : isSm ? '25%' : '50%'}
                 height='auto'
               />
             </Group>
           </Grid.Col>
-          <Grid.Col md={6} orderMd={1}>
+          <Grid.Col sm={6} md={6} orderMd={1}>
             <Stack
               spacing='lg'
               mt='md'
