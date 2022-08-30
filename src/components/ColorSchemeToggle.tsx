@@ -37,7 +37,7 @@ export function SwitchToggle() {
   const { classes, cx } = useStyles();
 
   return (
-    <Group position='center' my={30} sx={{ cursor: 'pointer' }}>
+    <Group position='center' my={30}>
       <div className={classes.root}>
         <BsFillSunFill
           className={cx(classes.icon, classes.iconLight)}
@@ -46,6 +46,7 @@ export function SwitchToggle() {
         <BsMoonStars className={cx(classes.icon, classes.iconDark)} size={14} />
         <Switch
           color='yellow'
+          sx={{ cursor: 'pointer' }}
           checked={colorScheme === 'dark'}
           onChange={() => toggleColorScheme()}
           size='md'
