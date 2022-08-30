@@ -56,7 +56,10 @@ function ProjectCard({ project }: Props) {
           {project.link.github && (
             <Link href={project.link.github} passHref>
               <Box component='a' target='_blank'>
-                <Tooltip label='Source Code'>
+                <Tooltip
+                  label='Source Code'
+                  events={{ hover: true, focus: false, touch: true }}
+                >
                   <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                     <BsGithub size={24} />
                   </ActionIcon>
@@ -67,7 +70,10 @@ function ProjectCard({ project }: Props) {
           {project.link.demo && (
             <Link href={project.link.demo} passHref>
               <Box component='a' target='_blank'>
-                <Tooltip label='Demo'>
+                <Tooltip
+                  label='Demo'
+                  events={{ hover: true, focus: false, touch: true }}
+                >
                   <ActionIcon
                     component='a'
                     target='_blank'
@@ -90,7 +96,10 @@ function ProjectCard({ project }: Props) {
           .filter((skill) => project.tech.includes(skill.name))
           .map((skill) => (
             <Box key={skill.name}>
-              <Tooltip label={skill.name}>
+              <Tooltip
+                label={skill.name}
+                events={{ hover: true, focus: false, touch: true }}
+              >
                 <Image
                   src={`/images/tech/${skill.icon}`}
                   alt={skill.name}

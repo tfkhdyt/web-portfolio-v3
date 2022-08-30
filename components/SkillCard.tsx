@@ -11,7 +11,12 @@ interface Props {
 function SkillCard({ skill }: Props) {
   return (
     <motion.div whileHover={{ y: -8 }}>
-      <Tooltip label={skill.name} withArrow withinPortal>
+      <Tooltip
+        label={skill.name}
+        withArrow
+        withinPortal
+        events={{ hover: true, focus: false, touch: true }}
+      >
         <Paper shadow='sm' radius='lg' p='xl'>
           <Image
             src={`/images/tech/${skill.icon}`}
