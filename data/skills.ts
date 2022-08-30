@@ -1,10 +1,4 @@
-import { skillCategories } from './skillCategories';
-
-interface Skill {
-  name: string;
-  category: typeof skillCategories[number];
-  icon: string;
-}
+import { Skill } from './skill';
 
 export const skills: Skill[] = [
   {
