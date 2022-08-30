@@ -2,13 +2,13 @@ import {
   ActionIcon,
   Box,
   Group,
-  Image,
   Paper,
   Text,
   Title,
   useMantineColorScheme,
 } from '@mantine/core';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
 import { HiExternalLink } from 'react-icons/hi';
@@ -85,13 +85,17 @@ function ProjectCard({ project }: Props) {
         {skills
           .filter((skill) => project.tech.includes(skill.name))
           .map((skill) => (
-            <Box key={skill.name}>
+            <Box
+              key={skill.name}
+              sx={{ position: 'relative', height: 25, width: 25 }}
+            >
               <Image
                 src={`/images/tech/${skill.icon}`}
                 alt={skill.name}
-                height={25}
-                fit='contain'
-                sx={{ pointerEvents: 'none' }}
+                layout='fill'
+                objectFit='contain'
+                width={25}
+                style={{ pointerEvents: 'none' }}
               />
             </Box>
           ))}

@@ -1,5 +1,6 @@
-import { Box, Button, Image, Stack, Title } from '@mantine/core';
+import { Box, Button, Stack, Title } from '@mantine/core';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import { IoMdArrowBack } from 'react-icons/io';
 

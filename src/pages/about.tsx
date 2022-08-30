@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Box, Grid, Group, Image, List, Text, Timeline } from '@mantine/core';
+import { Box, Grid, Group, List, Text, Timeline } from '@mantine/core';
 import Head from 'next/head';
+import Image from 'next/image';
 
 function about() {
   return (
@@ -10,14 +11,22 @@ function about() {
       </Head>
       <Grid>
         <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
-          <Image
-            src='/images/tfkhdyt_face.jpg'
-            alt='My face'
-            radius={300}
-            width={150}
-            height={150}
-            fit='contain'
-          />
+          <Box
+            sx={{
+              borderRadius: 150,
+              overflow: 'hidden',
+              width: 150,
+              height: 150,
+            }}
+          >
+            <Image
+              src='/images/tfkhdyt_face.jpg'
+              alt='My face'
+              width={150}
+              height={150}
+              objectFit='cover'
+            />
+          </Box>
         </Grid.Col>
         <Grid.Col xs={12} md={9} orderXs={2} orderMd={1}>
           <Text size={42} weight='bold'>
@@ -63,15 +72,15 @@ function about() {
         <Timeline active={1} mt='md'>
           <Timeline.Item title='Vocational High School'>
             <Text>SMKN 7 Baleendah</Text>
-            <Text size='sm'>Software Engineering</Text>
-            <Text size='xs' color='dimmed' mt={4}>
+            <Text size='md'>Software Engineering</Text>
+            <Text size='sm' color='dimmed' mt={4}>
               2017 - 2020
             </Text>
           </Timeline.Item>
           <Timeline.Item title='University'>
             <Text>Bale Bandung University</Text>
-            <Text size='sm'>Computer Science (Current GPA: 3.62)</Text>
-            <Text size='xs' color='dimmed' mt={4}>
+            <Text size='md'>Computer Science (Current GPA: 3.62)</Text>
+            <Text size='sm' color='dimmed' mt={4}>
               2020 - present
             </Text>
           </Timeline.Item>
