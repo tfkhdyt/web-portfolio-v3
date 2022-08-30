@@ -40,6 +40,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       >
         <NotificationsProvider>
           <Layout>
+            <style>
+              {`html {
+                color-scheme: ${colorScheme}
+              }`}
+            </style>
             <LazyMotion features={domAnimation}>
               <AnimatePresence
                 mode='wait'
