@@ -1,8 +1,8 @@
 import { AppShell, Container, useMantineTheme } from '@mantine/core';
-import { motion } from 'framer-motion';
-import router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 
+import { headerItems } from '../data/headerItem';
 import useBreakpoint from '../hooks/isSm';
 import MyFooter from './Footer';
 import MyHeader from './Header';
@@ -15,14 +15,10 @@ interface Props {
 export default function MyAppShell({ children }: Props) {
   const theme = useMantineTheme();
   const { isSm } = useBreakpoint();
-
-  const variants = {
-    hidden: { opacity: 0, x: -200, y: 0 },
-    enter: { opacity: 1, x: 0, y: 0 },
-    exit: { opacity: 0, x: 0, y: -100 },
-  };
-
   const router = useRouter();
+
+  if (!headerItems.map((item) => item.link).includes(router.asPath))
+    return <>{children}</>;
 
   return (
     <AppShell
