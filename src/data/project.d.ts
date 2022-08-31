@@ -1,5 +1,5 @@
 import { projectCategories } from './projectCategories';
-import { skills } from './skills';
+import { skills } from './Skills/skills';
 
 export interface Project {
   name: string;

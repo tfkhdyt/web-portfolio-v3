@@ -1,9 +1,9 @@
 import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
 import Head from 'next/head';
 
-import SkillCard from '@/components/SkillCard';
-import { skillCategories } from '@/data/skillCategories';
-import { skills } from '@/data/skills';
+import SkillCard from '@/components/Skills/SkillCard';
+import { skillCategories } from '@/data/Skills/skillCategories';
+import { skills } from '@/data/Skills/skills';
 
 function skillsPage() {
   return (

@@ -2,7 +2,7 @@ import { Box, Paper } from '@mantine/core';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-import { Skill } from '@/data/skill';
+import { Skill } from '@/data/Skills/skill';
 
 interface Props {
   skill: Skill;
@@ -29,6 +29,7 @@ function SkillCard({ skill }: Props) {
             style={{
               pointerEvents: 'none',
             }}
+            priority={skill.category === 'Language'}
             // caption={skill.name}
           />
         </Box>
