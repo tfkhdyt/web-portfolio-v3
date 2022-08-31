@@ -37,6 +37,16 @@ export const skills: Skill[] = [
     icon: 'php.svg',
   },
   {
+    name: 'Java',
+    category: 'Language',
+    icon: 'java.svg'
+  },
+  {
+    name: 'C++',
+    category: 'Language',
+    icon: 'cpp.svg'
+  },
+  {
     name: 'React',
     category: 'Framework/Library',
     icon: 'react.svg',
