@@ -29,7 +29,6 @@ function ProjectCard({ project }: Props) {
       key={project.name}
       component={motion.div}
       whileHover={{ y: -8 }}
-      whileTap={{ y: -8 }}
       shadow='sm'
       radius='lg'
       p='xl'
