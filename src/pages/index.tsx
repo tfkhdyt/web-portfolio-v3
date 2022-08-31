@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import {
   Box,
+  Center,
   Grid,
   Group,
   Stack,
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Taufik Hidayat | Junior Full Stack Developer</title>
       </Head>
-      <Box sx={{ height: '75vh', display: 'grid', placeItems: 'center' }}>
+      <Center sx={{ height: '75vh' }}>
         <Grid align='center' sx={{ width: '90%' }}>
           <Grid.Col sm={6} orderSm={2}>
             <Group position='center'>
@@ -44,28 +45,50 @@ const Home: NextPage = () => {
               }}
             >
               <Box>
-                <Text weight='bold' size={36} color={dark ? 'white' : 'dark'}>
+                <Text
+                  weight='bold'
+                  sx={{
+                    fontSize: 36,
+                    '@media (min-width: 768px)': {
+                      fontSize: 42,
+                    },
+                  }}
+                  color={dark ? 'white' : 'dark'}
+                >
                   Taufik Hidayat
                 </Text>
                 <Text
                   component='span'
                   variant='gradient'
                   weight='bold'
-                  size={22}
                   gradient={{ from: 'indigo', to: 'red', deg: 45 }}
                   mt={-5}
-                  sx={{ letterSpacing: 0.15 }}
+                  sx={{
+                    letterSpacing: 0.15,
+                    fontSize: 22,
+                    '@media (min-width: 768px)': {
+                      fontSize: 32,
+                    },
+                    lineHeight: 1,
+                  }}
                 >
                   Junior Full Stack Developer
                 </Text>
               </Box>
-              <Text size='md'>
+              <Text
+                size='md'
+                sx={{
+                  '@media (min-width: 992px)': {
+                    fontSize: 18,
+                  },
+                }}
+              >
                 Hi everyone 👋🏼, welcome to my portfolio website
               </Text>
             </Stack>
           </Grid.Col>
         </Grid>
-      </Box>
+      </Center>
     </>
   );
 };
