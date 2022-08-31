@@ -85,7 +85,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                       description: metaTagsData.deskripsi,
                       images: [
                         {
+                          url: metaTagsData.link + '/images/thumbnail-630.png',
+                          width: 1120,
+                          height: 630,
+                          alt: 'thumbnail 630p',
+                          type: 'image/png'
+                        },
+                        {
                           url: metaTagsData.link + metaTagsData.thumbnail,
+                          width: 1280,
+                          height: 720,
+                          alt: 'thumbnail 720p',
+                          type: 'image/png'
                         },
                       ],
                       site_name: metaTagsData.title,
