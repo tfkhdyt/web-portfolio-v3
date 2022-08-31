@@ -1,5 +1,5 @@
 import { Text, useMantineColorScheme } from '@mantine/core';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import ContactList from '@/components/Contact/ContactList';
 import MessageBox from '@/components/Contact/MessageBox';
@@ -10,9 +10,7 @@ function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact | Taufik Hidayat</title>
-      </Head>
+      <NextSeo title='Contact' />
       <main>
         <Text size={42} weight='bold'>
           Contact

@@ -21,6 +21,7 @@
     "framer-motion": "^7.2.1",
     "jotai": "^1.8.2",
     "next": "12.2.5",
+    "next-seo": "^5.5.0",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

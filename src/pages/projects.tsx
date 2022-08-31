@@ -1,5 +1,5 @@
 import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import ProjectCard from '@/components/Projects/ProjectCard';
 import { projectCategories } from '@/data/Projects/projectCategories';
@@ -8,9 +8,7 @@ import { projects } from '@/data/Projects/projects';
 function ProjectsPage() {
   return (
     <>
-      <Head>
-        <title>Projects | Taufik Hidayat</title>
-      </Head>
+      <NextSeo title='Projects' />
       <Text size={42} weight='bold'>
         Projects
       </Text>

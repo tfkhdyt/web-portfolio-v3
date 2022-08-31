@@ -1,5 +1,5 @@
 import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import SkillCard from '@/components/Skills/SkillCard';
 import { skillCategories } from '@/data/Skills/skillCategories';
@@ -8,9 +8,7 @@ import { skills } from '@/data/Skills/skills';
 function skillsPage() {
   return (
     <>
-      <Head>
-        <title>Skills | Taufik Hidayat</title>
-      </Head>
+      <NextSeo title='Skills' />
       <Text size={42} weight='bold'>
         Skills
       </Text>

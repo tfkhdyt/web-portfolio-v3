@@ -1,6 +1,5 @@
 import { Center, Grid, useMantineColorScheme } from '@mantine/core';
 import type { NextPage } from 'next';
-import Head from 'next/head';
 
 import IllustrationImage from '@/components/Home/IllustrationImage';
 import WelcomeText from '@/components/Home/WelcomeText';
@@ -11,9 +10,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Taufik Hidayat | Junior Full Stack Developer</title>
-      </Head>
       <Center
         sx={{ height: '75vh', '@media (min-width: 768px)': { height: '80vh' } }}
       >

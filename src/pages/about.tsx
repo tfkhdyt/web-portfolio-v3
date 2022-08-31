@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import Education from '@/components/About/Education';
 import Introduction from '@/components/About/Introduction';
@@ -8,9 +8,7 @@ import WorkExperience from '@/components/About/WorkExperience';
 function about() {
   return (
     <>
-      <Head>
-        <title>About Me | Taufik Hidayat</title>
-      </Head>
+      <NextSeo title='About Me' />
       <Introduction />
       <Education />
       <WorkExperience />

@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '@/styles/globals.css';
 
 import {
   ColorScheme,
@@ -10,10 +10,12 @@ import { NotificationsProvider } from '@mantine/notifications';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import type { AppProps } from 'next/app';
 import { Router } from 'next/router';
+import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
 
-import { variants } from '../animations/variants';
-import Layout from '../components/Layout';
+import { variants } from '@/animations/variants';
+import Layout from '@/components/Layout';
+import { metaTagsData } from '@/data/metaTags';
 
 NProgress.configure({ showSpinner: false });
 
@@ -66,6 +68,29 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                   exit='exit'
                   transition={{ ease: 'easeInOut', duration: 0.3 }}
                 >
+                  <DefaultSeo
+                    titleTemplate='%s - Taufik Hidayat'
+                    defaultTitle={metaTagsData.title}
+                    description={metaTagsData.deskripsi}
+                    twitter={{
+                      cardType: 'summary_large_image',
+                      site: '@tfkhdyt142',
+                      handle: '@tfkhdyt142',
+                    }}
+                    canonical={metaTagsData.link}
+                    openGraph={{
+                      url: metaTagsData.link,
+                      type: 'profile',
+                      title: metaTagsData.title,
+                      description: metaTagsData.deskripsi,
+                      images: [
+                        {
+                          url: metaTagsData.link + metaTagsData.thumbnail,
+                        },
+                      ],
+                      site_name: metaTagsData.title,
+                    }}
+                  />
                   <Component {...pageProps} />
                 </m.div>
               </AnimatePresence>
