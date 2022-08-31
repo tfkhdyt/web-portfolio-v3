@@ -24,7 +24,6 @@ function SkillCard({ skill }: Props) {
             src={`/images/tech/${skill.icon}`}
             layout='fill'
             objectFit='contain'
-            width={100}
             alt={skill.name}
             style={{
               pointerEvents: 'none',

@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
 import { HiExternalLink } from 'react-icons/hi';
 
-import { Project } from '@/data/project';
+import { Project } from '@/data/Projects/project';
 import { skills } from '@/data/Skills/skills';
 
 interface Props {
@@ -94,7 +94,6 @@ function ProjectCard({ project }: Props) {
                 alt={skill.name}
                 layout='fill'
                 objectFit='contain'
-                width={25}
                 style={{ pointerEvents: 'none' }}
               />
             </Box>
