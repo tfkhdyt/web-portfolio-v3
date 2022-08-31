@@ -5,7 +5,9 @@
       "@/animations/*": ["animations/*"],
       "@/components/*": ["components/*"],
       "@/data/*": ["data/*"],
+      "@/handlers/*": ["handlers/*"],
       "@/hooks/*": ["hooks/*"],
+      "@/lib/*": ["lib/*"],
       "@/store/*": ["store/*"],
       "@/styles/*": ["styles/*"]
     },

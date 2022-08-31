@@ -1,11 +1,12 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Box, Button, Group, Text, Textarea, TextInput } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
-import { handleSendMessageError } from 'handler/handleSendMessageError';
-import { updateSendMessageNotif } from 'lib/notifications/updateSendMessage';
 import { useForm } from 'react-hook-form';
 import { FiSend } from 'react-icons/fi';
 import * as yup from 'yup';
+
+import { handleSendMessageError } from '@/handlers/handleSendMessageError';
+import { updateSendMessageNotif } from '@/lib/notifications/updateSendMessage';
 
 interface FormData {
   name: string;
