@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                   initial='hidden'
                   animate='enter'
                   exit='exit'
-                  transition={{ ease: 'easeInOut', duration: 0.5 }}
+                  transition={{ ease: 'easeInOut', duration: 0.3 }}
                 >
                   <Component {...pageProps} />
                 </m.div>
