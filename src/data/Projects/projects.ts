@@ -165,7 +165,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/translate-bot',
       demo: 'https://t.me/tfkhdyt_translate_bot',
     },
-    tech: ['TypeScript', 'Telegraf'],
+    tech: ['TypeScript', 'Node.js', 'Telegraf'],
   },
   {
     name: 'WhatsApp Status Trimmer',
@@ -195,7 +195,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/kbbi-bot',
       demo: 'https://t.me/tfkhdyt_kbbi_bot',
     },
-    tech: ['TypeScript', 'Telegraf'],
+    tech: ['TypeScript', 'Node.js', 'Telegraf'],
   },
   {
     name: 'Portfolio Website',
@@ -204,6 +204,86 @@ export const projects: Project[] = [
     link: {
       github: 'https://github.com/tfkhdyt/tfkhdyt-portfolio',
       demo: 'https://tfkhdyt.web.app',
+    },
+    tech: ['JavaScript', 'Bootstrap'],
+  },
+  {
+    name: 'College Assignments',
+    category: 'Misc',
+    desc: 'All of my college assignments',
+    link: {
+      github: 'https://github.com/tfkhdyt/tugas-kuliah',
+      demo: null,
+    },
+    tech: ['Java', 'C++', 'PHP'],
+  },
+  {
+    name: 'Bayarcoek',
+    category: 'CLI',
+    desc: 'Automation script to encrypt all files inside a folder',
+    link: {
+      github: 'https://github.com/tfkhdyt/bayarcoek',
+      demo: null,
+    },
+    tech: ['JavaScript', 'Node.js'],
+  },
+  {
+    name: 'Anime Naon Ieu?',
+    category: 'Bot',
+    desc: 'Telegram Bot to find anime details from a screenshot',
+    link: {
+      github: 'https://github.com/tfkhdyt/anime-naon-ieu',
+      demo: 'https://t.me/tfkhdyt_ani_bot',
+    },
+    tech: ['JavaScript', 'Node.js', 'Telegraf'],
+  },
+  {
+    name: 'MovieDB',
+    category: 'Website',
+    desc: 'Web app to search movie information',
+    link: {
+      github: 'https://github.com/tfkhdyt/imdb',
+      demo: 'https://movie.tfkhdyt.my.id/',
+    },
+    tech: ['JavaScript', 'Bootstrap'],
+  },
+  {
+    name: '30 Hari Jago JavaScript',
+    category: 'Website',
+    desc: 'Web app to learn JavaScript in 30 days',
+    link: {
+      github: 'https://github.com/tfkhdyt/30DaysJagoJavaScript',
+      demo: 'https://belajar-js.tfkhdyt.my.id/',
+    },
+    tech: ['JavaScript', 'Bootstrap'],
+  },
+  {
+    name: 'School Website',
+    category: 'Website',
+    desc: 'SMKN 7 Baleendah school website with dynamic data',
+    link: {
+      github: 'https://github.com/tfkhdyt/web-sekolah',
+      demo: null,
+    },
+    tech: ['PHP', 'Bootstrap', 'MySQL'],
+  },
+  {
+    name: 'youtube-dl bot',
+    category: 'Bot',
+    desc: 'Telegram Bot to download youtube videos',
+    link: {
+      github: 'https://github.com/tfkhdyt/youtube-dl-bot',
+      demo: null,
+    },
+    tech: ['JavaScript', 'Node.js', 'Telegraf'],
+  },
+  {
+    name: 'Donation Page',
+    category: 'Website',
+    desc: 'Simple Donation Page',
+    link: {
+      github: 'https://github.com/tfkhdyt/donation-page',
+      demo: 'https://donate.tfkhdyt.my.id/',
     },
     tech: ['JavaScript', 'Bootstrap'],
   },
