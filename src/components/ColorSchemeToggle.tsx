@@ -9,6 +9,9 @@ import { BsFillSunFill, BsMoonStars } from 'react-icons/bs';
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
+    '& *': {
+      cursor: 'pointer',
+    },
   },
 
   icon: {
@@ -43,7 +46,6 @@ export function SwitchToggle() {
         <BsMoonStars className={cx(classes.icon, classes.iconDark)} size={14} />
         <Switch
           color='yellow'
-          sx={{ cursor: 'pointer' }}
           checked={colorScheme === 'dark'}
           onChange={() => toggleColorScheme()}
           size='md'
