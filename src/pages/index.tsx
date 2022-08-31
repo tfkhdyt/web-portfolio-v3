@@ -21,7 +21,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Taufik Hidayat | Junior Full Stack Developer</title>
       </Head>
-      <Center sx={{ height: '75vh' }}>
+      <Center
+        sx={{ height: '75vh', '@media (min-width: 768px)': { height: '80vh' } }}
+      >
         <Grid align='center' sx={{ width: '90%' }}>
           <Grid.Col sm={6} orderSm={2}>
             <Group position='center'>
