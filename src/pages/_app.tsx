@@ -9,13 +9,20 @@ import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import type { AppProps } from 'next/app';
+import { Router } from 'next/router';
+import NProgress from 'nprogress';
 
 import { variants } from '../animations/variants';
 import Layout from '../components/Layout';
 
+NProgress.configure({ showSpinner: false });
+
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
+
 function MyApp({ Component, pageProps, router }: AppProps) {
   const preferredColorScheme = useColorScheme();
-  // console.log(preferredColorScheme);
 
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'mantine-color-scheme',

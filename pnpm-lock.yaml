@@ -11,6 +11,7 @@ specifiers:
   '@mantine/notifications': ^5.2.4
   '@next/bundle-analyzer': ^12.2.5
   '@types/node': 18.7.13
+  '@types/nprogress': ^0.2.0
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': ^5.36.1
@@ -22,6 +23,7 @@ specifiers:
   framer-motion: ^7.2.1
   jotai: ^1.8.2
   next: 12.2.5
+  nprogress: ^0.2.0
   react: 18.2.0
   react-dom: 18.2.0
   react-hook-form: ^7.34.2
@@ -42,6 +44,7 @@ dependencies:
   framer-motion: 7.2.1_biqbaboplfbrettd7655fr4n2y
   jotai: 1.8.2_react@18.2.0
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+  nprogress: 0.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.34.2_react@18.2.0
@@ -50,6 +53,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 18.7.13
+  '@types/nprogress': 0.2.0
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.36.1_lbwfnm54o3pmr3ypeqp3btnera
@@ -284,8 +288,8 @@ packages:
   /@floating-ui/react-dom-interactions/0.6.6_zxljzmqdrxwnuenbkrz77w74uy:
     resolution: {integrity: sha512-qnao6UPjSZNHnXrF+u4/n92qVroQkx0Umlhy3Avk1oIebm/5ee6yvDm4xbHob0OjY7ya8WmUnV3rQlPwX3Atwg==}
     peerDependencies:
-      react: '>=16.8.0 || 18'
-      react-dom: '>=16.8.0 || 18'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/react-dom': 0.7.2_zxljzmqdrxwnuenbkrz77w74uy
       aria-hidden: 1.2.1_ug65io7jkbhmo4fihdmbrh3ina
@@ -701,8 +705,8 @@ packages:
   /@radix-ui/react-presence/1.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-A+6XEvN01NfVWiKu38ybawfHsBjWum42MRPnEuqPsBZ4eV7e/7K321B5VgYMPv3Xx5An6o1/l9ZuDBgmcmWK3w==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0 || 18
-      react-dom: ^16.8 || ^17.0 || ^18.0 || 18
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
     dependencies:
       '@babel/runtime': 7.18.9
       '@radix-ui/react-compose-refs': 1.0.0_react@18.2.0
@@ -795,6 +799,10 @@ packages:
 
   /@types/node/18.7.13:
     resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
+    dev: true
+
+  /@types/nprogress/0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -2358,6 +2366,10 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /object-assign/4.1.1:
