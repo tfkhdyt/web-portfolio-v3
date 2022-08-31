@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 import { headerItems } from '@/data/headerItem';
 import { navbarAtom } from '@/store/navbar';
 
-import { SwitchToggle } from './ColorSchemeToggle';
+import { SwitchToggle } from '../ColorSchemeToggle';
 
 function MyHeader() {
   const [opened, setOpened] = useAtom(navbarAtom);

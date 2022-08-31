@@ -14,7 +14,7 @@ import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
 
 import { variants } from '@/animations/variants';
-import Layout from '@/components/Layout';
+import Layout from '@/components/Templates/Layout';
 import { metaTagsData } from '@/data/metaTags';
 
 NProgress.configure({ showSpinner: false });

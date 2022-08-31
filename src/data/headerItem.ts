@@ -1,6 +1,6 @@
-import { NavbarItem } from './navbarItem';
+import { HeaderItem } from './headerItem.d';
 
-export const headerItems: NavbarItem[] = [
+export const headerItems: HeaderItem[] = [
   {
     label: 'Home',
     link: '/',
