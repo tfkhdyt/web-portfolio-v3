@@ -34,7 +34,7 @@ function ContactList({ isDark }: Props) {
                   className={`umami--click--${contact.name.replaceAll(
                     ' ',
                     '-'
-                  )}_Link`}
+                  )}-Link`}
                 >
                   {contact.label}
                 </Text>

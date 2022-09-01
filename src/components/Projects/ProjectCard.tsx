@@ -60,7 +60,7 @@ function ProjectCard({ project }: Props) {
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
                   '-'
-                )}_Source_Code`}
+                )}-Source_Code`}
               >
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <BsGithub size={24} />
@@ -76,7 +76,7 @@ function ProjectCard({ project }: Props) {
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
                   '-'
-                )}_Demo`}
+                )}-Demo`}
               >
                 <ActionIcon
                   component='a'
