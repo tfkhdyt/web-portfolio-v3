@@ -6,7 +6,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Third revision of my portfolio website',
     link: {
-      demo: '',
+      demo: 'https://www.tfkhdyt.my.id',
       github: 'https://github.com/tfkhdyt/web-portfolio-v3/',
     },
     tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Second revision of my portfolio website',
     link: {
-      demo: 'https://tfkhdyt.my.id',
+      demo: 'https://v2.tfkhdyt.my.id',
       github: 'https://github.com/tfkhdyt/web-portfolio',
     },
     tech: ['TypeScript', 'Next.js', 'Tailwind CSS', 'daisyUI', 'Framer Motion'],
