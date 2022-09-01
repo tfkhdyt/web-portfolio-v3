@@ -1,4 +1,4 @@
-import { Grid, Text } from '@mantine/core';
+import { Center, Grid, Text } from '@mantine/core';
 
 import { introduction } from '@/data/About/introdution';
 
@@ -8,7 +8,13 @@ function Introduction() {
   return (
     <Grid>
       <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
-        <RoundedImage src='/images/tfkhdyt_face.jpg' width={150} height={150} />
+        <Center sx={{ paddingTop: '1.5rem' }}>
+          <RoundedImage
+            src='/images/tfkhdyt_face.jpg'
+            width={150}
+            height={150}
+          />
+        </Center>
       </Grid.Col>
       <Grid.Col xs={12} md={9} orderXs={2} orderMd={1}>
         <Text size={42} weight='bold'>
