@@ -12,6 +12,7 @@ const useStyles = createStyles((theme) => ({
     '& *': {
       cursor: 'pointer',
     },
+    cursor: 'pointer',
   },
 
   icon: {
