@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-  background: #29d;
+  background: #7950f2;
 
   position: fixed;
   z-index: 1031;
@@ -12,7 +12,7 @@
   left: 0;
 
   width: 100%;
-  height: 2px;
+  height: 2.5px;
 }
 
 /* Fancy blur effect */
