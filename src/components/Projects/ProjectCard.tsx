@@ -54,7 +54,14 @@ function ProjectCard({ project }: Props) {
         >
           {project.link.github && (
             <Link href={project.link.github} passHref>
-              <Box component='a' target='_blank'>
+              <Box
+                component='a'
+                target='_blank'
+                className={`umami--click--${project.name.replaceAll(
+                  ' ',
+                  '_'
+                )}_Source_Code`}
+              >
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <BsGithub size={24} />
                 </ActionIcon>
@@ -63,7 +70,14 @@ function ProjectCard({ project }: Props) {
           )}
           {project.link.demo && (
             <Link href={project.link.demo} passHref>
-              <Box component='a' target='_blank'>
+              <Box
+                component='a'
+                target='_blank'
+                className={`umami--click--${project.name.replaceAll(
+                  ' ',
+                  '_'
+                )}_Demo`}
+              >
                 <ActionIcon
                   component='a'
                   target='_blank'

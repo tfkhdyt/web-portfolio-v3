@@ -1,4 +1,5 @@
 import { Box, Space, Text } from '@mantine/core';
+import Link from 'next/link';
 
 import { contacts } from '@/data/Contact/contacts';
 
@@ -23,16 +24,21 @@ function ContactList({ isDark }: Props) {
               <Space w={5} />
               -
               <Space w={5} />
-              <Text
-                component='a'
-                href={contact.link}
-                target='_blank'
-                size='lg'
-                weight={600}
-                underline
-              >
-                {contact.label}
-              </Text>
+              <Link href={contact.link} passHref>
+                <Text
+                  component='a'
+                  target='_blank'
+                  size='lg'
+                  weight={600}
+                  underline
+                  className={`umami--click--${contact.name.replaceAll(
+                    ' ',
+                    '_'
+                  )}_Link`}
+                >
+                  {contact.label}
+                </Text>
+              </Link>
             </Box>
           </li>
         ))}
