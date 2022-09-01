@@ -287,4 +287,104 @@ export const projects: Project[] = [
     },
     tech: ['JavaScript', 'Bootstrap'],
   },
+  {
+    name: 'CRUD Express',
+    category: 'Website',
+    desc: 'Simple CRUD with Authentication',
+    link: {
+      github: 'https://github.com/tfkhdyt/data-tanaman-express',
+      demo: null,
+    },
+    tech: ['JavaScript', 'Node.js', 'Express.js', 'Bootstrap', 'MongoDB'],
+  },
+  {
+    name: 'myDompet',
+    category: 'Website',
+    desc: 'Simple personal finance manager',
+    link: {
+      github: 'https://github.com/tfkhdyt/myDompet',
+      demo: null,
+    },
+    tech: ['PHP', 'Bootstrap', 'MySQL'],
+  },
+  {
+    name: 'YouTube Downloader',
+    category: 'CLI',
+    desc: 'User-friendly front-end for youtube-dl',
+    link: {
+      github: 'https://github.com/tfkhdyt/youtube-dl',
+      demo: null,
+    },
+    tech: ['Bash'],
+  },
+  {
+    name: 'Meetball',
+    category: 'Website',
+    desc: 'Restaurant website with multi-role',
+    link: {
+      github: 'https://github.com/tfkhdyt/restoran',
+      demo: null,
+    },
+    tech: ['PHP', 'Bootstrap', 'MySQL'],
+  },
+  {
+    name: 'Instant Video Compressor',
+    category: 'CLI',
+    desc: 'Simplified version of Ultra Video Compressor',
+    link: {
+      github: 'https://github.com/tfkhdyt/ivc',
+      demo: null,
+    },
+    tech: ['Python'],
+  },
+  {
+    name: 'Degenerator Bot',
+    category: 'Bot',
+    desc: 'Telegram Bot to generate degenerated copypasta memes',
+    link: {
+      github: 'https://github.com/tfkhdyt/MyCopyPastaBot-src',
+      demo: 'https://t.me/MyCopyPastaBot',
+    },
+    tech: ['Python'],
+  },
+  {
+    name: 'CRUD Python',
+    category: 'CLI',
+    desc: 'Simple CRUD with Python and SQLite',
+    link: {
+      github: 'https://github.com/tfkhdyt/crud-python',
+      demo: null,
+    },
+    tech: ['Python', 'SQLite'],
+  },
+  {
+    name: 'Ultra Video Compressor',
+    category: 'CLI',
+    desc: 'A script to compress video size without losing video quality on Termux',
+    link: {
+      github: 'https://github.com/tfkhdyt/uvc',
+      demo: null,
+    },
+    tech: ['Bash'],
+  },
+  {
+    name: 'SpotifyDL',
+    category: 'CLI',
+    desc: 'User-friendly front-end for Spotify-dl by SwapnilSoni1999',
+    link: {
+      github: 'https://github.com/tfkhdyt/SpotifyDL',
+      demo: null,
+    },
+    tech: ['Bash'],
+  },
+  {
+    name: 'Movie Bot',
+    category: 'Bot',
+    desc: 'Telegram Bot to search movies information',
+    link: {
+      github: 'https://github.com/tfkhdyt/tfkhdyt-movie-bot',
+      demo: 'https://t.me/TFKHDYTMovieBot',
+    },
+    tech: ['JavaScript', 'Node.js', 'Telegraf'],
+  },
 ];
