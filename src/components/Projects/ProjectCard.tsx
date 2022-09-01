@@ -59,7 +59,7 @@ function ProjectCard({ project }: Props) {
                 target='_blank'
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
-                  '_'
+                  '-'
                 )}_Source_Code`}
               >
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
@@ -75,7 +75,7 @@ function ProjectCard({ project }: Props) {
                 target='_blank'
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
-                  '_'
+                  '-'
                 )}_Demo`}
               >
                 <ActionIcon

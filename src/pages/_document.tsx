@@ -24,8 +24,6 @@ export default class _Document extends Document {
           <script
             data-website-id='8561225e-7d29-4f77-91a5-d8f3ed104625'
             src='https://umami.tfkhdyt.my.id/umami.js'
-            data-do-not-track='true'
-            data-cache='true'
             async
             defer
           />

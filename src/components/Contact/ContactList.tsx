@@ -33,7 +33,7 @@ function ContactList({ isDark }: Props) {
                   underline
                   className={`umami--click--${contact.name.replaceAll(
                     ' ',
-                    '_'
+                    '-'
                   )}_Link`}
                 >
                   {contact.label}
