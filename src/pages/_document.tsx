@@ -27,6 +27,10 @@ export default class _Document extends Document {
             async
             defer
           />
+          <meta
+            name='msvalidate.01'
+            content='FB08EAE4E24D8B37759DD91F6506B854'
+          />
         </Head>
         <body>
           <Main />
