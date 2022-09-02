@@ -79,9 +79,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                         site: '@tfkhdyt142',
                         handle: '@tfkhdyt142',
                       }}
-                      canonical={metaTagsData.link}
                       openGraph={{
-                        url: metaTagsData.link,
                         type: 'profile',
                         title: metaTagsData.title,
                         description: metaTagsData.deskripsi,
