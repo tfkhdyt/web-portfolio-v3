@@ -115,7 +115,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/message-form-to-telegram-api',
       demo: null,
     },
-    tech: ['TypeScript', 'NestJS', 'Telegraf'],
+    tech: ['TypeScript', 'Node.js', 'NestJS', 'Telegraf'],
   },
   {
     name: 'POPOWI',
@@ -185,7 +185,7 @@ export const projects: Project[] = [
       github: 'https://github.com/tfkhdyt/21cineplex-api',
       demo: 'https://tfkhdyt-21cineplex-api.herokuapp.com/docs/',
     },
-    tech: ['TypeScript', 'NestJS'],
+    tech: ['TypeScript', 'Node.js', 'NestJS'],
   },
   {
     name: 'KBBI Bot',
