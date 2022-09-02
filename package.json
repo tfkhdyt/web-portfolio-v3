@@ -27,6 +27,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.34.2",
     "react-icons": "^4.4.0",
+    "sharp": "^0.30.7",
     "yup": "^0.32.11"
   },
   "devDependencies": {
