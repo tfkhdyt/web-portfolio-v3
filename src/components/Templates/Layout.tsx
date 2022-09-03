@@ -5,6 +5,7 @@ import { ReactNode } from 'react';
 import { headerItems } from '@/data/headerItem';
 import useBreakpoint from '@/hooks/isSm';
 
+import ScrollToTop from '../ScrollToTop';
 import MyFooter from './Footer';
 import MyHeader from './Header';
 import MyNavbar from './Navbar';
@@ -37,6 +38,7 @@ export default function MyAppShell({ children }: Props) {
       header={<MyHeader />}
     >
       <Container>{children}</Container>
+      <ScrollToTop />
     </AppShell>
   );
 }
