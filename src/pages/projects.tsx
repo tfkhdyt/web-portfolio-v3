@@ -2,6 +2,7 @@ import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
 import { NextSeo } from 'next-seo';
 
 import ProjectCard from '@/components/Projects/ProjectCard';
+import ScrollToTop from '@/components/ScrollToTop';
 import { projectCategories } from '@/data/Projects/projectCategories';
 import { projects } from '@/data/Projects/projects';
 
@@ -46,6 +47,7 @@ function ProjectsPage() {
           </Tabs.Panel>
         ))}
       </Tabs>
+      <ScrollToTop />
     </>
   );
 }
