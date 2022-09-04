@@ -38,9 +38,9 @@ function WelcomeText({ isDark }: Props) {
             mt={-5}
             sx={{
               letterSpacing: 0.15,
-              fontSize: 22,
+              fontSize: 20,
               '@media (min-width: 768px)': {
-                fontSize: 32,
+                fontSize: 28,
               },
               lineHeight: 1,
             }}
