@@ -4,11 +4,11 @@ specifiers:
   '@emotion/react': ^11.10.4
   '@emotion/server': ^11.10.0
   '@hookform/resolvers': ^2.9.7
-  '@mantine/core': ^5.2.4
-  '@mantine/form': ^5.2.4
-  '@mantine/hooks': ^5.2.4
-  '@mantine/next': ^5.2.4
-  '@mantine/notifications': ^5.2.4
+  '@mantine/core': ^5.2.5
+  '@mantine/form': ^5.2.5
+  '@mantine/hooks': ^5.2.5
+  '@mantine/next': ^5.2.5
+  '@mantine/notifications': ^5.2.5
   '@next/bundle-analyzer': ^12.2.5
   '@types/node': 18.7.13
   '@types/nprogress': ^0.2.0
@@ -18,7 +18,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.36.1
   eslint: 8.23.0
   eslint-config-next: 12.2.5
-  eslint-plugin-react: ^7.31.1
+  eslint-plugin-react: ^7.31.6
   eslint-plugin-simple-import-sort: ^7.0.0
   framer-motion: ^7.2.1
   jotai: ^1.8.2
@@ -62,7 +62,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.36.1_yqf6kl63nyoq5megxukfnom5rm
   eslint: 8.23.0
   eslint-config-next: 12.2.5_yqf6kl63nyoq5megxukfnom5rm
-  eslint-plugin-react: 7.31.5_eslint@8.23.0
+  eslint-plugin-react: 7.31.6_eslint@8.23.0
   eslint-plugin-simple-import-sort: 7.0.0_eslint@8.23.0
   typescript: 4.8.2
 
@@ -290,8 +290,8 @@ packages:
   /@floating-ui/react-dom-interactions/0.6.6_zxljzmqdrxwnuenbkrz77w74uy:
     resolution: {integrity: sha512-qnao6UPjSZNHnXrF+u4/n92qVroQkx0Umlhy3Avk1oIebm/5ee6yvDm4xbHob0OjY7ya8WmUnV3rQlPwX3Atwg==}
     peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
+      react: '>=16.8.0 || 18'
+      react-dom: '>=16.8.0 || 18'
     dependencies:
       '@floating-ui/react-dom': 0.7.2_zxljzmqdrxwnuenbkrz77w74uy
       aria-hidden: 1.2.1_ug65io7jkbhmo4fihdmbrh3ina
@@ -707,8 +707,8 @@ packages:
   /@radix-ui/react-presence/1.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-A+6XEvN01NfVWiKu38ybawfHsBjWum42MRPnEuqPsBZ4eV7e/7K321B5VgYMPv3Xx5An6o1/l9ZuDBgmcmWK3w==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
+      react: ^16.8 || ^17.0 || ^18.0 || 18
+      react-dom: ^16.8 || ^17.0 || ^18.0 || 18
     dependencies:
       '@babel/runtime': 7.18.9
       '@radix-ui/react-compose-refs': 1.0.0_react@18.2.0
@@ -1116,8 +1116,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  /caniuse-lite/1.0.30001388:
-    resolution: {integrity: sha512-znVbq4OUjqgLxMxoNX2ZeeLR0d7lcDiE5uJ4eUiWdml1J1EkxbnQq6opT9jb9SMfJxB0XA16/ziHwni4u1I3GQ==}
+  /caniuse-lite/1.0.30001389:
+    resolution: {integrity: sha512-dXCB1Ufi5VekkH5vygd46PGp0HMW4rxorX7Xl1R51FWLcB21DRPOIgrpxvuM1VHXIs4bu/QQQdQaBneMzq9C2g==}
     dev: false
 
   /chalk/2.4.2:
@@ -1415,7 +1415,7 @@ packages:
       eslint-import-resolver-typescript: 2.7.1_faomjyrlgqmwswvqymymzkxcqi
       eslint-plugin-import: 2.26.0_un7ecal3cw2ng4g3gnr5d6g7tq
       eslint-plugin-jsx-a11y: 6.6.1_eslint@8.23.0
-      eslint-plugin-react: 7.31.5_eslint@8.23.0
+      eslint-plugin-react: 7.31.6_eslint@8.23.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.23.0
       typescript: 4.8.2
     transitivePeerDependencies:
@@ -1542,8 +1542,8 @@ packages:
       eslint: 8.23.0
     dev: true
 
-  /eslint-plugin-react/7.31.5_eslint@8.23.0:
-    resolution: {integrity: sha512-y7472VAcqns17rsQUk6tQCnqBi+boYjGdYarX022719+wGd1T4U1fOYJ2T2Trd3Od2q5M92e42zJ2uZOGmWamA==}
+  /eslint-plugin-react/7.31.6_eslint@8.23.0:
+    resolution: {integrity: sha512-CXu4eu28sb8Sd2+cyUYsJVyDvpTlaXPG+bOzzpS9IzZKtye96AYX3ZmHQ6ayn/OAIQ/ufDJP8ElPWd63Pepn9w==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
@@ -2345,7 +2345,7 @@ packages:
     dependencies:
       '@next/env': 12.2.5
       '@swc/helpers': 0.4.3
-      caniuse-lite: 1.0.30001388
+      caniuse-lite: 1.0.30001389
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
