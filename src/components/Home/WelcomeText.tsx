@@ -37,7 +37,6 @@ function WelcomeText({ isDark }: Props) {
             gradient={{ from: 'indigo', to: 'red', deg: 45 }}
             mt={-5}
             sx={{
-              letterSpacing: 0.15,
               fontSize: 20,
               '@media (min-width: 768px)': {
                 fontSize: 28,
