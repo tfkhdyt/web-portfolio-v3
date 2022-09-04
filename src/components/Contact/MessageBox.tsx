@@ -1,26 +1,22 @@
-import { yupResolver } from '@hookform/resolvers/yup';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Group, Text, Textarea, TextInput } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import { useForm } from 'react-hook-form';
 import { FiSend } from 'react-icons/fi';
-import * as yup from 'yup';
+import { z } from 'zod';
 
 import { handleSendMessageError } from '@/handlers/handleSendMessageError';
 import { updateSendMessageNotif } from '@/lib/notifications/updateSendMessage';
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+const messageSchema = z.object({
+  name: z.string().min(1, { message: 'Name is required' }),
+  email: z.string().min(1, { message: 'Email is required' }).email({
+    message: 'Invalid email',
+  }),
+  message: z.string().min(1, { message: 'Message is required' }),
+});
 
-const schema = yup
-  .object({
-    name: yup.string().required(),
-    email: yup.string().email().required(),
-    message: yup.string().required(),
-  })
-  .required();
+type MessageType = z.infer<typeof messageSchema>;
 
 function MessageBox() {
   const {
@@ -28,11 +24,13 @@ function MessageBox() {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<FormData>({
-    resolver: yupResolver(schema),
+  } = useForm<MessageType>({
+    resolver: zodResolver(messageSchema),
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: MessageType) => {
+    console.log('Data:', data);
+
     showNotification({
       id: 'send-message',
       loading: true,
@@ -55,11 +53,11 @@ function MessageBox() {
       }
     );
     const dataResponse = await response.json();
-
     if (!response.ok) {
       handleSendMessageError(response.status, dataResponse.message);
       return;
     }
+
     updateSendMessageNotif('success', 'Thank you for reaching me out');
 
     reset();
