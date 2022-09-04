@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
-        theme={{ colorScheme, fontFamily: 'Source Sans Pro, sans-serif' }}
+        theme={{ colorScheme, fontFamily: 'Rubik, sans-serif' }}
       >
         <NotificationsProvider>
           <Provider>
