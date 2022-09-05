@@ -2,7 +2,7 @@
 
 ![Preview](public/images/preview.png)
 
-<p align='center'>Third revision of my portfolio website</p>
+<p align='center'>Third revision of my portfolio website.</p>
 
 ## Build With
 
@@ -34,7 +34,7 @@ pnpm install
 # yarn install
 ```
 
-For message form support, create empty .env file and put your Message Form API URL
+For message form support, create empty .env file and put your Message Form API URL.
 
 ```env
 NEXT_PUBLIC_MESSAGE_FORM_API='Your API URL'
