@@ -7,7 +7,6 @@ import {
   Title,
   useMantineColorScheme,
 } from '@mantine/core';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
