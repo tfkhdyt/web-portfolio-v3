@@ -29,8 +29,6 @@ function ProjectCard({ project }: Props) {
   return (
     <Paper
       key={project.name}
-      component={motion.div}
-      whileHover={{ y: -8 }}
       shadow='sm'
       radius='lg'
       p='xl'
