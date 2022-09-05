@@ -1,4 +1,4 @@
-import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
+import { SimpleGrid, Tabs, Text } from '@mantine/core';
 import { NextSeo } from 'next-seo';
 
 import ProjectCard from '@/components/Projects/ProjectCard';
@@ -13,15 +13,13 @@ function ProjectsPage() {
         Projects
       </Text>
       <Tabs defaultValue='website' variant='pills' color='violet' mt='md'>
-        <ScrollArea type='never'>
-          <Tabs.List grow>
-            {projectCategories.map((category) => (
-              <Tabs.Tab value={category.toLowerCase()} key={category}>
-                {category}
-              </Tabs.Tab>
-            ))}
-          </Tabs.List>
-        </ScrollArea>
+        <Tabs.List grow>
+          {projectCategories.map((category) => (
+            <Tabs.Tab value={category.toLowerCase()} key={category}>
+              {category}
+            </Tabs.Tab>
+          ))}
+        </Tabs.List>
 
         {projectCategories.map((category) => (
           <Tabs.Panel

@@ -15,6 +15,7 @@ import { HiExternalLink } from 'react-icons/hi';
 
 import { Project } from '@/data/Projects/project';
 import { skills } from '@/data/Skills/skills';
+import { useStyles } from '@/hooks/useStyles';
 
 interface Props {
   project: Project;
@@ -23,6 +24,7 @@ interface Props {
 function ProjectCard({ project }: Props) {
   const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
+  const { classes } = useStyles();
 
   return (
     <Paper
@@ -37,6 +39,7 @@ function ProjectCard({ project }: Props) {
         flexDirection: 'column',
         justifyContent: 'space-evenly',
       }}
+      className={classes.card}
     >
       <Box
         sx={{
