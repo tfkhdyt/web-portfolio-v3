@@ -1,4 +1,4 @@
-import { ScrollArea, SimpleGrid, Tabs, Text } from '@mantine/core';
+import { SimpleGrid, Tabs, Text } from '@mantine/core';
 import { NextSeo } from 'next-seo';
 
 import SkillCard from '@/components/Skills/SkillCard';
@@ -13,15 +13,13 @@ function skillsPage() {
         Skills
       </Text>
       <Tabs defaultValue='language' variant='pills' color='violet' mt='md'>
-        <ScrollArea type='never'>
-          <Tabs.List grow>
-            {skillCategories.map((category) => (
-              <Tabs.Tab value={category.toLowerCase()} key={category}>
-                {category}
-              </Tabs.Tab>
-            ))}
-          </Tabs.List>
-        </ScrollArea>
+        <Tabs.List grow>
+          {skillCategories.map((category) => (
+            <Tabs.Tab value={category.toLowerCase()} key={category}>
+              {category}
+            </Tabs.Tab>
+          ))}
+        </Tabs.List>
 
         {skillCategories.map((category) => (
           <Tabs.Panel
