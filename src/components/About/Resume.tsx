@@ -1,13 +1,29 @@
-import { Box, Group, Text } from '@mantine/core';
+import { Anchor, Box, Text, useMantineColorScheme } from '@mantine/core';
+import Link from 'next/link';
 
 interface Props {
-  src: string;
+  link: string;
 }
 
-function Resume({ src }: Props) {
+function Resume({ link }: Props) {
+  const theme = useMantineColorScheme();
+
   return (
     <Box mt='md'>
-      <Text size={42} weight='bold'>
+      <Text>
+        Also you can read my resume{' '}
+        <Link href={link} passHref>
+          <Anchor
+            color={theme.colorScheme === 'dark' ? 'gray.0' : 'dark'}
+            target='_blank'
+            weight='bold'
+            component='a'
+          >
+            here
+          </Anchor>
+        </Link>
+      </Text>
+      {/* <Text size={42} weight='bold'>
         Resume
       </Text>
       <Group position='center'>
@@ -18,7 +34,7 @@ function Resume({ src }: Props) {
           allow='autoplay'
           loading='lazy'
         />
-      </Group>
+      </Group> */}
     </Box>
   );
 }

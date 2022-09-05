@@ -12,7 +12,7 @@ function about() {
       <Introduction />
       <Education />
       <WorkExperience />
-      <Resume src='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj/preview' />
+      <Resume link='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj' />
     </>
   );
 }

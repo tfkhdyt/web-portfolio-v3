@@ -30,7 +30,7 @@ function Introduction() {
           Taufik Hidayat
         </Text>
         {introduction.map((each, idx) => (
-          <Text size='lg' my='sm' key={idx}>
+          <Text size='md' my='sm' key={idx}>
             {each}
           </Text>
         ))}
