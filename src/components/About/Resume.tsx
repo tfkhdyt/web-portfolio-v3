@@ -1,11 +1,12 @@
 import { Anchor, Box, Text, useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link';
+import { FC } from 'react';
 
 interface Props {
   link: string;
 }
 
-function Resume({ link }: Props) {
+const Resume: FC<Props> = ({ link }) => {
   const theme = useMantineColorScheme();
 
   return (
@@ -37,6 +38,6 @@ function Resume({ link }: Props) {
       </Group> */}
     </Box>
   );
-}
+};
 
 export default Resume;

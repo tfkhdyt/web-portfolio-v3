@@ -1,6 +1,6 @@
 import { Grid, Group } from '@mantine/core';
 import Image from 'next/image';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface Props {
   src: string;
@@ -8,7 +8,7 @@ interface Props {
   height: number;
 }
 
-function IllustrationImage({ src, width, height }: Props) {
+const IllustrationImage: FC<Props> = ({ src, width, height }) => {
   return (
     <Grid.Col sm={6} orderSm={2}>
       <Group position='center'>
@@ -22,6 +22,6 @@ function IllustrationImage({ src, width, height }: Props) {
       </Group>
     </Grid.Col>
   );
-}
+};
 
 export default IllustrationImage;

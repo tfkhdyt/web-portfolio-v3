@@ -2,7 +2,7 @@ import { Box, List, Text, Timeline } from '@mantine/core';
 
 import { workExperience } from '@/data/About/workExperience';
 
-function WorkExperience() {
+const WorkExperience = () => {
   return (
     <Box mt='md'>
       <Text size={42} weight='bold'>
@@ -32,6 +32,6 @@ function WorkExperience() {
       </Timeline>
     </Box>
   );
-}
+};
 
 export default WorkExperience;

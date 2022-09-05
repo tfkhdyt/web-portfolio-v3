@@ -1,11 +1,11 @@
 import { Box, Grid, Stack, Text } from '@mantine/core';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface Props {
   isDark: boolean;
 }
 
-function WelcomeText({ isDark }: Props) {
+const WelcomeText: FC<Props> = ({ isDark }) => {
   return (
     <Grid.Col sm={6} orderSm={1}>
       <Stack
@@ -60,6 +60,6 @@ function WelcomeText({ isDark }: Props) {
       </Stack>
     </Grid.Col>
   );
-}
+};
 
 export default WelcomeText;

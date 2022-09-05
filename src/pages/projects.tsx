@@ -5,7 +5,7 @@ import ProjectCard from '@/components/Projects/ProjectCard';
 import { projectCategories } from '@/data/Projects/projectCategories';
 import { projects } from '@/data/Projects/projects';
 
-function ProjectsPage() {
+const ProjectsPage = () => {
   return (
     <>
       <NextSeo title='Projects' />
@@ -46,6 +46,6 @@ function ProjectsPage() {
       </Tabs>
     </>
   );
-}
+};
 
 export default ProjectsPage;

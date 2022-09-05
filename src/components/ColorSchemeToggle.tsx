@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function SwitchToggle() {
+const SwitchToggle = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { classes, cx } = useStyles();
 
@@ -54,4 +54,6 @@ export function SwitchToggle() {
       </div>
     </Group>
   );
-}
+};
+
+export default SwitchToggle;

@@ -2,7 +2,7 @@ import { Box, Text, Timeline } from '@mantine/core';
 
 import { education } from '@/data/About/education';
 
-function Education() {
+const Education = () => {
   return (
     <Box>
       <Text size={42} weight='bold'>
@@ -28,6 +28,6 @@ function Education() {
       </Timeline>
     </Box>
   );
-}
+};
 
 export default Education;

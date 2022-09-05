@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { headerItems } from '@/data/headerItem';
 import { navbarAtom } from '@/store/navbar';
 
-function MyNavbar() {
+const MyNavbar = () => {
   const [opened, setOpened] = useAtom(navbarAtom);
   const router = useRouter();
   const path = router.asPath;
@@ -41,6 +41,6 @@ function MyNavbar() {
       </Stack>
     </Navbar>
   );
-}
+};
 
 export default MyNavbar;

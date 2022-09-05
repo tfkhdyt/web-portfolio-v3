@@ -4,7 +4,7 @@ import { introduction } from '@/data/About/introdution';
 
 import RoundedImage from './RoundedImage';
 
-function Introduction() {
+const Introduction = () => {
   return (
     <Grid>
       <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
@@ -37,6 +37,6 @@ function Introduction() {
       </Grid.Col>
     </Grid>
   );
-}
+};
 
 export default Introduction;

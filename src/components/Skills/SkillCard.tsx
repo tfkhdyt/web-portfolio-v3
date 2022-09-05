@@ -1,5 +1,6 @@
 import { Box, Paper } from '@mantine/core';
 import Image from 'next/image';
+import { FC } from 'react';
 
 import { Skill } from '@/data/Skills/skill';
 import { useStyles } from '@/hooks/useStyles';
@@ -8,7 +9,7 @@ interface Props {
   skill: Skill;
 }
 
-function SkillCard({ skill }: Props) {
+const SkillCard: FC<Props> = ({ skill }) => {
   const { classes } = useStyles();
 
   return (
@@ -35,6 +36,6 @@ function SkillCard({ skill }: Props) {
       </Box>
     </Paper>
   );
-}
+};
 
 export default SkillCard;

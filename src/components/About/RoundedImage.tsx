@@ -1,5 +1,6 @@
 import { Box } from '@mantine/core';
 import Image from 'next/image';
+import { FC } from 'react';
 
 interface Props {
   src: string;
@@ -7,7 +8,7 @@ interface Props {
   height: number;
 }
 
-function RoundedImage({ src, width, height }: Props) {
+const RoundedImage: FC<Props> = ({ src, width, height }) => {
   return (
     <Box
       sx={{
@@ -27,6 +28,6 @@ function RoundedImage({ src, width, height }: Props) {
       />
     </Box>
   );
-}
+};
 
 export default RoundedImage;
