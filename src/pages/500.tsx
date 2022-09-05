@@ -52,7 +52,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function ServerError() {
+const ServerError = () => {
   const { classes } = useStyles();
   const router = useRouter();
 
@@ -79,4 +79,6 @@ export default function ServerError() {
       </Center>
     </div>
   );
-}
+};
+
+export default ServerError;

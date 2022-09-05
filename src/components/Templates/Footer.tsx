@@ -1,6 +1,6 @@
 import { Footer } from '@mantine/core';
 
-function MyFooter() {
+const MyFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -8,6 +8,6 @@ function MyFooter() {
       Copyright @ {currentYear} - Made with ❤️ by tfkhdyt
     </Footer>
   );
-}
+};
 
 export default MyFooter;

@@ -13,6 +13,7 @@ import type { AppProps } from 'next/app';
 import { Router } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
+import { FC } from 'react';
 
 import { variants } from '@/animations/variants';
 import Layout from '@/components/Templates/Layout';
@@ -24,7 +25,7 @@ Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-function MyApp({ Component, pageProps, router }: AppProps) {
+const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const preferredColorScheme = useColorScheme();
 
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -113,6 +114,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       </MantineProvider>
     </ColorSchemeProvider>
   );
-}
+};
 
 export default MyApp;

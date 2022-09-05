@@ -1,5 +1,6 @@
 import { Box, Space, Text } from '@mantine/core';
 import Link from 'next/link';
+import { FC } from 'react';
 
 import { contacts } from '@/data/Contact/contacts';
 
@@ -7,7 +8,7 @@ interface Props {
   isDark: boolean;
 }
 
-function ContactList({ isDark }: Props) {
+const ContactList: FC<Props> = ({ isDark }) => {
   return (
     <Box mt='md'>
       <Text size='lg'>
@@ -45,6 +46,6 @@ function ContactList({ isDark }: Props) {
       </ul>
     </Box>
   );
-}
+};
 
 export default ContactList;

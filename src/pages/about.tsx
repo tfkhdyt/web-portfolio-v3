@@ -5,7 +5,7 @@ import Introduction from '@/components/About/Introduction';
 import Resume from '@/components/About/Resume';
 import WorkExperience from '@/components/About/WorkExperience';
 
-function about() {
+const About = () => {
   return (
     <>
       <NextSeo title='About Me' />
@@ -15,6 +15,6 @@ function about() {
       <Resume link='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj' />
     </>
   );
-}
+};
 
-export default about;
+export default About;

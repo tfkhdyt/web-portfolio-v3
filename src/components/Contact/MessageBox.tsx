@@ -18,7 +18,7 @@ const messageSchema = z.object({
 
 type MessageType = z.infer<typeof messageSchema>;
 
-function MessageBox() {
+const MessageBox = () => {
   const {
     register,
     handleSubmit,
@@ -112,6 +112,6 @@ function MessageBox() {
       </Box>
     </>
   );
-}
+};
 
 export default MessageBox;

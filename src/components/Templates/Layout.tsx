@@ -1,6 +1,6 @@
 import { AppShell, Container, useMantineTheme } from '@mantine/core';
 import { useRouter } from 'next/router';
-import { ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 import { headerItems } from '@/data/headerItem';
 import useBreakpoint from '@/hooks/isSm';
@@ -14,7 +14,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function MyAppShell({ children }: Props) {
+const MyAppShell: FC<Props> = ({ children }) => {
   const theme = useMantineTheme();
   const { isSm } = useBreakpoint();
   const router = useRouter();
@@ -41,4 +41,6 @@ export default function MyAppShell({ children }: Props) {
       <ScrollToTop />
     </AppShell>
   );
-}
+};
+
+export default MyAppShell;

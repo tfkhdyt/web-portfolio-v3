@@ -2,7 +2,7 @@ import { ActionIcon, Affix, Transition } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { BsChevronUp } from 'react-icons/bs';
 
-function ScrollToTop() {
+const ScrollToTop = () => {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
@@ -23,6 +23,6 @@ function ScrollToTop() {
       </Transition>
     </Affix>
   );
-}
+};
 
 export default ScrollToTop;

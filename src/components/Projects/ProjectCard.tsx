@@ -9,6 +9,7 @@ import {
 } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FC } from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { HiExternalLink } from 'react-icons/hi';
 
@@ -20,7 +21,7 @@ interface Props {
   project: Project;
 }
 
-function ProjectCard({ project }: Props) {
+const ProjectCard: FC<Props> = ({ project }) => {
   const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
   const { classes } = useStyles();
@@ -114,6 +115,6 @@ function ProjectCard({ project }: Props) {
       </Group>
     </Paper>
   );
-}
+};
 
 export default ProjectCard;

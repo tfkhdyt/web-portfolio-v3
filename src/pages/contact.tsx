@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo';
 import ContactList from '@/components/Contact/ContactList';
 import MessageBox from '@/components/Contact/MessageBox';
 
-function Contact() {
+const Contact = () => {
   const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === 'dark';
 
@@ -20,6 +20,6 @@ function Contact() {
       </main>
     </>
   );
-}
+};
 
 export default Contact;

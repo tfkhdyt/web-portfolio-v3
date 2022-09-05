@@ -53,7 +53,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function NotFoundTitle() {
+const NotFoundTitle = () => {
   const { classes } = useStyles();
 
   return (
@@ -83,4 +83,6 @@ export default function NotFoundTitle() {
       </Container>
     </Center>
   );
-}
+};
+
+export default NotFoundTitle;

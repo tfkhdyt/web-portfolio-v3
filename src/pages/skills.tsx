@@ -5,7 +5,7 @@ import SkillCard from '@/components/Skills/SkillCard';
 import { skillCategories } from '@/data/Skills/skillCategories';
 import { skills } from '@/data/Skills/skills';
 
-function skillsPage() {
+const SkillsPage = () => {
   return (
     <>
       <NextSeo title='Skills' />
@@ -48,6 +48,6 @@ function skillsPage() {
       </Tabs>
     </>
   );
-}
+};
 
-export default skillsPage;
+export default SkillsPage;
