@@ -1,13 +1,13 @@
 import { ActionIcon, Affix, Transition } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
-import { AiFillRocket } from 'react-icons/ai';
+import { BsChevronUp } from 'react-icons/bs';
 
 function ScrollToTop() {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
     <Affix position={{ bottom: 83, right: 38 }}>
-      <Transition transition='fade' mounted={scroll.y > 0}>
+      <Transition transition='fade' mounted={scroll.y > 200}>
         {(transitionStyles) => (
           <ActionIcon
             color='violet'
@@ -17,7 +17,7 @@ function ScrollToTop() {
             style={transitionStyles}
             onClick={() => scrollTo({ y: 0 })}
           >
-            <AiFillRocket size={20} />
+            <BsChevronUp size={20} />
           </ActionIcon>
         )}
       </Transition>

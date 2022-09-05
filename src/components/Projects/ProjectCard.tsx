@@ -7,7 +7,6 @@ import {
   Title,
   useMantineColorScheme,
 } from '@mantine/core';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
@@ -29,8 +28,6 @@ function ProjectCard({ project }: Props) {
   return (
     <Paper
       key={project.name}
-      component={motion.div}
-      whileHover={{ y: -8 }}
       shadow='sm'
       radius='lg'
       p='xl'
