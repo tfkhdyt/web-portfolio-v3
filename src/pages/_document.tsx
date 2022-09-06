@@ -25,12 +25,6 @@ export default class _Document extends Document {
             href={metaTagsData.favicon}
             type='image/x-icon'
           />
-          <script
-            data-website-id='8561225e-7d29-4f77-91a5-d8f3ed104625'
-            src='https://umami.tfkhdyt.my.id/umami.js'
-            async
-            defer
-          />
           <meta
             name='msvalidate.01'
             content='FB08EAE4E24D8B37759DD91F6506B854'
