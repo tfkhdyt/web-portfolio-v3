@@ -4,11 +4,11 @@ import { education } from '@/data/About/education';
 
 const Education = () => {
   return (
-    <Box>
+    <Box mt='md'>
       <Text size={42} weight='bold'>
         Education
       </Text>
-      <Timeline active={1} mt='md'>
+      <Timeline active={1} mt='sm'>
         {education.map((each) => (
           <Timeline.Item
             title={
