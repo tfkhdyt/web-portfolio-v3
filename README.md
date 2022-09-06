@@ -21,7 +21,7 @@
 
 ### Prerequisites
 
-- Node.js
+- [Node.js](https://nodejs.org/en/)
 - Any Node.js package manager (npm, yarn, **pnpm**)
 
 ### Installation
