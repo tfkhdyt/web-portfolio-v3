@@ -10,7 +10,7 @@ interface Props {
 
 const ContactList: FC<Props> = ({ isDark }) => {
   return (
-    <Box mt='md'>
+    <Box mt='sm'>
       <Text size='lg'>
         Please don’t hesitate to get in touch with me by following my social
         media below:

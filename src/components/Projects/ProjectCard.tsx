@@ -62,6 +62,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   ' ',
                   '-'
                 )}-Source_Code`}
+                title='Source Code'
               >
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <BsGithub size={24} />
@@ -78,6 +79,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   ' ',
                   '-'
                 )}-Demo`}
+                title='Demo'
               >
                 <ActionIcon
                   component='a'
@@ -102,6 +104,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
             <Box
               key={skill.name}
               sx={{ position: 'relative', height: 25, width: 25 }}
+              title={skill.name}
             >
               <Image
                 src={`/images/tech/${skill.icon}`}

@@ -8,7 +8,7 @@ const WorkExperience = () => {
       <Text size={42} weight='bold'>
         Work Experience
       </Text>
-      <Timeline active={0} mt='md'>
+      <Timeline active={0} mt='sm'>
         {workExperience.map((each) => (
           <Timeline.Item
             title={

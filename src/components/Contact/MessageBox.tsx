@@ -70,7 +70,7 @@ const MessageBox = () => {
           Message
         </Text>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Group grow mt='md' sx={{ display: 'flex', alignItems: 'start' }}>
+          <Group grow mt='sm' sx={{ display: 'flex', alignItems: 'start' }}>
             <TextInput
               placeholder='Your name'
               label='Full name'
