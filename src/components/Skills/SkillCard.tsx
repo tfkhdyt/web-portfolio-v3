@@ -13,7 +13,13 @@ const SkillCard: FC<Props> = ({ skill }) => {
   const { classes } = useStyles();
 
   return (
-    <Paper shadow='sm' radius='lg' p='xl' className={classes.card}>
+    <Paper
+      shadow='sm'
+      radius='lg'
+      p='xl'
+      className={classes.card}
+      title={skill.name}
+    >
       <Box
         sx={{
           position: 'relative',
@@ -31,7 +37,6 @@ const SkillCard: FC<Props> = ({ skill }) => {
             pointerEvents: 'none',
           }}
           priority={skill.category === 'Language'}
-          // caption={skill.name}
         />
       </Box>
     </Paper>

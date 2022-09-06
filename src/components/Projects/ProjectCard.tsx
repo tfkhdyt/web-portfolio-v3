@@ -102,6 +102,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
             <Box
               key={skill.name}
               sx={{ position: 'relative', height: 25, width: 25 }}
+              title={skill.name}
             >
               <Image
                 src={`/images/tech/${skill.icon}`}
