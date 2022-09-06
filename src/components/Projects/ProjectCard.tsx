@@ -62,6 +62,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   ' ',
                   '-'
                 )}-Source_Code`}
+                title='Source Code'
               >
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <BsGithub size={24} />
@@ -78,6 +79,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   ' ',
                   '-'
                 )}-Demo`}
+                title='Demo'
               >
                 <ActionIcon
                   component='a'
