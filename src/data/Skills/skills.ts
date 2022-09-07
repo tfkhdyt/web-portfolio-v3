@@ -117,6 +117,11 @@ export const skills: Skill[] = [
     icon: 'framer-motion.png',
   },
   {
+    name: 'React Query',
+    category: 'Framework/Library',
+    icon: 'react-query.svg',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
