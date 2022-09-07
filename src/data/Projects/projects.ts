@@ -12,14 +12,14 @@ export const projects: Project[] = [
     tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
   },
   {
-    name: 'Todo List',
+    name: 'To Do List',
     category: 'Website',
     desc: 'Simple Todo List App with Authentication',
     link: {
       demo: 'http://tfkhdyt-todo-list.vercel.app/',
       github: 'https://github.com/tfkhdyt/todo-prisma',
     },
-    tech: ['TypeScript', 'Next.js', 'Mantine', 'Prisma', 'NextAuth'],
+    tech: ['TypeScript', 'Next.js', 'Mantine', 'Prisma', 'NextAuth', 'React Query'],
   },
   {
     name: 'Gatotkaca',
