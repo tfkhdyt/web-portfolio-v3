@@ -30,6 +30,7 @@ specifiers:
   react-dom: ^18.2.0
   react-hook-form: ^7.35.0
   react-icons: ^4.4.0
+  react-type-animation: ^2.1.1
   typescript: ^4.8.3
   zod: ^3.19.0
 
@@ -52,6 +53,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.35.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
+  react-type-animation: 2.1.1_biqbaboplfbrettd7655fr4n2y
   zod: 3.19.0
 
 devDependencies:
@@ -2664,6 +2666,17 @@ packages:
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-type-animation/2.1.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-leXq9tZLsfbQWi+1PvsSc2XZYv9CqRrChvuv81M0UPECggBEQgplQzTO9LzgjYNPdnhf4UMeEtZMI4G1qPpuwA==}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: '>= 15.0.0'
+      react-dom: '>= 15.0.0'
+    dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false

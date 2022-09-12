@@ -14,4 +14,17 @@ export const useStyles = createStyles((theme) => ({
       transform: 'translateY(-8px)',
     },
   },
+  gradientText: {
+    backgroundImage: 'linear-gradient(to bottom right, #4338ca, #dc2626)',
+    color: 'transparent',
+    backgroundClip: 'text',
+    fontWeight: 700,
+    fontSize: 20,
+    '@media (min-width: 768px)': {
+      fontSize: 24,
+    },
+    lineHeight: 1,
+    marginTop: -5,
+    // width: 'fit-content',
+  },
 }));
