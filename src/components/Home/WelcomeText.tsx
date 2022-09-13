@@ -13,15 +13,7 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
 
   return (
     <Grid.Col sm={6} orderSm={1}>
-      <Stack
-        spacing='md'
-        sx={{
-          textAlign: 'center',
-          '@media (min-width: 768px)': {
-            textAlign: 'left',
-          },
-        }}
-      >
+      <Stack spacing='md'>
         <Box>
           <Text
             weight='bold'
@@ -35,20 +27,6 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
           >
             Taufik Hidayat
           </Text>
-          {/*  <Text
-            component='span'
-            variant='gradient'
-            weight='bold'
-            gradient={{ from: 'indigo', to: 'red', deg: 45 }}
-            mt={-5}
-            sx={{
-              fontSize: 20,
-              '@media (min-width: 768px)': {
-                fontSize: 28,
-              },
-              lineHeight: 1,
-            }}
-          > */}
           <TypeAnimation
             sequence={[
               'Junior Full Stack Developer',

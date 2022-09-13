@@ -22,9 +22,10 @@ export const useStyles = createStyles((theme) => ({
     fontSize: 20,
     '@media (min-width: 768px)': {
       fontSize: 24,
+      textAlign: 'left',
     },
     lineHeight: 1,
     marginTop: -5,
-    width: 'fit-content',
+    textAlign: 'center',
   },
 }));
