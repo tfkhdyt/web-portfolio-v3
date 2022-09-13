@@ -13,7 +13,15 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
 
   return (
     <Grid.Col sm={6} orderSm={1}>
-      <Stack spacing='md'>
+      <Stack
+        spacing='md'
+        sx={{
+          textAlign: 'center',
+          '@media (min-width: 768px)': {
+            textAlign: 'left',
+          },
+        }}
+      >
         <Box>
           <Text
             weight='bold'
