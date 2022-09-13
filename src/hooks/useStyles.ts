@@ -15,7 +15,7 @@ export const useStyles = createStyles((theme) => ({
     },
   },
   gradientText: {
-    backgroundImage: 'linear-gradient(to bottom right, #4338ca, #dc2626)',
+    backgroundImage: `linear-gradient(to bottom right, ${theme.colors.indigo[7]}, ${theme.colors.red[7]})`,
     color: 'transparent',
     backgroundClip: 'text',
     fontWeight: 700,
@@ -25,6 +25,6 @@ export const useStyles = createStyles((theme) => ({
     },
     lineHeight: 1,
     marginTop: -5,
-    // width: 'fit-content',
+    width: 'fit-content',
   },
 }));
