@@ -26,6 +26,5 @@ export const useStyles = createStyles((theme) => ({
     },
     lineHeight: 1,
     marginTop: -5,
-    textAlign: 'center',
   },
 }));
