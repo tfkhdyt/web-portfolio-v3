@@ -58,7 +58,7 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
             },
           }}
         >
-          Hi everyone 👋🏼, welcome to my portfolio website
+          Hi everyone <span className='wave'>👋🏼</span>, welcome to my portfolio website
         </Text>
       </Stack>
     </Grid.Col>
