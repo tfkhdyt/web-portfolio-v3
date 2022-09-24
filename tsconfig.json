@@ -10,7 +10,8 @@
       "@/lib/*": ["lib/*"],
       "@/public/*": ["public/*"],
       "@/store/*": ["store/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/utils/*": ["utils/*"]
     },
     "target": "es2018",
     "lib": ["dom", "dom.iterable", "esnext"],
