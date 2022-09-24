@@ -29,8 +29,6 @@ const MessageBox = () => {
   });
 
   const onSubmit = async (data: MessageType) => {
-    console.log('Data:', data);
-
     showNotification({
       id: 'send-message',
       loading: true,
