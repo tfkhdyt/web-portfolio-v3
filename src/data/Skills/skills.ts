@@ -122,6 +122,11 @@ export const skills: Skill[] = [
     icon: 'react-query.svg',
   },
   {
+    name: 'whatsapp-web.js',
+    category: 'Framework/Library',
+    icon: 'wwebjs.png',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',

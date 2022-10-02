@@ -19,7 +19,14 @@ export const projects: Project[] = [
       demo: 'http://tfkhdyt-todo-list.vercel.app/',
       github: 'https://github.com/tfkhdyt/todo-prisma',
     },
-    tech: ['TypeScript', 'Next.js', 'Mantine', 'Prisma', 'NextAuth', 'React Query'],
+    tech: [
+      'TypeScript',
+      'Next.js',
+      'Mantine',
+      'Prisma',
+      'NextAuth',
+      'React Query',
+    ],
   },
   {
     name: 'Gatotkaca',
@@ -156,6 +163,26 @@ export const projects: Project[] = [
       demo: 'https://quotes.tfkhdyt.my.id/',
     },
     tech: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+  },
+  {
+    name: 'WA Sticker Bot',
+    category: 'Bot',
+    desc: 'Free and Open Source WhatsApp Sticker Generator Bot',
+    link: {
+      github: 'https://github.com/tfkhdyt/wa-sticker-bot',
+      demo: 'https://wa.me/6285156002842',
+    },
+    tech: ['TypeScript', 'Node.js', 'whatsapp-web.js'],
+  },
+  {
+    name: 'Auto Salam Responder',
+    category: 'Bot',
+    desc: 'WhatsApp Bot to automatically respond to salam',
+    link: {
+      github: 'https://github.com/tfkhdyt/auto-salam-responder',
+      demo: null,
+    },
+    tech: ['TypeScript', 'Node.js', 'whatsapp-web.js'],
   },
   {
     name: 'Translate Bot',
