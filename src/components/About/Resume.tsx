@@ -1,4 +1,7 @@
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
 import { Anchor, Box, Text, useMantineColorScheme } from '@mantine/core';
+import { Viewer } from '@react-pdf-viewer/core';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -36,6 +39,7 @@ const Resume: FC<Props> = ({ link }) => {
           loading='lazy'
         />
       </Group> */}
+      <Viewer fileUrl='/pdf/resume.pdf' />
     </Box>
   );
 };
