@@ -7,6 +7,7 @@ import {
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
+import { Worker } from '@react-pdf-viewer/core';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import { Provider } from 'jotai';
 import type { AppProps } from 'next/app';
@@ -109,7 +110,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
                         site_name: metaTagsData.title,
                       }}
                     />
-                    <Component {...pageProps} />
+                    <Worker workerUrl='/workers/pdf.worker.min.js'>
+                      <Component {...pageProps} />
+                    </Worker>
                   </m.div>
                 </AnimatePresence>
               </LazyMotion>
