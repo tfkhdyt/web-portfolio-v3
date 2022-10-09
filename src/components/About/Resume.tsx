@@ -1,20 +1,23 @@
-import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-import { Anchor, Box, Text, useMantineColorScheme } from '@mantine/core';
+import { Box, Text } from '@mantine/core';
 import { Viewer } from '@react-pdf-viewer/core';
-import Link from 'next/link';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import { FC } from 'react';
 
 interface Props {
   link: string;
 }
 
-const Resume: FC<Props> = ({ link }) => {
-  const theme = useMantineColorScheme();
+const Resume: FC<Props> = () => {
+  const defaultLayoutPluginInstance = defaultLayoutPlugin({});
 
   return (
     <Box mt='md'>
-      <Text>
+      <Text size={42} weight='bold' mb='md'>
+        Resume
+      </Text>
+      {/*   <Text>
         Also you can read my resume{' '}
         <Link href={link} passHref>
           <Anchor
@@ -26,7 +29,7 @@ const Resume: FC<Props> = ({ link }) => {
             here
           </Anchor>
         </Link>
-      </Text>
+      </Text> */}
       {/* <Text size={42} weight='bold'>
         Resume
       </Text>
@@ -39,7 +42,10 @@ const Resume: FC<Props> = ({ link }) => {
           loading='lazy'
         />
       </Group> */}
-      <Viewer fileUrl='/pdf/resume.pdf' />
+      <Viewer
+        fileUrl='/pdf/resume.pdf'
+        plugins={[defaultLayoutPluginInstance]}
+      />
     </Box>
   );
 };

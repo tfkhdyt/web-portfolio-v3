@@ -110,7 +110,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
                         site_name: metaTagsData.title,
                       }}
                     />
-                    <Worker workerUrl='node_modules/pdfjs-dist/build/pdf.worker.min.js'>
+                    <Worker workerUrl='/workers/pdf.worker.min.js'>
                       <Component {...pageProps} />
                     </Worker>
                   </m.div>
