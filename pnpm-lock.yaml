@@ -26,6 +26,7 @@ specifiers:
   next: ^12.3.1
   next-seo: ^5.5.0
   nprogress: ^0.2.0
+  pdfjs-dist: ^2.16.105
   react: ^18.2.0
   react-dom: ^18.2.0
   react-hook-form: ^7.36.1
@@ -49,6 +50,7 @@ dependencies:
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.5.0_azq6kxkn3od7qdylwkyksrwopy
   nprogress: 0.2.0
+  pdfjs-dist: 2.16.105
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.36.1_react@18.2.0
@@ -1319,6 +1321,10 @@ packages:
       domelementtype: 2.3.0
     dev: false
 
+  /dommatrix/1.0.3:
+    resolution: {integrity: sha512-l32Xp/TLgWb8ReqbVJAFIvXmY7go4nTxxlWiAFyhoQw9RKEOHBZNnyGvJWqDVSPmq3Y9HlM4npqF/T6VMOXhww==}
+    dev: false
+
   /domutils/2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
     dependencies:
@@ -2552,6 +2558,18 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
+  /pdfjs-dist/2.16.105:
+    resolution: {integrity: sha512-J4dn41spsAwUxCpEoVf6GVoz908IAA3mYiLmNxg8J9kfRXc2jxpbUepcP0ocp0alVNLFthTAM8DZ1RaHh8sU0A==}
+    peerDependencies:
+      worker-loader: ^3.0.8
+    peerDependenciesMeta:
+      worker-loader:
+        optional: true
+    dependencies:
+      dommatrix: 1.0.3
+      web-streams-polyfill: 3.2.1
+    dev: false
+
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: false
@@ -3094,6 +3112,11 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: false
+
+  /web-streams-polyfill/3.2.1:
+    resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
+    engines: {node: '>= 8'}
     dev: false
 
   /webpack-bundle-analyzer/4.3.0:
