@@ -12,7 +12,7 @@ const About = () => {
       <Introduction />
       <Education />
       <WorkExperience />
-      <Resume link='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj' />
+      <Resume />
     </>
   );
 };
