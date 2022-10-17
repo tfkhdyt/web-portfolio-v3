@@ -107,7 +107,7 @@ export const projects: Project[] = [
   {
     name: 'VSGA JWD',
     category: 'Misc',
-    desc: 'All my tasks during the VSGA Junior Web Developer certification program from BPPTIK',
+    desc: 'My assignments during the VSGA Junior Web Developer certification program from BPPTIK',
     link: {
       github: 'https://github.com/tfkhdyt/vsga-jwd',
       demo: null,
@@ -147,12 +147,12 @@ export const projects: Project[] = [
   {
     name: 'IDCamp2022',
     category: 'Misc',
-    desc: 'All my tasks during the IDCamp 2022',
+    desc: 'My assignments during the IDCamp 2022',
     link: {
       github: 'https://github.com/tfkhdyt/IDCamp2022',
       demo: null,
     },
-    tech: ['JavaScript'],
+    tech: ['JavaScript', 'Node.js', 'Hapi.js', 'Redis', 'RabbitMQ'],
   },
   {
     name: 'Random Quote Generator',
@@ -237,7 +237,7 @@ export const projects: Project[] = [
   {
     name: 'College Assignments',
     category: 'Misc',
-    desc: 'All of my college assignments',
+    desc: 'My college assignments',
     link: {
       github: 'https://github.com/tfkhdyt/tugas-kuliah',
       demo: null,

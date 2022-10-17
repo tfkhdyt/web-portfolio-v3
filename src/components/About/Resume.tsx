@@ -11,7 +11,7 @@ const Resume = () => {
   const { colorScheme } = useMantineColorScheme();
 
   return (
-    <Box mt='md'>
+    <Box mt='md' id='resume'>
       <Text size={42} weight='bold' mb='md'>
         Resume
       </Text>
@@ -20,7 +20,7 @@ const Resume = () => {
           ['@media (max-width: 768px)']: {
             height: 550,
           },
-          height: 842,
+          height: 720,
         }}
       >
         <Viewer
