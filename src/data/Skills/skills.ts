@@ -127,6 +127,11 @@ export const skills: Skill[] = [
     icon: 'wwebjs.png',
   },
   {
+    name: 'Hapi.js',
+    category: 'Framework/Library',
+    icon: 'hapi.png',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
@@ -167,6 +172,21 @@ export const skills: Skill[] = [
     icon: 'sqlite.svg',
   },
   {
+    name: 'Redis',
+    category: 'DBMS',
+    icon: 'redis.svg',
+  },
+  {
+    name: 'RabbitMQ',
+    category: 'Message Broker',
+    icon: 'rabbitmq.webp',
+  },
+  {
+    name: 'GNU/Linux',
+    category: 'Operating System',
+    icon: 'linux.svg',
+  },
+  {
     name: 'EndeavourOS',
     category: 'Operating System',
     icon: 'endeavouros.svg',
@@ -175,10 +195,5 @@ export const skills: Skill[] = [
     name: 'Arch Linux',
     category: 'Operating System',
     icon: 'arch.svg',
-  },
-  {
-    name: 'GNU/Linux',
-    category: 'Operating System',
-    icon: 'linux.svg',
   },
 ];
