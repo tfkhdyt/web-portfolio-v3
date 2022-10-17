@@ -39,7 +39,7 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
             sequence={[
               'Junior Full Stack Developer',
               2000,
-              'Linux Power User',
+              'Linux Geek',
               2000,
               'FLOSS Enthusiast',
               2000,
@@ -58,7 +58,8 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
             },
           }}
         >
-          Hi everyone <span className='wave'>👋🏼</span>, welcome to my portfolio website
+          Hi everyone <span className='wave'>👋🏼</span>, welcome to my portfolio
+          website
         </Text>
       </Stack>
     </Grid.Col>
