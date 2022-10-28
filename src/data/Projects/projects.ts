@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'openmusic-go',
+    category: 'API',
+    desc: 'Dicoding Intermediate Back-end Submission rewritten in Go',
+    link: {
+      github: 'https://github.com/tfkhdyt/openmusic-go',
+      demo: null,
+    },
+    tech: ['Go', 'Gin', 'PostgreSQL'],
+  },
+  {
     name: 'Portfolio Website v3',
     category: 'Website',
     desc: 'Third revision of my portfolio website',
