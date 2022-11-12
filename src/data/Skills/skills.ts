@@ -178,8 +178,13 @@ export const skills: Skill[] = [
   },
   {
     name: 'RabbitMQ',
-    category: 'Message Broker',
+    category: 'Misc',
     icon: 'rabbitmq.webp',
+  },
+  {
+    name: 'Docker',
+    category: 'Misc',
+    icon: 'docker.svg',
   },
   {
     name: 'GNU/Linux',
