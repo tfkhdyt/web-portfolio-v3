@@ -54,10 +54,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
           }}
         >
           {project.link.github && (
-            <Link href={project.link.github} passHref>
+            <Link href={project.link.github} target='_blank'>
               <Box
-                component='a'
-                target='_blank'
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
                   '-'
@@ -71,10 +69,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
             </Link>
           )}
           {project.link.demo && (
-            <Link href={project.link.demo} passHref>
+            <Link href={project.link.demo} target='_blank'>
               <Box
-                component='a'
-                target='_blank'
                 className={`umami--click--${project.name.replaceAll(
                   ' ',
                   '-'

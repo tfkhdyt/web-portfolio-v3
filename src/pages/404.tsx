@@ -74,8 +74,8 @@ const NotFoundTitle = () => {
           address, or the page has been moved to another URL.
         </Text>
         <Group position='center'>
-          <Link href='/' passHref>
-            <Button component='a' variant='subtle' size='md'>
+          <Link href='/'>
+            <Button variant='subtle' size='md'>
               Take me back to home page
             </Button>
           </Link>

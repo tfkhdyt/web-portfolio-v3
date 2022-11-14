@@ -25,17 +25,16 @@ const ContactList: FC<Props> = ({ isDark }) => {
               <Space w={5} />
               -
               <Space w={5} />
-              <Link href={contact.link} passHref>
+              <Link href={contact.link} target='_blank'>
                 <Text
-                  component='a'
-                  target='_blank'
-                  size='lg'
-                  weight={600}
-                  underline
+                  fz='lg'
+                  fw={600}
+                  td='underline'
                   className={`umami--click--${contact.name.replaceAll(
                     ' ',
                     '-'
                   )}-Link`}
+                  c={isDark ? 'dark.0' : 'dark'}
                 >
                   {contact.label}
                 </Text>
