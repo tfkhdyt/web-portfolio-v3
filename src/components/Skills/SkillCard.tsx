@@ -30,11 +30,11 @@ const SkillCard: FC<Props> = ({ skill }) => {
       >
         <Image
           src={`/images/tech/${skill.icon}`}
-          layout='fill'
-          objectFit='contain'
+          fill
           alt={skill.name}
           style={{
             pointerEvents: 'none',
+            objectFit: 'contain',
           }}
           priority={skill.category === 'Language'}
         />

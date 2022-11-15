@@ -105,9 +105,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
               <Image
                 src={`/images/tech/${skill.icon}`}
                 alt={skill.name}
-                layout='fill'
-                objectFit='contain'
-                style={{ pointerEvents: 'none' }}
+                fill
+                style={{ pointerEvents: 'none', objectFit: 'contain' }}
               />
             </Box>
           ))}
