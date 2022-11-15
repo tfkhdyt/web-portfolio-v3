@@ -49,6 +49,6 @@ export const contacts: Contact[] = [
   {
     name: 'Mastodon',
     label: '@tfkhdyt@fosstodon.org',
-    link: 'https://fosstodon.org/web/@tfkhdyt',
+    link: 'https://fosstodon.org/@tfkhdyt',
   },
 ];
