@@ -21,8 +21,8 @@ const MyFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Footer height={60} py='md' sx={{ textAlign: 'center', fontSize: 14 }}>
-      <Flex gap={5} justify='center' align='center' direction='row'>
+    <Footer height='auto' py='sm' sx={{ textAlign: 'center', fontSize: 14 }}>
+      <Flex justify='center'>
         <CopyleftAnchor /> &#127279; {currentYear} - Made with ❤️ by tfkhdyt
       </Flex>
     </Footer>
