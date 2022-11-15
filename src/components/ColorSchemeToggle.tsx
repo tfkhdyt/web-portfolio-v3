@@ -13,12 +13,13 @@ const SwitchToggle = () => {
   return (
     <Group position='center'>
       <Switch
+        checked={colorScheme === 'dark'}
+        onChange={() => toggleColorScheme()}
         size='md'
         color={colorScheme === 'dark' ? 'gray' : 'dark'}
         onLabel={<BsFillSunFill size={14} color='yellow' />}
         offLabel={<BsFillMoonFill size={14} color={theme.colors.violet[5]} />}
-        onChange={() => toggleColorScheme()}
-        checked={colorScheme === 'dark'}
+        mb='sm'
       />
     </Group>
   );
