@@ -18,9 +18,9 @@ const Resume = () => {
       <Box
         sx={{
           ['@media (max-width: 768px)']: {
-            height: 550,
+            height: 450,
           },
-          height: 720,
+          height: 775,
         }}
       >
         <Viewer
