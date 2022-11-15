@@ -10,6 +10,7 @@ specifiers:
   '@mantine/next': ^5.7.2
   '@mantine/notifications': ^5.7.2
   '@next/bundle-analyzer': ^12.3.3
+  '@next/font': ^13.0.3
   '@react-pdf-viewer/core': ^3.8.0
   '@react-pdf-viewer/default-layout': ^3.8.0
   '@types/node': ^18.11.9
@@ -47,6 +48,7 @@ dependencies:
   '@mantine/next': 5.7.2_gwjfpevgdz35a6gaooo7tcafza
   '@mantine/notifications': 5.7.2_gpb23uvyv4tvmpz42jjjg2mwmq
   '@next/bundle-analyzer': 12.3.3
+  '@next/font': 13.0.3
   '@react-pdf-viewer/core': 3.8.0_ghzlh6wwtt6ibjm74q4djayxxy
   '@react-pdf-viewer/default-layout': 3.8.0_ghzlh6wwtt6ibjm74q4djayxxy
   framer-motion: 7.6.6_biqbaboplfbrettd7655fr4n2y
@@ -524,6 +526,10 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
+
+  /@next/font/13.0.3:
+    resolution: {integrity: sha512-J3bZooNyhzhRshEJZlc4Kagfx6f8LQkPdCsP0nZm63dAUaoeMaQRidFFhbL68WZ3S5XleVfpGYypZuBSyJqYtw==}
+    dev: false
 
   /@next/swc-android-arm-eabi/13.0.3:
     resolution: {integrity: sha512-uxfUoj65CdFc1gX2q7GtBX3DhKv9Kn343LMqGNvXyuTpYTGMmIiVY7b9yF8oLWRV0gVKqhZBZifUmoPE8SJU6Q==}
