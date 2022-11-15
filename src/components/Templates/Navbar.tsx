@@ -1,4 +1,10 @@
-import { Divider, Navbar, Stack, Text } from '@mantine/core';
+import {
+  Divider,
+  Navbar,
+  Stack,
+  Text,
+  useMantineColorScheme,
+} from '@mantine/core';
 import { useAtom } from 'jotai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -8,6 +14,8 @@ import { navbarAtom } from '@/store/navbar';
 
 const MyNavbar = () => {
   const [opened, setOpened] = useAtom(navbarAtom);
+  const { colorScheme } = useMantineColorScheme();
+  const isDark = colorScheme === 'dark';
   const router = useRouter();
   const path = router.asPath;
 
@@ -25,8 +33,12 @@ const MyNavbar = () => {
             onClick={() => setOpened(false)}
             style={{ cursor: 'pointer' }}
           >
-            <Link href={item.link} scroll={false}>
-              <Text mx='md' size='md' weight={600}>
+            <Link
+              href={item.link}
+              scroll={false}
+              style={{ textDecoration: 'none' }}
+            >
+              <Text mx='md' fz='md' weight={600} c={isDark ? 'dark.0' : 'dark'}>
                 {item.label}
               </Text>
             </Link>

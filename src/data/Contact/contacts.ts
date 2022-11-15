@@ -8,12 +8,12 @@ export const contacts: Contact[] = [
   },
   {
     name: 'Twitter',
-    label: 'tfkhdyt142',
+    label: '@tfkhdyt142',
     link: 'https://twitter.com/tfkhdyt142',
   },
   {
     name: 'Instagram',
-    label: '_tfkhdyt_',
+    label: '@_tfkhdyt_',
     link: 'https://www.instagram.com/_tfkhdyt_/',
   },
   {
@@ -23,7 +23,7 @@ export const contacts: Contact[] = [
   },
   {
     name: 'Telegram',
-    label: 'tfkhdyt',
+    label: '@tfkhdyt',
     link: 'https://t.me/tfkhdyt',
   },
   {
@@ -45,5 +45,10 @@ export const contacts: Contact[] = [
     name: 'Showwcase',
     label: 'tfkhdyt',
     link: 'https://tfkhdyt.showwcase.com/',
+  },
+  {
+    name: 'Mastodon',
+    label: '@tfkhdyt@fosstodon.org',
+    link: 'https://fosstodon.org/web/@tfkhdyt',
   },
 ];

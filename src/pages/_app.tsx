@@ -7,6 +7,7 @@ import {
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
+import { Rubik } from '@next/font/google';
 import { Worker } from '@react-pdf-viewer/core';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import { Provider } from 'jotai';
@@ -26,6 +27,8 @@ NProgress.configure({ showSpinner: false });
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const preferredColorScheme = useColorScheme();
@@ -53,7 +56,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
-        theme={{ colorScheme, fontFamily: 'Rubik, sans-serif' }}
+        theme={{ colorScheme, fontFamily: rubik.style.fontFamily }}
       >
         <NotificationsProvider>
           <Provider>

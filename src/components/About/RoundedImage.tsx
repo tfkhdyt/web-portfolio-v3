@@ -23,7 +23,7 @@ const RoundedImage: FC<Props> = ({ src, width, height }) => {
         alt='My face'
         width={width}
         height={height}
-        objectFit='cover'
+        // objectFit='cover'
         priority
       />
     </Box>
