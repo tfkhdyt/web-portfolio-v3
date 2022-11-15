@@ -1,4 +1,4 @@
-import { Box, Space, Text } from '@mantine/core';
+import { Box, Flex, Space, Text } from '@mantine/core';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -18,14 +18,14 @@ const ContactList: FC<Props> = ({ isDark }) => {
       <ul>
         {contacts.map((contact, idx) => (
           <li key={idx}>
-            <Box sx={{ display: 'flex' }}>
+            <Flex wrap='wrap'>
               <Text size='lg' color={isDark ? 'dimmed' : 'dark.7'}>
                 {contact.name}
               </Text>
               <Space w={5} />
               -
               <Space w={5} />
-              <Link href={contact.link} target='_blank'>
+              <Link href={contact.link} target='_blank' rel='me'>
                 <Text
                   fz='lg'
                   fw={600}
@@ -39,7 +39,7 @@ const ContactList: FC<Props> = ({ isDark }) => {
                   {contact.label}
                 </Text>
               </Link>
-            </Box>
+            </Flex>
           </li>
         ))}
       </ul>
