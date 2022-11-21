@@ -20,7 +20,7 @@ const Resume = () => {
           ['@media (max-width: 768px)']: {
             height: 450,
           },
-          height: 775,
+          height: 700,
         }}
       >
         <Viewer
