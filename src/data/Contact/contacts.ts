@@ -3,18 +3,18 @@ import { Contact } from './contact';
 export const contacts: Contact[] = [
   {
     name: 'Mastodon',
-    label: '@tfkhdyt@fosstodon.org',
+    label: '@tfkhdyt',
     link: 'https://fosstodon.org/@tfkhdyt',
   },
   {
     name: 'Matrix',
-    label: '@tfkhdyt:matrix.org',
+    label: '@tfkhdyt',
     link: 'https://matrix.to/#/@tfkhdyt:matrix.org',
   },
   {
-    name: 'GitHub',
-    label: 'tfkhdyt',
-    link: 'https://github.com/tfkhdyt',
+    name: 'Email',
+    label: 'tfkhdyt@proton.me',
+    link: 'mailto:tfkhdyt@proton.me',
   },
   {
     name: 'Telegram',
@@ -22,9 +22,9 @@ export const contacts: Contact[] = [
     link: 'https://t.me/tfkhdyt',
   },
   {
-    name: 'Email',
-    label: 'tfkhdyt@proton.me',
-    link: 'mailto:tfkhdyt@proton.me',
+    name: 'GitHub',
+    label: 'tfkhdyt',
+    link: 'https://github.com/tfkhdyt',
   },
   {
     name: 'Facebook',
@@ -42,14 +42,14 @@ export const contacts: Contact[] = [
   //   link: 'https://twitter.com/tfkhdyt142',
   // },
   {
-    name: 'Instagram',
-    label: '@_tfkhdyt_',
-    link: 'https://www.instagram.com/_tfkhdyt_/',
-  },
-  {
     name: 'LinkedIn',
     label: 'Taufik Hidayat',
     link: 'https://www.linkedin.com/in/tfkhdyt142/',
+  },
+  {
+    name: 'Instagram',
+    label: '@_tfkhdyt_',
+    link: 'https://www.instagram.com/_tfkhdyt_/',
   },
   // {
   //   name: 'Showwcase',
