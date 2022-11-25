@@ -22,6 +22,11 @@ export const contacts: Contact[] = [
     link: 'https://t.me/tfkhdyt',
   },
   {
+    name: 'Codeberg',
+    label: 'tfkhdyt',
+    link: 'https://codeberg.org/tfkhdyt',
+  },
+  {
     name: 'GitHub',
     label: 'tfkhdyt',
     link: 'https://github.com/tfkhdyt',
@@ -46,11 +51,11 @@ export const contacts: Contact[] = [
     label: 'Taufik Hidayat',
     link: 'https://www.linkedin.com/in/tfkhdyt142/',
   },
-  {
+  /* {
     name: 'Instagram',
     label: '@_tfkhdyt_',
     link: 'https://www.instagram.com/_tfkhdyt_/',
-  },
+  }, */
   // {
   //   name: 'Showwcase',
   //   label: 'tfkhdyt',
