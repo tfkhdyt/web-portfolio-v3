@@ -10,8 +10,8 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
-import { BsGithub } from 'react-icons/bs';
-import { HiExternalLink } from 'react-icons/hi';
+import { FiExternalLink } from 'react-icons/fi';
+import { GoRepo } from 'react-icons/go';
 
 import { Project } from '@/data/Projects/project';
 import { skills } from '@/data/Skills/skills';
@@ -55,35 +55,23 @@ const ProjectCard: FC<Props> = ({ project }) => {
         >
           {project.link.github && (
             <Link href={project.link.github} target='_blank'>
-              <Box
-                className={`umami--click--${project.name.replaceAll(
-                  ' ',
-                  '-'
-                )}-Source_Code`}
-                title='Source Code'
-              >
+              <Box title='Repository'>
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
-                  <BsGithub size={24} />
+                  <GoRepo size={20} />
                 </ActionIcon>
               </Box>
             </Link>
           )}
           {project.link.demo && (
             <Link href={project.link.demo} target='_blank'>
-              <Box
-                className={`umami--click--${project.name.replaceAll(
-                  ' ',
-                  '-'
-                )}-Demo`}
-                title='Demo'
-              >
+              <Box title='Demo'>
                 <ActionIcon
                   component='a'
                   target='_blank'
                   color={dark ? undefined : 'dark'}
                   size='lg'
                 >
-                  <HiExternalLink size={24} />
+                  <FiExternalLink size={21} />
                 </ActionIcon>
               </Box>
             </Link>
