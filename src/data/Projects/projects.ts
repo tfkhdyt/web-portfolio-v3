@@ -6,7 +6,7 @@ export const projects: Project[] = [
     category: 'API',
     desc: 'Dicoding Intermediate Back-end Submission rewritten in Go',
     link: {
-      github: 'https://github.com/tfkhdyt/openmusic-go',
+      github: 'https://codeberg.org/tfkhdyt/openmusic-go',
       demo: null,
     },
     tech: ['Go', 'Gin', 'PostgreSQL'],
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     desc: 'Third revision of my portfolio website',
     link: {
       demo: 'https://www.tfkhdyt.my.id',
-      github: 'https://github.com/tfkhdyt/web-portfolio-v3/',
+      github: 'https://codeberg.org/tfkhdyt/web-portfolio-v3',
     },
     tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
   },
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My Linux desktop dotfiles',
     link: {
-      github: 'https://github.com/tfkhdyt/dotfiles',
+      github: 'https://codeberg.org/tfkhdyt/dotfiles',
       demo: null,
     },
     tech: ['GNU/Linux'],
