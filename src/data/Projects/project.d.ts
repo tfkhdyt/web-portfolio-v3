@@ -8,6 +8,6 @@ export interface Project {
   tech: typeof skills[number]['name'][];
   link: {
     demo: string | null;
-    github: string | null;
+    repo: string | null;
   };
 }

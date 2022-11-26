@@ -53,8 +53,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
             alignItems: 'center',
           }}
         >
-          {project.link.github && (
-            <Link href={project.link.github} target='_blank'>
+          {project.link.repo && (
+            <Link href={project.link.repo} target='_blank'>
               <Box title='Repository'>
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <GoRepo size={20} />

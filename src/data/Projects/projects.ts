@@ -6,7 +6,7 @@ export const projects: Project[] = [
     category: 'API',
     desc: 'Dicoding Intermediate Back-end Submission rewritten in Go',
     link: {
-      github: 'https://codeberg.org/tfkhdyt/openmusic-go',
+      repo: 'https://codeberg.org/tfkhdyt/openmusic-go',
       demo: null,
     },
     tech: ['Go', 'Gin', 'PostgreSQL'],
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     desc: 'Third revision of my portfolio website',
     link: {
       demo: 'https://www.tfkhdyt.my.id',
-      github: 'https://codeberg.org/tfkhdyt/web-portfolio-v3',
+      repo: 'https://codeberg.org/tfkhdyt/web-portfolio-v3',
     },
     tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
   },
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     desc: 'Simple Todo List App with Authentication',
     link: {
       demo: 'http://tfkhdyt-todo-list.vercel.app/',
-      github: 'https://github.com/tfkhdyt/todo-prisma',
+      repo: 'https://github.com/tfkhdyt/todo-prisma',
     },
     tech: [
       'TypeScript',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     desc: 'Metaseach-engine, based on SearXNG',
     link: {
       demo: 'https://gatotkaca.tfkhdyt.my.id',
-      github: 'https://github.com/tfkhdyt/gatotkaca',
+      repo: 'https://github.com/tfkhdyt/gatotkaca',
     },
     tech: ['Python'],
   },
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     desc: 'Roadmap to become a Full Stack Developer',
     link: {
       demo: 'https://roadmap.tfkhdyt.my.id',
-      github: 'https://github.com/tfkhdyt/full-stack-roadmap',
+      repo: 'https://github.com/tfkhdyt/full-stack-roadmap',
     },
     tech: [
       'TypeScript',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     desc: 'Second revision of my portfolio website',
     link: {
       demo: 'https://v2.tfkhdyt.my.id',
-      github: 'https://github.com/tfkhdyt/web-portfolio',
+      repo: 'https://github.com/tfkhdyt/web-portfolio',
     },
     tech: ['TypeScript', 'Next.js', 'Tailwind CSS', 'daisyUI', 'Framer Motion'],
   },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'Golang port of whatsapp-status-trimmer (Node.js)',
     link: {
-      github: 'https://github.com/tfkhdyt/wast-go',
+      repo: 'https://github.com/tfkhdyt/wast-go',
       demo: null,
     },
     tech: ['Go'],
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My Linux desktop dotfiles',
     link: {
-      github: 'https://codeberg.org/tfkhdyt/dotfiles',
+      repo: 'https://codeberg.org/tfkhdyt/dotfiles',
       demo: null,
     },
     tech: ['GNU/Linux'],
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Books management app',
     link: {
-      github: 'https://github.com/tfkhdyt/bookstore',
+      repo: 'https://github.com/tfkhdyt/bookstore',
       demo: 'https://bookstore.tfkhdyt.my.id/',
     },
     tech: [
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My assignments during the VSGA Junior Web Developer certification program from BPPTIK',
     link: {
-      github: 'https://github.com/tfkhdyt/vsga-jwd',
+      repo: 'https://github.com/tfkhdyt/vsga-jwd',
       demo: null,
     },
     tech: ['PHP', 'Tailwind CSS'],
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     category: 'API',
     desc: 'REST API to send message from HTML form into Telegram Messages',
     link: {
-      github: 'https://github.com/tfkhdyt/message-form-to-telegram-api',
+      repo: 'https://github.com/tfkhdyt/message-form-to-telegram-api',
       demo: null,
     },
     tech: ['TypeScript', 'Node.js', 'NestJS', 'Telegraf'],
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Popcat.click clone with Jokowi as the character',
     link: {
-      github: 'https://github.com/tfkhdyt/popclick',
+      repo: 'https://github.com/tfkhdyt/popclick',
       demo: null,
     },
     tech: ['JavaScript', 'React', 'Bootstrap'],
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Web app to solve some linear algebra and matrices problems',
     link: {
-      github: 'https://github.com/tfkhdyt/tugas-akhir-aljabar-linier-matriks',
+      repo: 'https://github.com/tfkhdyt/tugas-akhir-aljabar-linier-matriks',
       demo: 'https://aljabar-linier-matriks-kelompok-2.vercel.app/',
     },
     tech: ['JavaScript', 'Tailwind CSS', 'Next.js', 'Framer Motion'],
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My assignments during the IDCamp 2022',
     link: {
-      github: 'https://github.com/tfkhdyt/IDCamp2022',
+      repo: 'https://github.com/tfkhdyt/IDCamp2022',
       demo: null,
     },
     tech: ['JavaScript', 'Node.js', 'Hapi.js', 'Redis', 'RabbitMQ'],
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'A web app that will generate a random quote for you',
     link: {
-      github: 'https://github.com/tfkhdyt/random-quote-generator',
+      repo: 'https://github.com/tfkhdyt/random-quote-generator',
       demo: 'https://quotes.tfkhdyt.my.id/',
     },
     tech: ['TypeScript', 'Next.js', 'Tailwind CSS'],
@@ -179,7 +179,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Free and Open Source WhatsApp Sticker Generator Bot',
     link: {
-      github: 'https://github.com/tfkhdyt/wa-sticker-bot',
+      repo: 'https://github.com/tfkhdyt/wa-sticker-bot',
       demo: 'https://wa.me/6285156002842',
     },
     tech: ['TypeScript', 'Node.js', 'whatsapp-web.js'],
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'WhatsApp Bot to automatically respond to salam',
     link: {
-      github: 'https://github.com/tfkhdyt/auto-salam-responder',
+      repo: 'https://github.com/tfkhdyt/auto-salam-responder',
       demo: null,
     },
     tech: ['TypeScript', 'Node.js', 'whatsapp-web.js'],
@@ -199,7 +199,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Google Translate on Telegram Bot',
     link: {
-      github: 'https://github.com/tfkhdyt/translate-bot',
+      repo: 'https://github.com/tfkhdyt/translate-bot',
       demo: 'https://t.me/tfkhdyt_translate_bot',
     },
     tech: ['TypeScript', 'Node.js', 'Telegraf'],
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'Simple Node.js script to trim and split a video into 30s videos for WhatsApp Status',
     link: {
-      github: 'https://github.com/tfkhdyt/whatsapp-status-trimmer',
+      repo: 'https://github.com/tfkhdyt/whatsapp-status-trimmer',
       demo: null,
     },
     tech: ['TypeScript', 'Node.js'],
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     category: 'API',
     desc: 'Cinema XXI REST API using Web Scraping Method with NestJS, TypeScript, and Cheerio',
     link: {
-      github: 'https://github.com/tfkhdyt/21cineplex-api',
+      repo: 'https://github.com/tfkhdyt/21cineplex-api',
       demo: 'https://tfkhdyt-21cineplex-api.herokuapp.com/docs/',
     },
     tech: ['TypeScript', 'Node.js', 'NestJS'],
@@ -229,7 +229,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Indonesian Dictionary in Telegram using web scraping method',
     link: {
-      github: 'https://github.com/tfkhdyt/kbbi-bot',
+      repo: 'https://github.com/tfkhdyt/kbbi-bot',
       demo: 'https://t.me/tfkhdyt_kbbi_bot',
     },
     tech: ['TypeScript', 'Node.js', 'Telegraf'],
@@ -239,7 +239,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'My old portfolio website',
     link: {
-      github: 'https://github.com/tfkhdyt/tfkhdyt-portfolio',
+      repo: 'https://github.com/tfkhdyt/tfkhdyt-portfolio',
       demo: 'https://tfkhdyt.web.app',
     },
     tech: ['JavaScript', 'Bootstrap'],
@@ -249,7 +249,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My college assignments',
     link: {
-      github: 'https://github.com/tfkhdyt/tugas-kuliah',
+      repo: 'https://github.com/tfkhdyt/tugas-kuliah',
       demo: null,
     },
     tech: ['Java', 'C++', 'PHP'],
@@ -259,7 +259,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'Automation script to encrypt all files inside a folder',
     link: {
-      github: 'https://github.com/tfkhdyt/bayarcoek',
+      repo: 'https://github.com/tfkhdyt/bayarcoek',
       demo: null,
     },
     tech: ['JavaScript', 'Node.js'],
@@ -269,7 +269,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Telegram Bot to find anime details from a screenshot',
     link: {
-      github: 'https://github.com/tfkhdyt/anime-naon-ieu',
+      repo: 'https://github.com/tfkhdyt/anime-naon-ieu',
       demo: 'https://t.me/tfkhdyt_ani_bot',
     },
     tech: ['JavaScript', 'Node.js', 'Telegraf'],
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Web app to search movie information',
     link: {
-      github: 'https://github.com/tfkhdyt/imdb',
+      repo: 'https://github.com/tfkhdyt/imdb',
       demo: 'https://movie.tfkhdyt.my.id/',
     },
     tech: ['JavaScript', 'Bootstrap'],
@@ -289,7 +289,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Web app to learn JavaScript in 30 days',
     link: {
-      github: 'https://github.com/tfkhdyt/30DaysJagoJavaScript',
+      repo: 'https://github.com/tfkhdyt/30DaysJagoJavaScript',
       demo: 'https://belajar-js.tfkhdyt.my.id/',
     },
     tech: ['JavaScript', 'Bootstrap'],
@@ -299,7 +299,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'SMKN 7 Baleendah school website with dynamic data',
     link: {
-      github: 'https://github.com/tfkhdyt/web-sekolah',
+      repo: 'https://github.com/tfkhdyt/web-sekolah',
       demo: null,
     },
     tech: ['PHP', 'Bootstrap', 'MySQL'],
@@ -309,7 +309,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Telegram Bot to download youtube videos',
     link: {
-      github: 'https://github.com/tfkhdyt/youtube-dl-bot',
+      repo: 'https://github.com/tfkhdyt/youtube-dl-bot',
       demo: null,
     },
     tech: ['JavaScript', 'Node.js', 'Telegraf'],
@@ -319,7 +319,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Simple Donation Page',
     link: {
-      github: 'https://github.com/tfkhdyt/donation-page',
+      repo: 'https://github.com/tfkhdyt/donation-page',
       demo: 'https://donate.tfkhdyt.my.id/',
     },
     tech: ['JavaScript', 'Bootstrap'],
@@ -329,7 +329,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Simple CRUD with Authentication',
     link: {
-      github: 'https://github.com/tfkhdyt/data-tanaman-express',
+      repo: 'https://github.com/tfkhdyt/data-tanaman-express',
       demo: null,
     },
     tech: ['JavaScript', 'Node.js', 'Express.js', 'Bootstrap', 'MongoDB'],
@@ -339,7 +339,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Simple personal finance manager',
     link: {
-      github: 'https://github.com/tfkhdyt/myDompet',
+      repo: 'https://github.com/tfkhdyt/myDompet',
       demo: null,
     },
     tech: ['PHP', 'Bootstrap', 'MySQL'],
@@ -349,7 +349,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'User-friendly front-end for youtube-dl',
     link: {
-      github: 'https://github.com/tfkhdyt/youtube-dl',
+      repo: 'https://github.com/tfkhdyt/youtube-dl',
       demo: null,
     },
     tech: ['Bash'],
@@ -359,7 +359,7 @@ export const projects: Project[] = [
     category: 'Website',
     desc: 'Restaurant website with multi-role',
     link: {
-      github: 'https://github.com/tfkhdyt/restoran',
+      repo: 'https://github.com/tfkhdyt/restoran',
       demo: null,
     },
     tech: ['PHP', 'Bootstrap', 'MySQL'],
@@ -369,7 +369,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'Simplified version of Ultra Video Compressor',
     link: {
-      github: 'https://github.com/tfkhdyt/ivc',
+      repo: 'https://github.com/tfkhdyt/ivc',
       demo: null,
     },
     tech: ['Python'],
@@ -379,7 +379,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Telegram Bot to generate degenerated copypasta memes',
     link: {
-      github: 'https://github.com/tfkhdyt/MyCopyPastaBot-src',
+      repo: 'https://github.com/tfkhdyt/MyCopyPastaBot-src',
       demo: 'https://t.me/MyCopyPastaBot',
     },
     tech: ['Python'],
@@ -389,7 +389,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'Simple CRUD with Python and SQLite',
     link: {
-      github: 'https://github.com/tfkhdyt/crud-python',
+      repo: 'https://github.com/tfkhdyt/crud-python',
       demo: null,
     },
     tech: ['Python', 'SQLite'],
@@ -399,7 +399,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'A script to compress video size without losing video quality on Termux',
     link: {
-      github: 'https://github.com/tfkhdyt/uvc',
+      repo: 'https://github.com/tfkhdyt/uvc',
       demo: null,
     },
     tech: ['Bash'],
@@ -409,7 +409,7 @@ export const projects: Project[] = [
     category: 'CLI',
     desc: 'User-friendly front-end for Spotify-dl by SwapnilSoni1999',
     link: {
-      github: 'https://github.com/tfkhdyt/SpotifyDL',
+      repo: 'https://github.com/tfkhdyt/SpotifyDL',
       demo: null,
     },
     tech: ['Bash'],
@@ -419,7 +419,7 @@ export const projects: Project[] = [
     category: 'Bot',
     desc: 'Telegram Bot to search movies information',
     link: {
-      github: 'https://github.com/tfkhdyt/tfkhdyt-movie-bot',
+      repo: 'https://github.com/tfkhdyt/tfkhdyt-movie-bot',
       demo: 'https://t.me/TFKHDYTMovieBot',
     },
     tech: ['JavaScript', 'Node.js', 'Telegraf'],
