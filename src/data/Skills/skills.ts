@@ -27,6 +27,11 @@ export const skills: Skill[] = [
     icon: 'golang.svg',
   },
   {
+    name: 'Rust',
+    category: 'Language',
+    icon: 'rust.svg',
+  },
+  {
     name: 'Python',
     category: 'Language',
     icon: 'python.svg',
