@@ -19,7 +19,6 @@ const SwitchToggle = () => {
         color={colorScheme === 'dark' ? 'gray' : 'dark'}
         onLabel={<BsFillSunFill size={14} color='yellow' />}
         offLabel={<BsFillMoonFill size={14} color={theme.colors.violet[5]} />}
-        mb='sm'
       />
     </Group>
   );
