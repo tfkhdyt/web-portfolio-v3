@@ -47,10 +47,16 @@ const MyHeader = () => {
           <MediaQuery smallerThan='sm' styles={{ display: 'none' }}>
             <Group spacing={0.5}>
               {headerItems.map((item, idx) => (
-                <Link href={item.link} key={idx} scroll={false}>
+                <Link
+                  href={item.link}
+                  key={idx}
+                  scroll={false}
+                  target={item.label === 'Blog' ? '_blank' : undefined}
+                >
                   <Button
                     variant='subtle'
                     size='lg'
+                    compact
                     color={item.link === path ? 'violet' : 'gray'}
                   >
                     {item.label}
@@ -60,15 +66,6 @@ const MyHeader = () => {
             </Group>
           </MediaQuery>
         </Box>
-        {/* <ActionIcon
-          color={dark ? 'yellow' : 'blue'}
-          variant='light'
-          onClick={() => toggleColorScheme()}
-          title='Toggle color scheme'
-          size='lg'
-        >
-          {dark ? <BsFillSunFill size={16} /> : <BsFillMoonFill size={16} />}
-        </ActionIcon> */}
         <SwitchToggle />
       </Container>
     </Header>

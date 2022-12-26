@@ -36,6 +36,7 @@ const MyNavbar = () => {
             <Link
               href={item.link}
               scroll={false}
+              target={item.label === 'Blog' ? '_blank' : undefined}
               style={{ textDecoration: 'none' }}
             >
               <Text mx='md' fz='md' weight={600} c={isDark ? 'dark.0' : 'dark'}>

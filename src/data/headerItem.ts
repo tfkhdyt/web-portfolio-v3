@@ -21,4 +21,8 @@ export const headerItems: HeaderItem[] = [
     label: 'Contact',
     link: '/contact',
   },
+  {
+    label: 'Blog',
+    link: 'https://blog.tfkhdyt.my.id',
+  },
 ];
