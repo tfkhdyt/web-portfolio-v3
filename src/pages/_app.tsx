@@ -28,7 +28,7 @@ Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-const rubik = Rubik({ subsets: ['latin'] });
+const rubik = Rubik({ subsets: ['latin'], display: 'swap' });
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const preferredColorScheme = useColorScheme();
