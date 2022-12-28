@@ -38,16 +38,16 @@ export const projects: Project[] = [
       'React Query',
     ],
   },
-  {
-    name: 'Gatotkaca',
-    category: 'Website',
-    desc: 'Metaseach-engine, based on SearXNG',
-    link: {
-      demo: 'https://gatotkaca.tfkhdyt.my.id',
-      repo: 'https://github.com/tfkhdyt/gatotkaca',
-    },
-    tech: ['Python'],
-  },
+  // {
+  //   name: 'Gatotkaca',
+  //   category: 'Website',
+  //   desc: 'Metaseach-engine, based on SearXNG',
+  //   link: {
+  //     demo: 'https://gatotkaca.tfkhdyt.my.id',
+  //     repo: 'https://github.com/tfkhdyt/gatotkaca',
+  //   },
+  //   tech: ['Python'],
+  // },
   {
     name: 'Full Stack Roadmap',
     category: 'Website',
@@ -134,16 +134,16 @@ export const projects: Project[] = [
     },
     tech: ['TypeScript', 'Node.js', 'NestJS', 'Telegraf'],
   },
-  {
-    name: 'POPOWI',
-    category: 'Website',
-    desc: 'Popcat.click clone with Jokowi as the character',
-    link: {
-      repo: 'https://github.com/tfkhdyt/popclick',
-      demo: null,
-    },
-    tech: ['JavaScript', 'React', 'Bootstrap'],
-  },
+  // {
+  //   name: 'POPOWI',
+  //   category: 'Website',
+  //   desc: 'Popcat.click clone with Jokowi as the character',
+  //   link: {
+  //     repo: 'https://github.com/tfkhdyt/popclick',
+  //     demo: null,
+  //   },
+  //   tech: ['JavaScript', 'React', 'Bootstrap'],
+  // },
   {
     name: 'LAM Final Project',
     category: 'Website',
@@ -374,16 +374,16 @@ export const projects: Project[] = [
     },
     tech: ['Python'],
   },
-  {
-    name: 'Degenerator Bot',
-    category: 'Bot',
-    desc: 'Telegram Bot to generate degenerated copypasta memes',
-    link: {
-      repo: 'https://github.com/tfkhdyt/MyCopyPastaBot-src',
-      demo: 'https://t.me/MyCopyPastaBot',
-    },
-    tech: ['Python'],
-  },
+  // {
+  //   name: 'Degenerator Bot',
+  //   category: 'Bot',
+  //   desc: 'Telegram Bot to generate degenerated copypasta memes',
+  //   link: {
+  //     repo: 'https://github.com/tfkhdyt/MyCopyPastaBot-src',
+  //     demo: 'https://t.me/MyCopyPastaBot',
+  //   },
+  //   tech: ['Python'],
+  // },
   {
     name: 'CRUD Python',
     category: 'CLI',
