@@ -12,9 +12,9 @@ import { Worker } from '@react-pdf-viewer/core';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import { Provider } from 'jotai';
 import type { AppProps } from 'next/app';
-import { Router } from 'next/router';
+// import { Router } from 'next/router';
 import { DefaultSeo } from 'next-seo';
-import NProgress from 'nprogress';
+// import NProgress from 'nprogress';
 import { FC, useEffect } from 'react';
 
 import { variants } from '@/animations/variants';
@@ -22,11 +22,11 @@ import Layout from '@/components/Templates/Layout';
 import { metaTagsData } from '@/data/metaTags';
 import messageForHackers from '@/utils/messageForHackers';
 
-NProgress.configure({ showSpinner: false });
+/* NProgress.configure({ showSpinner: false });
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
-Router.events.on('routeChangeError', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done()); */
 
 const rubik = Rubik({ subsets: ['latin'], display: 'swap' });
 
