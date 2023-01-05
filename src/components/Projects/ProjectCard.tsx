@@ -10,8 +10,8 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+import { BiGitRepoForked } from 'react-icons/bi';
 import { FiExternalLink } from 'react-icons/fi';
-import { GoRepo } from 'react-icons/go';
 
 import { Project } from '@/data/Projects/project';
 import { skills } from '@/data/Skills/skills';
@@ -57,7 +57,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
             <Link href={project.link.repo} target='_blank'>
               <Box title='Repository'>
                 <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
-                  <GoRepo size={20} />
+                  <BiGitRepoForked size={20} />
                 </ActionIcon>
               </Box>
             </Link>
