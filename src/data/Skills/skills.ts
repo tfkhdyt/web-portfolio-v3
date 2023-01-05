@@ -35,21 +35,25 @@ export const skills: Skill[] = [
     name: 'Python',
     category: 'Language',
     icon: 'python.svg',
+    show: false,
   },
   {
     name: 'PHP',
     category: 'Language',
     icon: 'php.svg',
+    show: false,
   },
   {
     name: 'Java',
     category: 'Language',
     icon: 'java.svg',
+    show: false,
   },
   {
     name: 'C++',
     category: 'Language',
     icon: 'cpp.svg',
+    show: false,
   },
   {
     name: 'Bash',
@@ -95,6 +99,7 @@ export const skills: Skill[] = [
     name: 'Zustand',
     category: 'Framework/Library',
     icon: 'zustand.png',
+    show: false,
   },
   {
     name: 'React Hook Form',
@@ -140,6 +145,7 @@ export const skills: Skill[] = [
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
+    show: false,
   },
   {
     name: 'Tailwind CSS',
@@ -205,5 +211,15 @@ export const skills: Skill[] = [
     name: 'Arch Linux',
     category: 'Operating System',
     icon: 'arch.svg',
+  },
+  {
+    name: 'Debian',
+    category: 'Operating System',
+    icon: 'debian.png',
+  },
+  {
+    name: 'Ubuntu Server',
+    category: 'Operating System',
+    icon: 'ubuntu.svg',
   },
 ];

@@ -38,7 +38,7 @@ const SkillsPage = () => {
               spacing='lg'
             >
               {skills
-                .filter((skill) => skill.category === category)
+                .filter((skill) => skill.category === category && skill.show !== false)
                 .map((skill) => (
                   <SkillCard skill={skill} key={skill.name} />
                 ))}
