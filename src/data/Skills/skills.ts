@@ -71,6 +71,11 @@ export const skills: Skill[] = [
     icon: 'next.svg',
   },
   {
+    name: 'SvelteKit',
+    category: 'Framework/Library',
+    icon: 'sveltekit.svg',
+  },
+  {
     name: 'Node.js',
     category: 'Framework/Library',
     icon: 'node.png',
@@ -95,42 +100,42 @@ export const skills: Skill[] = [
     category: 'Framework/Library',
     icon: 'telegraf.svg',
   },
-  {
-    name: 'Zustand',
-    category: 'Framework/Library',
-    icon: 'zustand.png',
-    show: false,
-  },
-  {
-    name: 'React Hook Form',
-    category: 'Framework/Library',
-    icon: 'react-hook-form.svg',
-  },
-  {
-    name: 'Jotai',
-    category: 'Framework/Library',
-    icon: 'jotai.png',
-  },
+  // {
+  //   name: 'Zustand',
+  //   category: 'Framework/Library',
+  //   icon: 'zustand.png',
+  //   show: false,
+  // },
+  // {
+  //   name: 'React Hook Form',
+  //   category: 'Framework/Library',
+  //   icon: 'react-hook-form.svg',
+  // },
+  // {
+  //   name: 'Jotai',
+  //   category: 'Framework/Library',
+  //   icon: 'jotai.png',
+  // },
   {
     name: 'Prisma',
     category: 'Framework/Library',
     icon: 'prisma.png',
   },
-  {
-    name: 'NextAuth',
-    category: 'Framework/Library',
-    icon: 'nextauth.png',
-  },
-  {
-    name: 'Framer Motion',
-    category: 'Framework/Library',
-    icon: 'framer-motion.png',
-  },
-  {
-    name: 'React Query',
-    category: 'Framework/Library',
-    icon: 'react-query.svg',
-  },
+  // {
+  //   name: 'NextAuth',
+  //   category: 'Framework/Library',
+  //   icon: 'nextauth.png',
+  // },
+  // {
+  //   name: 'Framer Motion',
+  //   category: 'Framework/Library',
+  //   icon: 'framer-motion.png',
+  // },
+  // {
+  //   name: 'React Query',
+  //   category: 'Framework/Library',
+  //   icon: 'react-query.svg',
+  // },
   {
     name: 'whatsapp-web.js',
     category: 'Framework/Library',
