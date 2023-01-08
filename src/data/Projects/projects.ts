@@ -2,11 +2,21 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'M/M/s Queue Theory Calculator',
+    category: 'Website',
+    desc: 'Calculator to solve M/M/s queue theory problem, written in TypeScript and SvelteKit.',
+    link: {
+      demo: 'https://queue.tfkhdyt.my.id',
+      repo: 'https://github.com/tfkhdyt/mms-queue-theory-calculator',
+    },
+    tech: ['TypeScript', 'SvelteKit', 'Tailwind CSS'],
+  },
+  {
     name: 'openmusic-go',
     category: 'API',
     desc: 'Dicoding Intermediate Back-end Submission rewritten in Go',
     link: {
-      repo: 'https://codeberg.org/tfkhdyt/openmusic-go',
+      repo: 'https://github.com/tfkhdyt/openmusic-go',
       demo: null,
     },
     tech: ['Go', 'Gin', 'PostgreSQL'],
@@ -17,7 +27,7 @@ export const projects: Project[] = [
     desc: 'Third revision of my portfolio website',
     link: {
       demo: 'https://www.tfkhdyt.my.id',
-      repo: 'https://codeberg.org/tfkhdyt/web-portfolio-v3',
+      repo: 'https://github.com/tfkhdyt/web-portfolio-v3',
     },
     tech: ['TypeScript', 'Next.js', 'Mantine', 'Framer Motion', 'Jotai'],
   },
@@ -90,7 +100,7 @@ export const projects: Project[] = [
     category: 'Misc',
     desc: 'My Linux desktop dotfiles',
     link: {
-      repo: 'https://codeberg.org/tfkhdyt/dotfiles',
+      repo: 'https://github.com/tfkhdyt/dotfiles',
       demo: null,
     },
     tech: ['GNU/Linux'],
