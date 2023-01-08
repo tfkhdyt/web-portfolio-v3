@@ -6,11 +6,11 @@ export const contacts: Contact[] = [
     label: '@tfkhdyt',
     link: 'https://fosstodon.org/@tfkhdyt',
   },
-  {
-    name: 'Matrix',
-    label: '@tfkhdyt',
-    link: 'https://matrix.to/#/@tfkhdyt:matrix.org',
-  },
+  // {
+  //   name: 'Matrix',
+  //   label: '@tfkhdyt',
+  //   link: 'https://matrix.to/#/@tfkhdyt:matrix.org',
+  // },
   {
     name: 'Email',
     label: 'tfkhdyt@proton.me',
@@ -21,11 +21,11 @@ export const contacts: Contact[] = [
     label: '@tfkhdyt',
     link: 'https://t.me/tfkhdyt',
   },
-  {
-    name: 'Codeberg',
-    label: 'tfkhdyt',
-    link: 'https://codeberg.org/tfkhdyt',
-  },
+  // {
+  //   name: 'Codeberg',
+  //   label: 'tfkhdyt',
+  //   link: 'https://codeberg.org/tfkhdyt',
+  // },
   {
     name: 'GitHub',
     label: 'tfkhdyt',
