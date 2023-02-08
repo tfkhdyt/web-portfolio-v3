@@ -9,7 +9,7 @@ export const projects: Project[] = [
       demo: null,
       repo: 'https://github.com/tfkhdyt/forum-api',
     },
-    tech: ['JavaScript', 'Hapi.js', 'PostgreSQL'],
+    tech: ['JavaScript', 'Node.js', 'Hapi.js', 'PostgreSQL'],
   },
   {
     name: 'M/M/s Queue Theory Calculator',
