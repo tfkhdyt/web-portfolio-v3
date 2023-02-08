@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Forum API',
+    category: 'API',
+    desc: 'Dicoding Expert Back-end Submission',
+    link: {
+      demo: null,
+      repo: 'https://github.com/tfkhdyt/forum-api',
+    },
+    tech: ['JavaScript', 'Hapi.js', 'PostgreSQL'],
+  },
+  {
     name: 'M/M/s Queue Theory Calculator',
     category: 'Website',
     desc: 'Calculator to solve M/M/s queue theory problem, written in TypeScript and SvelteKit.',
