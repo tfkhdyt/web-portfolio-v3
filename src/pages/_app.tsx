@@ -15,12 +15,12 @@ import type { AppProps } from 'next/app';
 // import { Router } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 // import NProgress from 'nprogress';
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 
 import { variants } from '@/animations/variants';
 import Layout from '@/components/Templates/Layout';
 import { metaTagsData } from '@/data/metaTags';
-import messageForHackers from '@/utils/messageForHackers';
+// import messageForHackers from '@/utils/messageForHackers';
 
 /* NProgress.configure({ showSpinner: false });
 
@@ -44,9 +44,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
 
   useHotkeys([['mod+J', () => toggleColorScheme()]]);
 
-  useEffect(() => {
-    messageForHackers();
-  }, []);
+  // useEffect(() => {
+  //   messageForHackers();
+  // }, []);
 
   return (
     <ColorSchemeProvider
