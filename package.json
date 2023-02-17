@@ -22,7 +22,7 @@
     "@react-pdf-viewer/core": "^3.11.0",
     "@react-pdf-viewer/default-layout": "^3.11.0",
     "framer-motion": "^9.0.4",
-    "jotai": "^1.13.1",
+    "jotai": "^2.0.2",
     "next": "^13.1.6",
     "next-seo": "^5.15.0",
     "nprogress": "^0.2.0",
@@ -35,6 +35,7 @@
     "zod": "^3.20.6"
   },
   "devDependencies": {
+    "@swc-jotai/react-refresh": "^0.0.4",
     "@types/node": "^18.13.0",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.28",
