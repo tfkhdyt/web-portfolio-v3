@@ -55,9 +55,9 @@ const MyHeader = () => {
                 >
                   <Button
                     variant='subtle'
-                    size='lg'
+                    size='md'
                     compact
-                    color={item.link === path ? 'violet' : 'gray'}
+                    color={item.link === path ? 'violet' : 'dark'}
                   >
                     {item.label}
                   </Button>
