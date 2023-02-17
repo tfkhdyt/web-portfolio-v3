@@ -56,7 +56,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
           {project.link.repo && (
             <Link href={project.link.repo} target='_blank'>
               <Box title='Repository'>
-                <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
+                <ActionIcon color={dark ? undefined : 'dark'} size='lg' component='a'>
                   <BiGitRepoForked size={20} />
                 </ActionIcon>
               </Box>
