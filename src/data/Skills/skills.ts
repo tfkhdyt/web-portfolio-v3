@@ -58,7 +58,7 @@ export const skills: Skill[] = [
   {
     name: 'Bash',
     category: 'Language',
-    icon: 'bash.svg',
+    icon: 'bash.png',
   },
   {
     name: 'React',
