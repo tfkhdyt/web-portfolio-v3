@@ -20,6 +20,7 @@ const createMessageSchema = z.object({
       invalid_type_error: 'Message should be a string',
     })
     .max(100, 'Max number of message is 100'),
+  token: z.string().optional(),
 });
 
 const userId = process.env.USER_ID as string;
@@ -39,7 +40,26 @@ export default async function handler(
       });
     }
 
-    const { name, email, message } = body.data;
+    const { name, email, message, token } = body.data;
+
+    const formData = new FormData();
+    formData.append('secret', process.env.TURNSTILE_SECRET_KEY as string);
+    formData.append('response', token as string);
+
+    const url = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+    const result = await fetch(url, {
+      body: formData,
+      method: 'POST',
+    });
+
+    const outcome = await result.json();
+    if (!outcome.success) {
+      return res.status(401).json({
+        status: 'fail',
+        errors: ['You should complete the turnstile challenge first'],
+      });
+    }
+
     const _message = `*${name} (${email}) says:*
 ${message}`;
 

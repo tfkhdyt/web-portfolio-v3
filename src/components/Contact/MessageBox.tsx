@@ -1,6 +1,8 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Group, Text, Textarea, TextInput } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiSend } from 'react-icons/fi';
 import { z } from 'zod';
@@ -27,6 +29,8 @@ const MessageBox = () => {
   } = useForm<MessageType>({
     resolver: zodResolver(messageSchema),
   });
+  const [token, setToken] = useState('');
+  const turnstileWidgetRef = useRef<TurnstileInstance>(null);
 
   const onSubmit = async (data: MessageType) => {
     showNotification({
@@ -44,6 +48,7 @@ const MessageBox = () => {
       },
       body: JSON.stringify({
         ...data,
+        token,
         message: String(data.message),
       }),
     });
@@ -59,6 +64,7 @@ const MessageBox = () => {
     updateSendMessageNotif('success', 'Thank you for reaching me out');
 
     reset();
+    turnstileWidgetRef.current?.reset();
   };
 
   return (
@@ -97,6 +103,12 @@ const MessageBox = () => {
               error={errors.message?.message}
             />
           </Group>
+          <Turnstile
+            siteKey='0x4AAAAAAAC6ajiD2yN039r2'
+            onSuccess={(token) => setToken(token)}
+            style={{ marginTop: '1rem' }}
+            ref={turnstileWidgetRef}
+          />
           <Button
             mt='md'
             size='md'
