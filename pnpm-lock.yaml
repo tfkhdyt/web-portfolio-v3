@@ -9,6 +9,7 @@ specifiers:
   '@mantine/hooks': ^5.10.4
   '@mantine/next': ^5.10.4
   '@mantine/notifications': ^5.10.4
+  '@marsidev/react-turnstile': ^0.0.7
   '@next/bundle-analyzer': ^13.1.6
   '@next/font': ^13.1.6
   '@react-pdf-viewer/core': ^3.11.0
@@ -50,6 +51,7 @@ dependencies:
   '@mantine/hooks': 5.10.4_react@18.2.0
   '@mantine/next': 5.10.4_pnokhhiiffeanlj7xihut5qdrq
   '@mantine/notifications': 5.10.4_zvr3twhaqlaxovla5vk46k3pgm
+  '@marsidev/react-turnstile': 0.0.7_biqbaboplfbrettd7655fr4n2y
   '@next/bundle-analyzer': 13.1.6
   '@next/font': 13.1.6
   '@react-pdf-viewer/core': 3.11.0_ghzlh6wwtt6ibjm74q4djayxxy
@@ -438,6 +440,16 @@ packages:
       react: '>=16.8.0'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@marsidev/react-turnstile/0.0.7_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-BWXZ6/ddE96cP/U3jkLO8wbJi6qOpE4wH67h6EkD57TRy4RSauBBYKRZkuUEpfgm2wdWoPukPz4LfnoV5KJGrQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@motionone/animation/10.15.1:

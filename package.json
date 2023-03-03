@@ -17,6 +17,7 @@
     "@mantine/hooks": "^5.10.4",
     "@mantine/next": "^5.10.4",
     "@mantine/notifications": "^5.10.4",
+    "@marsidev/react-turnstile": "^0.0.7",
     "@next/bundle-analyzer": "^13.1.6",
     "@next/font": "^13.1.6",
     "@react-pdf-viewer/core": "^3.11.0",
