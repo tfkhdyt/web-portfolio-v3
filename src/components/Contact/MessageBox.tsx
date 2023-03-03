@@ -1,11 +1,13 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Group, Text, Textarea, TextInput } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiSend } from 'react-icons/fi';
 import { z } from 'zod';
 
-import { handleSendMessageError } from '@/handlers/handleSendMessageError';
+// import { handleSendMessageError } from '@/handlers/handleSendMessageError';
 import { updateSendMessageNotif } from '@/lib/notifications/updateSendMessage';
 
 const messageSchema = z.object({
@@ -27,6 +29,8 @@ const MessageBox = () => {
   } = useForm<MessageType>({
     resolver: zodResolver(messageSchema),
   });
+  const [token, setToken] = useState('');
+  const turnstileWidgetRef = useRef<TurnstileInstance>(null);
 
   const onSubmit = async (data: MessageType) => {
     showNotification({
@@ -37,28 +41,30 @@ const MessageBox = () => {
       autoClose: false,
       disallowClose: true,
     });
-    const response = await fetch(
-      process.env.NEXT_PUBLIC_MESSAGE_FORM_API + '/message',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...data,
-          message: String(data.message),
-        }),
-      }
-    );
+    const response = await fetch('/api/message', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        ...data,
+        token,
+        message: String(data.message),
+      }),
+    });
     const dataResponse = await response.json();
     if (!response.ok) {
-      handleSendMessageError(response.status, dataResponse.message);
+      // handleSendMessageError(response.status, dataResponse.errors);
+      dataResponse.errors.forEach((err: string) => {
+        updateSendMessageNotif('error', err);
+      });
       return;
     }
 
     updateSendMessageNotif('success', 'Thank you for reaching me out');
 
     reset();
+    turnstileWidgetRef.current?.reset();
   };
 
   return (
@@ -97,6 +103,12 @@ const MessageBox = () => {
               error={errors.message?.message}
             />
           </Group>
+          <Turnstile
+            siteKey='0x4AAAAAAAC6ajiD2yN039r2'
+            onSuccess={(token) => setToken(token)}
+            style={{ marginTop: '1rem' }}
+            ref={turnstileWidgetRef}
+          />
           <Button
             mt='md'
             size='md'
