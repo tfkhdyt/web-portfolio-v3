@@ -42,7 +42,7 @@ export default async function handler(
 
     const { name, email, message, token } = body.data;
 
-    const formData = new FormData();
+    const formData = new URLSearchParams();
     formData.append('secret', process.env.TURNSTILE_SECRET_KEY as string);
     formData.append('response', token as string);
 
