@@ -104,7 +104,7 @@ const MessageBox = () => {
             />
           </Group>
           <Turnstile
-            siteKey='0x4AAAAAAAC6ajiD2yN039r2'
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY as string}
             onSuccess={(token) => setToken(token)}
             style={{ marginTop: '1rem' }}
             ref={turnstileWidgetRef}
