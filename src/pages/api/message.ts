@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { z } from 'zod';
 
-import { bot } from '@/lib/telegram/bot';
+import { Bot } from '@/lib/telegram/bot';
 
 const createMessageSchema = z.object({
   name: z.string({
@@ -62,6 +62,8 @@ export default async function handler(
 
     const _message = `*${name} (${email}) says:*
 ${message}`;
+
+    const bot = Bot.getInstance();
 
     try {
       await bot.telegram.sendMessage(userId, _message, {
