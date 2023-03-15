@@ -4,7 +4,7 @@ pre-commit:
       glob: '*.{ts,tsx,html,css}'
       run: pnpm prettier -w {staged_files}
     lint:
-      glob: '*.{ts,tsx,html,css}'
+      glob: '*.{ts,tsx}'
       run: pnpm eslint --fix {staged_files}
   parallel: true
 pre-push:
@@ -13,6 +13,6 @@ pre-push:
       glob: '*.{ts,tsx,html,css}'
       run: pnpm prettier -w {all_files}
     lint:
-      glob: '*.{ts,tsx,html,css}'
+      glob: '*.{ts,tsx}'
       run: pnpm eslint --fix {all_files}
   parallel: true
