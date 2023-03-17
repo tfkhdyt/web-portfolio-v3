@@ -11,8 +11,8 @@ pre-push:
   commands:
     format:
       glob: '*.{ts,tsx,html,css}'
-      run: pnpm prettier -w {all_files}
+      run: pnpm prettier -w {push_files}
     lint:
       glob: '*.{ts,tsx}'
-      run: pnpm eslint --fix {all_files}
+      run: pnpm eslint --fix {push_files}
   parallel: true
