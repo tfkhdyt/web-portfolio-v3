@@ -56,11 +56,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
           {project.link.repo && (
             <Link href={project.link.repo} target='_blank'>
               <Box title='Repository'>
-                <ActionIcon
-                  color={dark ? undefined : 'dark'}
-                  size='lg'
-                  component='a'
-                >
+                <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <BiGitRepoForked size={20} />
                 </ActionIcon>
               </Box>
@@ -69,12 +65,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
           {project.link.demo && (
             <Link href={project.link.demo} target='_blank'>
               <Box title='Demo'>
-                <ActionIcon
-                  component='a'
-                  target='_blank'
-                  color={dark ? undefined : 'dark'}
-                  size='lg'
-                >
+                <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
                   <FiExternalLink size={21} />
                 </ActionIcon>
               </Box>
@@ -98,6 +89,9 @@ const ProjectCard: FC<Props> = ({ project }) => {
                 src={`/images/tech/${skill.icon}`}
                 alt={skill.name}
                 fill
+                sizes='(max-width: 768px) 8vw,
+                  (max-width: 1200px) 16vw,
+                  32vw'
                 style={{ pointerEvents: 'none', objectFit: 'contain' }}
               />
             </Box>
