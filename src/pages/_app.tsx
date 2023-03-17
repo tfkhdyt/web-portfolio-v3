@@ -7,11 +7,10 @@ import {
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
-import { Rubik } from '@next/font/google';
-import { Worker } from '@react-pdf-viewer/core';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import { Provider } from 'jotai';
 import type { AppProps } from 'next/app';
+import { Rubik } from 'next/font/google';
 // import { Router } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 // import NProgress from 'nprogress';
@@ -113,16 +112,14 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
                         site_name: metaTagsData.title,
                       }}
                     />
-                    <Worker workerUrl='/workers/pdf.worker.min.js'>
-                      <a
-                        rel='me'
-                        href='https://fosstodon.org/@tfkhdyt'
-                        style={{ display: 'none' }}
-                      >
-                        Mastodon
-                      </a>
-                      <Component {...pageProps} />
-                    </Worker>
+                    <a
+                      rel='me'
+                      href='https://fosstodon.org/@tfkhdyt'
+                      style={{ display: 'none' }}
+                    >
+                      Mastodon
+                    </a>
+                    <Component {...pageProps} />
                   </m.div>
                 </AnimatePresence>
               </LazyMotion>
