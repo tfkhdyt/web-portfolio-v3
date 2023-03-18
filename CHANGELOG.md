@@ -1,0 +1,208 @@
+# Changelog
+All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
+
+- - -
+## 0.1.0 - 2023-03-18
+#### Bug Fixes
+- **(Card)** add whileTap for mobile - (4fd072a) - tfkhdyt
+- **(_app)** disable progress bar - (c59e8a5) - tfkhdyt
+- **(_app)** remove canonical and openGraph.url from Next-SEO - (8377ab4) - tfkhdyt
+- **(_app)** set scroll bar theme depends on color scheme - (080d11c) - tfkhdyt
+- **(about)** remove resume iframe, and change it into link - (423b3ad) - tfkhdyt
+- **(about)** set priority on avatar image - (24585ce) - tfkhdyt
+- **(app)** comment out messageForHackers - (0203aed) - tfkhdyt
+- **(card)** change translate on hover method to pure css - (fa960f0) - tfkhdyt
+- **(card)** remove whileHover prop - (2bb7a52) - tfkhdyt
+- **(card)** disable tooltip - (a6feb88) - tfkhdyt
+- **(components)** fix image and link new API - (cbe870b) - tfkhdyt
+- **(contacts)** remove @ on label - (e187d1d) - tfkhdyt
+- **(document)** remove umami - (ac72884) - tfkhdyt
+- **(education)** change education order - (331eba8) - tfkhdyt
+- **(fonts)** set display option to swap in @next/font Rubik initialization - (c7133b3) - tfkhdyt
+- **(footer)** fix footer covering content on mobile view - (05adc4a) - tfkhdyt
+- **(footer)** set height to auto and padding-y to sm - (4a8662a) - tfkhdyt
+- **(footer)** change to copyleft - (e7c009e) - tfkhdyt
+- **(header)** change header item size to md, and change inactive item color to dark - (46d78f2) - tfkhdyt
+- **(header)** change color scheme toggler - (e696773) - tfkhdyt
+- **(home)** fix center component size - (5b4f5cb) - tfkhdyt
+- **(home)** fix text size to small on desktop - (df96aa1) - tfkhdyt
+- **(home)** fix grid, and change image component to next.js - (ae5f542) - tfkhdyt
+- **(home)** fix grid - (0b4110b) - tfkhdyt
+- **(home)** fix grid issue on sm - (903adff) - tfkhdyt
+- **(home)** remove mx on junior full stack developer - (80e37fb) - tfkhdyt
+- **(image)** apply new next/image props - (4d4ff55) - tfkhdyt
+- **(introduction)** change some term - (7ce982d) - tfkhdyt
+- **(introduction)** fix grammar - (2ee7966) - tfkhdyt
+- **(introduction)** make rounded image centered - (fc3f1d6) - tfkhdyt
+- **(layout)** move scroll to top button to layout - (2a410c9) - tfkhdyt
+- **(metatags)** uncomment link for thumbnail - (583971f) - Taufik Hidayat
+- **(navbar)** fix text color and decoration - (8e8f464) - tfkhdyt
+- **(navbar)** set cursor to pointer on navbar items - (13ac7ac) - tfkhdyt
+- **(navbar)** prevent scroll to top after clicking navbar - (41b74f1) - tfkhdyt
+- **(navbar)** close navbar after moving to another page - (1c39723) - tfkhdyt
+- **(nprogress)** reduce bar height - (04e810d) - tfkhdyt
+- **(nprogress)** change progress color and height - (8e69798) - tfkhdyt
+- **(projects)** add Node.js to Forum API - (981ff3b) - tfkhdyt
+- **(projects)** add Node.js to API projects tech stack - (35a2139) - tfkhdyt
+- **(resume)** remove resume preview - (794bdbe) - tfkhdyt
+- **(resume)** reduce height to 700px - (4ae7077) - tfkhdyt
+- **(resume)** adjust viewer box height - (f38b34e) - tfkhdyt
+- **(resume)** add id attr and adjust height - (9b88e60) - tfkhdyt
+- **(resume)** fix wrong document - (e1cff0f) - tfkhdyt
+- **(resume)** fix pdf viewer theme and size - (6bc8d80) - tfkhdyt
+- **(sections)** adjust margin top - (af074a6) - tfkhdyt
+- **(skills)** add "withArrow withinPortal" to skill card - (d73258f) - tfkhdyt
+- **(skills)** change categories to skillCategories - (f78797b) - tfkhdyt
+- **(tabs)** remove unneeded scroll area - (0294949) - tfkhdyt
+- **(tooltip)** fix tooltip not working on mobile - (e7a7e80) - tfkhdyt
+- **(umami)** fix umami track event issue - (bdf4b3e) - tfkhdyt
+- **(umami)** fix umami track event issue - (8149750) - tfkhdyt
+- **(useStyles)** make hover bg color on light theme darker - (50f3e89) - tfkhdyt
+- **(useStyles)** chnage hover bg color on light theme - (bae5c24) - tfkhdyt
+- **(usestyles)** change timing function of card to ease out - (6d3998e) - tfkhdyt
+#### Build system
+- **(deps)** upgrade deps - (6b28eef) - tfkhdyt
+- **(deps)** install react-turnstile - (529bec9) - tfkhdyt
+- **(deps)** install telegraf - (919a066) - tfkhdyt
+- **(deps)** upgrade jotai - (ac79b47) - tfkhdyt
+- **(deps)** upgrade framer motion to v9 - (221b8e2) - tfkhdyt
+- **(deps)** upgrade deps - (bc91b8a) - tfkhdyt
+- **(deps)** upgrade deps - (9da44db) - tfkhdyt
+- **(deps)** update deps - (5b0de61) - tfkhdyt
+- **(deps)** install prettier - (90ba964) - tfkhdyt
+- **(deps)** upgrade to next.js 13 - (2173756) - tfkhdyt
+- **(deps)** update deps - (0382773) - tfkhdyt
+- **(deps)** install @react-pdf-viewer/core - (f0c4a07) - tfkhdyt
+- **(deps)** install pdfjs-dist - (6b2e141) - tfkhdyt
+- **(deps)** upgrade deps - (323f5a1) - tfkhdyt
+- **(deps)** update deps, including Next.js 12.3 - (98fa62b) - tfkhdyt
+- **(deps)** install react-pdf - (7a23bf7) - tfkhdyt
+- **(deps)** upgrade deps - (afcf84d) - tfkhdyt
+- **(deps)** remove yup - (5893802) - tfkhdyt
+- **(deps)** add zod - (ec85c72) - tfkhdyt
+- **(deps)** remove sharp because it's unneeded - (67cd085) - tfkhdyt
+- **(deps)** upgrade deps - (e118e67) - tfkhdyt
+- **(deps)** add framer motion - (5f07929) - tfkhdyt
+- **(deps)** add mantine - (e47c5d1) - tfkhdyt
+#### Continuous Integration
+- **(hook)** remove html and css from lint glob - (56e7e6e) - tfkhdyt
+- **(lefthook)** change all_files to push_files on pre-push - (5f0e788) - tfkhdyt
+- add lefthook - (46a12a2) - tfkhdyt
+#### Documentation
+- **(readme)** add link for node.js - (daf589d) - tfkhdyt
+- **(readme)** add dot to the end of sentences - (816d559) - tfkhdyt
+- **(readme)** add more info to readme - (cfabf09) - tfkhdyt
+#### Features
+- **(_app)** add Jotai Provider - (c9ef26a) - tfkhdyt
+- **(_app)** setup mantine - (edf67c1) - tfkhdyt
+- **(_document)** add bing webmaster verification tag - (ae83266) - tfkhdyt
+- **(about)** add education, work experience, and resume - (ab8ed6e) - tfkhdyt
+- **(analytics)** setup umami - (fb0358d) - tfkhdyt
+- **(api)** add telegram message - (c9dd5d1) - tfkhdyt
+- **(app.tsx)** add hidden mastodon link for verification - (3b4d418) - tfkhdyt
+- **(card)** change card color on hover - (6884210) - tfkhdyt
+- **(components)** add metatags - (69bba77) - tfkhdyt
+- **(components)** add AppShell - (f410239) - tfkhdyt
+- **(contacts)** remove matrix and codeberg - (e595147) - tfkhdyt
+- **(document)** add lang attribute to html tag - (44ba7a0) - tfkhdyt
+- **(emoji)** add waving animation - (45e1aca) - tfkhdyt
+- **(fonts)** migrate to @next/font - (edf5672) - tfkhdyt
+- **(fonts)** change font to rubik - (022e5fb) - tfkhdyt
+- **(message)** apply cloudflare turnstile captcha - (2c4116f) - tfkhdyt
+- **(messagebox)** apply new native api - (db40439) - tfkhdyt
+- **(next-seo)** add 630p thumbnail - (4bf56c0) - tfkhdyt
+- **(pages)** add 500 page - (416e0ff) - tfkhdyt
+- **(pages)** revamps 404 page - (4082c1f) - tfkhdyt
+- **(pages)** add 404 page - (fa94d3a) - tfkhdyt
+- **(pages)** add contact page - (31edc93) - tfkhdyt
+- **(pages)** setup page transition - (d30dd09) - tfkhdyt
+- **(pages)** add skills page - (bb18616) - tfkhdyt
+- **(pages)** add project page - (bef2c6e) - tfkhdyt
+- **(pages)** add skills page - (78cce52) - tfkhdyt
+- **(pages)** add about page - (cbeaf99) - tfkhdyt
+- **(pages)** complete home page - (a8ae158) - tfkhdyt
+- **(pages)** add _document - (3248c89) - tfkhdyt
+- **(project)** add zustand to bookstore - (923d7db) - tfkhdyt
+- **(projects)** add Forum API project - (64eb43e) - tfkhdyt
+- **(projects)** add mms calculator - (cfb07fa) - tfkhdyt
+- **(projects)** add auto salam responder and wa sticker bot - (5835eb7) - tfkhdyt
+- **(projects)** add react query to to do list - (661f001) - tfkhdyt
+- **(projects)** add scroll to top button - (a491798) - tfkhdyt
+- **(projects)** add more projects - (53d85dc) - tfkhdyt
+- **(projects)** add more projects data - (63348e7) - tfkhdyt
+- **(projects)** add framer motion to several projects - (eac8a43) - tfkhdyt
+- **(resume)** add pdf viewer to resume - (43e160a) - tfkhdyt
+- **(skills)** add sveltekit, and remove some tech - (81e938c) - tfkhdyt
+- **(skills)** add show property to optionally hide skill set from skills page - (3692b08) - tfkhdyt
+- **(skills)** add docker and change message broker category to misc - (899093e) - tfkhdyt
+- **(skills)** add wweb.js - (20b5409) - tfkhdyt
+- **(skills)** add React Query - (f358417) - tfkhdyt
+- **(skills)** add bash - (909a82c) - tfkhdyt
+- **(skills)** add more skills data - (00b0371) - tfkhdyt
+- **(skills)** add framer motion - (33677fb) - tfkhdyt
+- setup pdf viewer - (7964b7e) - tfkhdyt
+- add message for hacker - (d0726cb) - tfkhdyt
+- implement next seo - (75e9934) - tfkhdyt
+- implement NProgress - (c75b75f) - tfkhdyt
+- implement jotai - (f14e3ee) - tfkhdyt
+#### Miscellaneous Chores
+- **(.next)** clear cache - (7292667) - tfkhdyt
+- **(eslint)** change lint script and add react version to the config - (05f4efb) - tfkhdyt
+- **(eslint)** disable react/no-unknown-property rule - (085a3df) - tfkhdyt
+- **(favicon)** change favicon - (841ad4e) - tfkhdyt
+- **(gitignore)** add **/.next - (161c0ea) - tfkhdyt
+- **(pages)** remove /api - (e31dfa3) - tfkhdyt
+- **(resume)** update resume - (b2e318e) - tfkhdyt
+- **(resume)** update resume - (de35738) - tfkhdyt
+- **(resume)** update resume - (089843d) - tfkhdyt
+- **(resume)** update resume - (033ce51) - tfkhdyt
+- **(resume)** update resume - (0cd4b0c) - tfkhdyt
+- **(resume)** update resume - (cf2385d) - tfkhdyt
+- **(resume)** update resume - (8a75f02) - tfkhdyt
+- **(resume)** add aws arhcitecting certificate - (fc74783) - tfkhdyt
+- **(resume)** update resume - (22ca693) - tfkhdyt
+- **(resume)** update resume - (9adf1c4) - tfkhdyt
+- **(resume)** update resume - (0e12189) - tfkhdyt
+- **(resume)** update resume file - (d0a7bb5) - tfkhdyt
+- **(styles)** remove unneeded css - (dd6aade) - tfkhdyt
+- **(tsconfig)** change target to es2018 - (bf88f56) - tfkhdyt
+- **(tsconfig)** add handlers and lib as new path aliases - (7231370) - tfkhdyt
+- initialize cog.toml - (8b96368) - tfkhdyt
+- remove swcrc - (eef49bc) - tfkhdyt
+- rebuild eslint config - (ffdee83) - tfkhdyt
+- update resume - (c970817) - tfkhdyt
+- update resume - (b356897) - tfkhdyt
+- add LICENSE - (cee986f) - Taufik Hidayat
+- add funding.yml - (3695013) - tfkhdyt
+- revert back to pnpm - (b0c5719) - tfkhdyt
+- migrate to bun - (9c15490) - tfkhdyt
+- change v3 to www - (577e6fc) - tfkhdyt
+- setup bundle analyzer - (690a5cb) - tfkhdyt
+- move all source code to src folder - (9250330) - tfkhdyt
+- setup sort import plugin - (0b753d0) - tfkhdyt
+#### Performance Improvements
+- **(about)** lazy load resume iframe - (447f2e8) - tfkhdyt
+- **(app)** use next/font instead of "@next/font" - (8ce0584) - tfkhdyt
+- **(bot)** change bot model to singleton - (d2ff5df) - tfkhdyt
+- **(font)** set font proxy to fontbit.io - (168707f) - tfkhdyt
+- **(icon)** optimize tech images - (f498bb1) - tfkhdyt
+- **(image)** change illustration to svg - (0d6fb9a) - tfkhdyt
+- **(image)** optimize face and illustration - (80975a0) - tfkhdyt
+- **(images)** convert to next/image - (c6c7762) - tfkhdyt
+- **(skills)** improve bash icon file size - (8afd5d8) - tfkhdyt
+#### Refactoring
+- **(about)** extract reusable components - (09749b4) - tfkhdyt
+- **(components)** refactor templates folder - (2d9f4fc) - tfkhdyt
+- **(data)** extract type from headerItem - (23d39d3) - tfkhdyt
+- **(data)** extract types from data - (3ceedd9) - tfkhdyt
+- migrate to arrow functional component - (0f1c27f) - tfkhdyt
+- setup path aliases - (9cc6c8f) - tfkhdyt
+#### Style
+- **(_app)** format - (58d9934) - tfkhdyt
+- **(card)** remove unneeded imports - (1533567) - tfkhdyt
+- **(data)** format - (1d77488) - tfkhdyt
+- format the code with prettier - (19bd569) - tfkhdyt
+
+- - -
+
+Changelog generated by [cocogitto](https://github.com/cocogitto/cocogitto).
