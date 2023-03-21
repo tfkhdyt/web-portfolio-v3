@@ -3,5 +3,6 @@ export const projectCategories = [
   'Bot',
   'CLI',
   'API',
+  'Suckless Build',
   'Misc',
 ] as const;
