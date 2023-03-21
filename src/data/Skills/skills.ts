@@ -30,6 +30,7 @@ export const skills: Skill[] = [
     name: 'Rust',
     category: 'Language',
     icon: 'rust.svg',
+    show: false,
   },
   {
     name: 'Python',
@@ -48,6 +49,11 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'java.svg',
     show: false,
+  },
+  {
+    name: 'C',
+    category: 'Language',
+    icon: 'c.png',
   },
   {
     name: 'C++',
