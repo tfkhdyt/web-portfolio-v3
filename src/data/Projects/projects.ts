@@ -2,6 +2,66 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Pondokeun API',
+    category: 'API',
+    desc: 'Pondokeun Link Shortener as a REST API',
+    link: {
+      demo: null,
+      repo: 'https://github.com/tfkhdyt/pondokeun-api',
+    },
+    tech: ['TypeScript', 'Node.js', 'NestJS'],
+  },
+  {
+    name: 'dmenu',
+    category: 'Suckless Build',
+    desc: 'My dmenu build',
+    link: {
+      repo: 'https://github.com/tfkhdyt/dmenu',
+      demo: null,
+    },
+    tech: ['C'],
+  },
+  {
+    name: 'st',
+    category: 'Suckless Build',
+    desc: 'My st (Simple Terminal) build',
+    link: {
+      repo: 'https://github.com/tfkhdyt/st',
+      demo: null,
+    },
+    tech: ['C'],
+  },
+  {
+    name: 'WhatsApp Link Generator',
+    category: 'Website',
+    desc: 'Web app to generate WhatsApp contact link with default message easily ',
+    link: {
+      repo: 'https://github.com/tfkhdyt/whatsapp-link-generator',
+      demo: 'https://walinkgen.tfkhdyt.my.id/',
+    },
+    tech: ['TypeScript', 'SvelteKit', 'Tailwind CSS'],
+  },
+  {
+    name: 'dwm',
+    category: 'Suckless Build',
+    desc: 'My dwm (dynamic window manager) build',
+    link: {
+      repo: 'https://github.com/tfkhdyt/dwm',
+      demo: null,
+    },
+    tech: ['C'],
+  },
+  {
+    name: 'Hacktiv8 MSIB Backend Course',
+    category: 'Misc',
+    desc: 'Repository to store all the code I wrote during the Independent Study at Hacktiv8 Golang for Back End Programmer Batch 4 class.',
+    link: {
+      repo: 'https://github.com/tfkhdyt/hacktiv8-msib-golang-backend',
+      demo: null,
+    },
+    tech: ['Go', 'Gin', 'PostgreSQL'],
+  },
+  {
     name: 'Forum API',
     category: 'API',
     desc: 'Dicoding Expert Back-end Submission',
