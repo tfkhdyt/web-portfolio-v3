@@ -2,6 +2,23 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Pondokeun',
+    category: 'Website',
+    desc: 'Lightweght, Modern, Free and Open Source Link Shortener',
+    link: {
+      demo: 'https://link.tfkhdyt.my.id',
+      repo: 'https://github.com/tfkhdyt/pondokeun',
+    },
+    tech: [
+      'SvelteKit',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'Prisma',
+      'PostgreSQL',
+    ],
+  },
+  {
     name: 'Pondokeun API',
     category: 'API',
     desc: 'Pondokeun Link Shortener as a REST API',
