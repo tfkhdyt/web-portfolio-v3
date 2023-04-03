@@ -153,6 +153,11 @@ export const skills: Skill[] = [
     icon: 'hapi.png',
   },
   {
+    name: 'tRPC',
+    category: 'Framework/Library',
+    icon: 'trpc.svg',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
