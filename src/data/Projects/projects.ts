@@ -16,6 +16,7 @@ export const projects: Project[] = [
       'Node.js',
       'Prisma',
       'PostgreSQL',
+      'tRPC',
     ],
   },
   {
