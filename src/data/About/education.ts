@@ -4,7 +4,7 @@ export const education: IEducation[] = [
   {
     name: 'Bale Bandung University',
     type: 'University',
-    major: 'Computer Science (Current GPA: 3.62)',
+    major: 'Computer Science (Current GPA: 3.64)',
     timePeriod: '2020 - present',
   },
   {
