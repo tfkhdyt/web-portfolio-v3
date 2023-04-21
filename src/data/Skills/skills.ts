@@ -106,6 +106,11 @@ export const skills: Skill[] = [
     category: 'Framework/Library',
     icon: 'telegraf.svg',
   },
+  {
+    name: 'Vite',
+    category: 'Framework/Library',
+    icon: 'vite.svg',
+  },
   // {
   //   name: 'Zustand',
   //   category: 'Framework/Library',
@@ -158,6 +163,11 @@ export const skills: Skill[] = [
     icon: 'trpc.svg',
   },
   {
+    name: 'Alpine.js',
+    category: 'Framework/Library',
+    icon: 'alpine.svg',
+  },
+  {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
     icon: 'bootstrap.svg',
@@ -177,6 +187,11 @@ export const skills: Skill[] = [
     name: 'Mantine',
     category: 'UI Framework/Component',
     icon: 'mantine.svg',
+  },
+  {
+    name: 'UnoCSS',
+    category: 'UI Framework/Component',
+    icon: 'unocss.svg',
   },
   {
     name: 'PostgreSQL',

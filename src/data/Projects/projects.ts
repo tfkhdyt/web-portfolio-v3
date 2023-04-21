@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Netflix Clone',
+    category: 'Website',
+    desc: 'Netflix Landing Page slicing challenge for https://codedesign.dev',
+    link: {
+      demo: 'https://netflix-tfkhdyt.vercel.app',
+      repo: 'https://github.com/tfkhdyt/netflix-clone',
+    },
+    tech: ['HTML', 'Vite', 'UnoCSS', 'Alpine.js'],
+  },
+  {
     name: 'Pondokeun',
     category: 'Website',
     desc: 'Lightweght, Modern, Free and Open Source Link Shortener',
