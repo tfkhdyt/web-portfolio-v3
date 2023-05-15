@@ -2,6 +2,46 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Kanban Board',
+    category: 'API',
+    desc: 'Kanban Board API - Hacktiv8 Golang Final Project 3',
+    link: {
+      demo: null,
+      repo: 'https://codeberg.org/tfkhdyt/kanban-board',
+    },
+    tech: ['Go', 'Gin', 'PostgreSQL'],
+  },
+  {
+    name: 'MyGram',
+    category: 'API',
+    desc: 'MyGram API - Hacktiv8 Golang Final Project 2',
+    link: {
+      demo: null,
+      repo: 'https://github.com/tfkhdyt/hacktiv8-msib-final-project-2',
+    },
+    tech: ['Go', 'Gin', 'PostgreSQL'],
+  },
+  {
+    name: 'Todo List',
+    category: 'API',
+    desc: 'Todo List API - Hacktiv8 Golang Final Project 1',
+    link: {
+      demo: 'https://todolist-final-project.up.railway.app/swagger/index.html',
+      repo: 'https://github.com/tfkhdyt/hacktiv8-msib-final-project-1',
+    },
+    tech: ['Go', 'Gin', 'PostgreSQL'],
+  },
+  {
+    name: 'PrayerMate',
+    category: 'CLI',
+    desc: 'CLI-based application to remind users of prayer times',
+    link: {
+      demo: null,
+      repo: 'https://codeberg.org/tfkhdyt/prayermate',
+    },
+    tech: ['Go'],
+  },
+  {
     name: 'Netflix Clone',
     category: 'Website',
     desc: 'Netflix Landing Page slicing challenge for https://codedesign.dev',
